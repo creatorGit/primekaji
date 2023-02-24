@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>コンポーネント | Components</title>
+
+  <link rel="icon" href="assets/images/icons/favicon.png">
+
+  <!-- google fonts 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- BootStrap 読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- jQuery UI 読み込み -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- FontAwesome 読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  
+  <!-- stylesheetファイル 読み込み -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="body" class="home">
+  <header>
+    
+  </header>
+
+  <div class="l-main py-4">
+    <div id="main" class="container u-clearfix">
+      <div class="forms">
+        <h1 class="font-weight-bold u-en mb-2">FORMS</h1>
+        <h2 class="font-weight-bold u-en mb-2">Input</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default">
+                <p class="u-en">Default & Focus</p>
+                <input class="default" type="text" placeholder="プレースホルダー" />
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="disabled">
+                <p class="u-en">Disabled</p>
+                <input class="disabled" type="text" placeholder="プレースホルダー" disabled/>
+                <p class="c-error-alert mt-1 u-hidden"><i class="fa fa-exclamation-circle mr-1"></i>エラーが発生しました。</p>
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="c-error">
+                <p class="u-en">Error</p>
+                <input class="default c-input-error" type="text" placeholder="プレースホルダー" />
+                <p class="c-error-alert mt-1"><i class="fa fa-exclamation-circle mr-1"></i>エラーが発生しました。</p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <form class="form">
+              <fieldset>
+                <p class="u-en">Date Picker</p>
+                <input type="text" class="date-picker" placeholder="2021/06/20">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="font-weight-bold u-en mb-2">Textarea</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default">
+                <p class="u-en">Default & Focus</p>
+                <textarea name="" id="" cols="30" rows="5" class="default" placeholder="プレースホルダー"></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="disabled">
+                <p class="u-en">Disabled<p>
+                <textarea name="" id="" cols="30" rows="5" class="default" placeholder="プレースホルダー" disabled></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="c-error">
+                <p class="u-en">Error</p>
+                <textarea name="" id="" cols="30" rows="5" class="c-input-error" placeholder="プレースホルダー"></textarea>
+                <p class="c-letter-num"><span>0</span>/70文字</p>
+                <p class="c-error-alert mt-1"><i class="fa fa-exclamation-circle mr-1"></i>エラーが発生しました。</p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="font-weight-bold mb-2">SelectBox</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default">
+                <p class="u-en">Default</p>
+                <select class="default">
+                  <optgroup label="グループ1">
+                    <option>テキスト1</option>
+                  </optgroup>
+                  <optgroup label="グループ2">
+                    <option>テキスト2</option>
+                    <option disabled>テキスト</option>
+                    <option>テキスト3</option>
+                  </optgroup>
+                  <optgroup label="グループ3" disabled>
+                    <option>テキスト4</option>
+                    <option>テキスト5</option>
+                    <option>テキスト6</option>
+                  </optgroup>
+                </select>
+                <p class="c-error-alert mt-1 u-hidden"><i class="fa fa-exclamation-circle mr-1"></i>エラーが発生しました。</p>
+              </fieldset>
+            </form>
+          </div>
+          
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default disabled">
+                <p class="u-en">Disabled</p>
+                <select class="default" disabled>
+                  <option value="テキスト">テキスト</option>
+                  <option value="テキスト">テキスト</option>
+                  <option value="テキスト">テキスト</option>
+                </select>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default c-error">
+                <p class="u-en">Error</p>
+                <select class="c-input-error">
+                  <optgroup label="グループ1">
+                    <option>テキスト1</option>
+                  </optgroup>
+                  <optgroup label="グループ2">
+                    <option>テキスト2</option>
+                    <option disabled>テキスト</option>
+                    <option>テキスト3</option>
+                  </optgroup>
+                  <optgroup label="グループ3" disabled>
+                    <option>テキスト4</option>
+                    <option>テキスト5</option>
+                    <option>テキスト6</option>
+                  </optgroup>
+                </select>
+                <p class="c-error-alert mt-1"><i class="fa fa-exclamation-circle mr-1"></i>エラーが発生しました。</p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="font-weight-bold mt-2">Checkbox & Radio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default">
+                <p class="u-en">Default</p>
+                <label class="checkbox">テキスト
+                  <input type="checkbox" id="" class="" name="" value="" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+          
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="Disabled">
+                <p class="u-en">Disabled</p>
+                <label class="checkbox u-disabled">テキスト
+                  <input type="checkbox" id="" class="" name="" value="" disabled>
+                  <span class="checkmark"></span>
+                </label>                  
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="default">
+                <p class="u-en">Default</p>
+                <label class="radio">テキスト1
+                  <input type="radio" id="" class="" name="radio" value="" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="radio mt-2">テキスト2
+                  <input type="radio" id="" class="" name="radio" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+          
+          <div class="col-md-4">
+            <form class="form">
+              <fieldset class="Disabled">
+                <p class="u-en">Disabled</p>
+                <label class="radio u-disabled">テキスト
+                  <input type="radio" id="" class="" name="" value="" disabled>
+                  <span class="checkmark"></span>
+                </label>                
+              </fieldset>
+            </form>
+          </div>
+        </div>            
+      </div>
+      <div class="buttons mt-4">
+        <h1 class="font-weight-bold u-en">BUTTONS</h1>
+
+        <h2 class="u-en mt-4 mb-2">Primary Blue Button</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="!#" class="primary-btn-purple">テキスト</a>
+          </div>
+          <div class="col-md-3">
+            <a href="!#" class="primary-btn-purple disabled">テキスト</a>
+          </div>
+        </div>
+
+        <h2 class="u-en mt-4 mb-2">Primary Orange Button</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="!#" class="primary-btn-brown">テキスト</a>
+          </div>
+          <div class="col-md-3">
+            <a href="!#" class="primary-btn-brown disabled">テキスト</a>
+          </div>
+        </div>
+
+        <h2 class="u-en mt-4 mb-2">Outlined</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="!#" class="outline-btn">テキスト</a>
+          </div>
+          <div class="col-md-3">
+            <a href="!#" class="outline-btn disabled">テキスト</a>
+          </div>
+        </div>
+
+        <h2 class="u-en mt-4 mb-2">Add Button</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="!#" class="add-btn">テキスト</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="text-center">
+      <p class="c-copyright u-en">Copyright &copy; 2023 prime kaji All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JQuery 読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+  <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/datePicker.js"></script>
+</body>
+
+</html>

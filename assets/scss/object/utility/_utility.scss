@@ -1,0 +1,102 @@
+@import "hover";
+@import "hidden";
+@import "animation";
+
+.u-clearfix::before, .u-clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.u-br {
+  border-radius: 6px;
+}
+
+.u-brm {
+  border-radius: 8px;
+}
+
+.u-brl {
+  border-radius: 12px;
+}
+
+.u-mrs {
+  margin-right: 10px;
+}
+
+.u-py-00 {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.mt-30 {
+  @include overTablet {
+    margin-top: 30px;
+  }
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.mb-30 {
+  @include overTablet {
+    margin-bottom: 30px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.mt-60 {
+  @include overTablet {
+    margin-top: 60px;
+  }
+  @include mobile {
+    margin-top: 30px;
+  }
+}
+
+.u-large-text-size {
+  font-size: $large-text-size;
+}
+
+.u-font-xsmall {
+  font-size: $xsmall-text-size;
+  font-weight: $font-weight-base;
+}
+
+.u-font-bold {
+  font-weight: $font-weight-bold;
+}
+
+.u-font-small {
+  font-size: $small-text-size;
+}
+
+.u-font-base {
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+}
+
+.u-border-top-1px {
+  border-top: 1px solid #eee;
+}
+
+.u-font-noto-sans-jp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.u-font-helvetica-neue, .u-en {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@include tablet {
+  .u-large-text-size {
+    font-size: #{$large-text-size - 2px};
+  }
+}
+
+@include mobile {
+  .u-large-text-size {
+    font-size: #{$large-text-size - 4px};
+  }
+}

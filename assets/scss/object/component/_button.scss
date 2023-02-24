@@ -1,0 +1,92 @@
+.primary-btn-purple {
+  background-color: $third-color;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: $button-text-size !important;
+  line-height: 26px !important;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  text-align: center;
+  &:hover {
+    outline: none;
+    opacity: 0.8;
+    color: #fff !important;
+    text-decoration: none;
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.primary-btn-brown {
+  background-color: $secondary-color;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: $button-text-size !important;
+  line-height: 26px !important;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  color: #fff !important;
+  display: block;
+  text-align: center;
+  &:hover {
+    outline: none;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.outline-btn {
+  color: $primary-color;
+  padding: 12px 50px;
+  border-radius: 5px;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #E2E2E2;
+  &:hover {
+    outline: none;
+    background-color: #CDBC95;
+    color: #fff;
+    text-decoration: none;
+  }
+  &.disabled {
+    pointer-events: none;
+    background-color: $border-color;
+    color: #A0A0A0;
+    border-color: $border-color;
+  }
+  &.active {
+    color: #fff;
+    background-color: #CDBC95;
+  }
+}
+
+.add-btn {
+  color: $primary-color;
+  background-color: $add-btn-color;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 6px 10px 6px 30px;
+  font-size: $font-size-base;
+  line-height: 15px;
+  font-weight: 700;
+  background-image: url("../images/icons/plus.png");
+  background-size: 15px 15px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+    background-color: #ddd;
+  }
+}

@@ -1,0 +1,34 @@
+.u-pc-show {
+  @include desktop {
+    display: block;
+  }
+  @include underDesktop {
+    display: none;
+  }
+}
+
+.u-sp-show {
+  @include overTablet {
+    display: none;
+  }
+  @include mobile {
+    display: block;
+  }
+}
+
+.u-tab-sp-show {
+  @include desktop {
+    display: none;
+  }
+  @include underDesktop {
+    display: block;
+  }
+}
+
+.u-overhidden {
+  overflow: hidden;
+}
+
+.u-hidden {
+  display: none !important;
+}

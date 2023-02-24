@@ -1,0 +1,39 @@
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+$font-weight-base: 400;
+$font-weight-bold: 700;
+
+$line-height-base: 1.5;
+$line-height-desc: 26px;
+
+$font-size-base: 14px;
+$button-text-size: 18px;
+$large-text-size: 26px;
+$middle-text-size: 22px;
+$small-text-size: 16px;
+$ssmall-text-size: 12px;
+$xsmall-text-size: 11px;
+
+@include tablet {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@include mobile {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}

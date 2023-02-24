@@ -1,0 +1,131 @@
+@import "button";
+@import "search-box";
+@import "media";
+@import "sns-links";
+@import "form";
+
+
+.breadcrumb-wrap {
+  .breadcrumb {
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    @include overTablet {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .container {
+    @include desktop {
+      max-width: 1310px !important;
+    }
+    @include underDesktop {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.articles {
+  &.grid {
+    @include desktop {
+      gap: 20px;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+    @include mobile {
+      gap: 10px;
+    }
+  }
+  .article {
+    border: 1px solid #E2E2E2;
+    @include desktop {
+      padding: 20px;
+    }
+    @include tablet {
+      padding: 15px;
+    }
+    @include mobile {
+      padding: 12px;
+    }
+  }
+}
+
+.star-review-wrap {
+  column-gap: 10px;
+  .fa-star {
+    color: #E5E1D8;
+    font-size: 18px;
+    &.checked {
+      color: #B19D70;
+    }
+  }
+  .review-mark {
+    font-size: 12px;
+    color: #ACACAC;
+  }
+}
+
+.heart-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.message-num-wrap {
+  column-gap: 5px;
+  .message-num {
+    font-size: 12px;
+    color: #312200;
+    letter-spacing: .05rem;
+    line-height: 14px;
+  }
+}
+
+.meta-tags {
+  @include overTablet {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  @include mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .meta-tag {
+    .meta {
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.1rem;
+      padding: 2px 4px;
+      border-radius: 2px;
+      color: #BABABA;
+      background-color: #E8E8E8;
+      &.cat-own {
+        background-color: #CBBFCB;
+        color: #fff;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.c-view-more-btn {
+  margin-left: auto;
+  margin-right: auto;
+  @include overTablet {
+    max-width: 339px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  @include mobile {
+    max-width: 270px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
