@@ -301,6 +301,7 @@ header.fixed {
 .header-login-btn img {
   margin-left: auto;
   margin-right: auto;
+  width: 28px;
 }
 
 .header-txt-wrap {
@@ -363,6 +364,21 @@ header.fixed {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 961px) {
+  .container-inner {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .container-inner {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .container-inner {
+    margin-top: 25px;
+  }
+}
 
 .m-top-btn-wrap {
   border-bottom: 1px solid #E2E2E2;
@@ -418,6 +434,14 @@ header.fixed {
 @media (min-width: 240px) and (max-width: 520px) {
   .main-col {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .signup-contents {
+    max-width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -796,19 +820,16 @@ footer {
 @media (min-width: 961px) {
   .p-main-title {
     font-size: 30px;
-    margin-bottom: 45px;
   }
 }
 @media (min-width: 521px) and (max-width: 960px) {
   .p-main-title {
     font-size: 28px;
-    margin-bottom: 36px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
   .p-main-title {
     font-size: 24px;
-    margin-bottom: 25px;
   }
 }
 
@@ -836,21 +857,16 @@ footer {
   text-decoration: none;
 }
 
-@media (min-width: 961px) {
-  .grid-lg-4 {
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 521px) {
+  .p-main-desc {
+    font-size: 18px;
+    margin-top: 10px;
   }
 }
-
-@media (min-width: 521px) and (max-width: 960px) {
-  .grid-md-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (min-width: 240px) and (max-width: 520px) {
-  .grid-sm-2 {
-    grid-template-columns: repeat(2, 1fr);
+  .p-main-desc {
+    font-size: 15px;
+    margin-top: 5px;
   }
 }
 
@@ -1163,6 +1179,30 @@ select:hover:not(:disabled) {
   color: red;
 }
 
+@media (min-width: 961px) {
+  .grid-lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 961px) {
+  .grid-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 521px) and (max-width: 960px) {
+  .grid-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 240px) and (max-width: 520px) {
+  .grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .breadcrumb-wrap .breadcrumb {
   margin-bottom: 10px;
   padding-left: 0;
@@ -1316,4 +1356,89 @@ select:hover:not(:disabled) {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
+
+.notice-box {
+  background-color: #B19D70;
+}
+@media (min-width: 521px) {
+  .notice-box {
+    padding: 15px 25px;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .notice-box {
+    padding: 9px 12px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 521px) {
+  .notice-box > .flex {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .notice-box > .flex {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.notice-box p {
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (min-width: 961px) {
+  .card-wrap {
+    gap: 30px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .card-wrap {
+    gap: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .card-wrap {
+    gap: 15px;
+  }
+}
+
+.card-item {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #E2E2E2;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media screen and (min-width: 961px) {
+  .card-item {
+    grid-template-columns: 1fr 2.2fr;
+  }
+}
+@media screen and (max-width: 960px) {
+  .card-item {
+    grid-template-columns: auto;
+  }
+}
+.card-item .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #AEA6BC;
+}
+.card-item .card-detail p {
+  font-size: 15px;
+  color: #312200;
+  margin-top: 7px;
+}
+.card-item .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-item .img-box img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

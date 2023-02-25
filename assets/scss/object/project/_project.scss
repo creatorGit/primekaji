@@ -7,15 +7,12 @@
   letter-spacing: 0.05rem;
   @include desktop {
     font-size: 30px;
-    margin-bottom: 45px;
   }
   @include tablet {
     font-size: 28px;
-    margin-bottom: 36px;
   }
   @include mobile {
     font-size: 24px;
-    margin-bottom: 25px;
   }
 }
 .p-article-title {
@@ -39,19 +36,14 @@
     }
   }
 }
-
-.grid-lg-4 {
-  @include desktop {
-    grid-template-columns: repeat(4, 1fr);
+.p-main-desc {
+  @include overTablet {
+    font-size: 18px;
+    margin-top: 10px;
   }
-}
-.grid-md-3 {
-  @include tablet {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.grid-sm-2 {
   @include mobile {
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 15px;
+    margin-top: 5px;
   }
 }
+
