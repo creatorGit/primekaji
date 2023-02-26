@@ -487,18 +487,19 @@ header.fixed {
 
 .login-form {
   max-width: 800px;
-  min-height: 560px;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 521px) {
   .login-form {
     padding: 60px;
+    min-height: 560px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
   .login-form {
     padding: 40px 14px;
+    min-height: 420px;
   }
 }
 .login-form .form fieldset {
@@ -525,13 +526,13 @@ header.fixed {
   }
 }
 @media (min-width: 521px) {
-  .login-form .alert-box.alerted {
+  .login-form .alert-box.alerted-alone-page {
     margin-top: 120px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
-  .login-form .alert-box.alerted {
-    margin-top: 130px;
+  .login-form .alert-box.alerted-alone-page {
+    margin-top: 90px;
   }
 }
 

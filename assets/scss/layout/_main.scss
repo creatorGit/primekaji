@@ -107,14 +107,15 @@
 
 .login-form {
   max-width: 800px;
-  min-height: 560px;
   margin-left: auto;
   margin-right: auto;
   @include overTablet {
     padding: 60px;
+    min-height: 560px;
   }
   @include mobile {
     padding: 40px 14px;
+    min-height: 420px;
   }
   .form{
     fieldset {
@@ -136,12 +137,12 @@
     @include mobile {
       margin-top: 27px;
     }
-    &.alerted {
+    &.alerted-alone-page {
       @include overTablet {
         margin-top: 120px;
       }
       @include mobile {
-        margin-top: 130px;
+        margin-top: 90px;
       }
     }
   }
