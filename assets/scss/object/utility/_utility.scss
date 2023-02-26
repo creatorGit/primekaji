@@ -82,6 +82,45 @@
   }
 }
 
+.mt-80 {
+  @include overTablet {
+    margin-top: 80px;
+  }
+  @include mobile {
+    margin-top: 40px;
+  }
+}
+
+.bt-80 {
+  @include overTablet {
+    padding-top: 80px;
+  }
+  @include mobile {
+    padding-top: 40px;
+  }
+}
+
+.pb-80 {
+  @include overTablet {
+    padding-bottom: 80px;
+  }
+  @include mobile {
+    padding-bottom: 40px;
+  }
+}
+
+.mt-120 {
+  @include desktop {
+    margin-top: 120px;
+  }
+  @include tablet {
+    margin-top: 80px;
+  }
+  @include mobile {
+    margin-top: 60px;
+  }
+}
+
 .u-large-text-size {
   font-size: $large-text-size;
 }
@@ -126,3 +165,4 @@
     font-size: #{$large-text-size - 4px};
   }
 }
+
