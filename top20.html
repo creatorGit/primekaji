@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>退会</title>
+  <title>予約状況の確認一覧</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">退会</li>
+        <li class="breadcrumb-item">予約状況の確認一覧</li>
       </ul>
     </div>
   </div>
@@ -95,36 +95,53 @@
       </div>
       <div class="main-col">
         <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">退会</h2>
-          <p class="p-main-desc animated fadeInUpShort">本当に退会してもよろしいですか？<br>これまでプライムカジを利用した情報は削除されますのでご注意下さい。</p>
-          <p class="p-sub-desc animated fadeInUpShort mt-3">※登録情報は、一定期間経過後に削除されます。この猶予期間はサービス利用に関するトラブルを防ぐために設けられています。</p>
+          <h2 class="p-main-title animated fadeInLeftShort">予約状況の確認一覧</h2>
         </div>
         <div class="container-inner">
-          <form action="" class="form animatedParent">
-            <div class="grid two-btn-wrap mt-60">
-              <a href="!#" class="outline-btn custom_outline-btn">退会しない</a>
-              <input type="button" class="c-view-more-btn primary-btn-brown modalShowBtn" data-target="#signoutModal" value="退会する">
-            </div>
-          </form>
+          <input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?">
+          <input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?">
         </div>
       </div>
     </div>
   </div>
 
   <!-- Modal -->
-  <div class="modal-wrap" id="signoutModal">
+  <!-- サービス完了 -->
+  <div class="modal-wrap" id="serviceFinish">
     <div class="mask"></div>
     <div class="modal">
       <div class="modal__inner">
         <button type="button" class="crossBtn">&times;</button>
         <div class="caution-wrap grid">
-          <span class="caution-mark">!</span>
-          <span class="txt">Caution</span>
+          <span class="caution-mark">？</span>
+          <span class="txt">What’s</span>
         </div>
-        <h2 class="text-center">現在予約中のサービスがあります。</h3>
+        <h2 class="text-center">サービス完了ボタンとは</h3>
         <div class="modal__inner__contents">
-          <p>恐れ入りますが、予約中のサービスがある間は退会することができません。</p>
-          <p>サービス予約をキャンセルするか、施行が完了してから再度お試しください。</p>
+          <p>サービス施行が完了したものは完了ボタンを押してください。</p>
+          <p class="note">※施行予定日より〇日経過した場合、自動でサービスが完了されます。</p>
+        </div>
+        <div class="mt-60">
+          <button type="button" class="close-btn c-view-more-btn primary-btn-brown">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- サービスキャンセル -->
+  <div class="modal-wrap" id="serviceCancel">
+    <div class="mask"></div>
+    <div class="modal">
+      <div class="modal__inner">
+        <button type="button" class="crossBtn">&times;</button>
+        <div class="caution-wrap grid">
+          <span class="caution-mark">？</span>
+          <span class="txt">What’s</span>
+        </div>
+        <h2 class="text-center">サービスキャンセルボタンとは</h3>
+        <div class="modal__inner__contents">
+          <p>サービス施行が完了したものは完了ボタンを押してください。</p>
+          <p class="note">※施行予定日より〇日経過した場合、自動でサービスが完了されます。</p>
         </div>
         <div class="mt-60">
           <button type="button" class="close-btn c-view-more-btn primary-btn-brown">閉じる</button>

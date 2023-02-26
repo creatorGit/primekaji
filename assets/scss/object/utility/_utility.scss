@@ -46,6 +46,33 @@
   }
 }
 
+.mb-40 {
+  @include overTablet {
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.mt-45 {
+  @include overTablet {
+    margin-top: 45px;
+  }
+  @include mobile {
+    margin-top: 25px;
+  }
+}
+
+.mb-45 {
+  @include overTablet {
+    margin-bottom: 45px;
+  }
+  @include mobile {
+    margin-bottom: 25px;
+  }
+}
+
 .mt-60 {
   @include overTablet {
     margin-top: 60px;

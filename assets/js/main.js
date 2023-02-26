@@ -42,8 +42,9 @@ $(window).scroll(function() {
 
 // =============================== Modals =================================
 $(document).ready(function(){
-  $('.signout-btn').on('click', function(){
-    $('#modal').addClass('visible');
+  $('.modalShowBtn').on('click', function(){
+    var target = $(this).attr('data-target');
+    $(target).addClass('visible');
   });
 
   $('.mask').on('click', function(){
@@ -73,3 +74,16 @@ $(document).ready(function(){
   });
 });
 // ============================== End of Modals ===================================
+
+//パスワードの表示・非表示機能
+function pushHideButton() {
+  var txtPass = document.getElementById("textPassword");
+  var btnEye = document.getElementById("buttonEye");
+  if (txtPass.type === "text") {
+    txtPass.type = "password";
+    btnEye.className = "fa fa-eye toggle-eyes";
+  } else {
+    txtPass.type = "text";
+    btnEye.className = "fa fa-eye-slash toggle-eyes";
+  }
+}

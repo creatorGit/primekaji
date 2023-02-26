@@ -68,3 +68,91 @@
     margin-right: auto;
   }
 }
+
+.login-pw-wrap {
+  @include overTablet {
+    margin-top: 25px;
+  }
+  @include mobile {
+    margin-top: 12px;
+  }
+}
+
+._box-shadow {
+  @include overTablet {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  @include mobile {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.pw-reset-text {
+  font-weight: 500;
+  color: #3E80DB;
+}
+
+.alert-box {
+  .alert-text {
+    @include overTablet {
+      font-size: 20px;
+      margin-top: 11px;
+    }
+    @include mobile {
+      font-size: 17px;
+      margin-top: 9px;
+    }
+  }
+}
+
+.login-form {
+  max-width: 800px;
+  min-height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  @include overTablet {
+    padding: 60px;
+  }
+  @include mobile {
+    padding: 40px 14px;
+  }
+  .form{
+    fieldset {
+      padding: 0;
+    }
+  } 
+  .pw-reset-text {
+    @include overTablet {
+      margin-top: 10px;
+    }
+    @include mobile {
+      margin-top: 5px;
+    }
+  }
+  .alert-box {    
+    @include overTablet {
+      margin-top: 35px;
+    }
+    @include mobile {
+      margin-top: 27px;
+    }
+    &.alerted {
+      @include overTablet {
+        margin-top: 120px;
+      }
+      @include mobile {
+        margin-top: 130px;
+      }
+    }
+  }
+}
+
+.one-btn-wrap {
+  text-align: center;
+  @include overTablet {
+    row-gap: 20px;
+  }
+  @include mobile {
+    row-gap: 15px;
+  }
+}

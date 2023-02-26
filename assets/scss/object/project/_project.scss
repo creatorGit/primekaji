@@ -14,6 +14,21 @@
     font-size: 24px;
   }
 }
+
+.p-main-title-en {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 600;
+  color: #AEA6BC;
+  letter-spacing: 0.1rem;
+  @include overTablet {
+    font-size: 20px;
+    margin-top: 7px;
+  }
+  @include mobile {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
 .p-article-title {
   letter-spacing: 0.05rem;
   font-weight: 500;
@@ -58,23 +73,6 @@
     row-gap: 15px;
     grid-template-columns: auto;
   }
-  .outline-btn {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    border-color: $secondary-color;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    @include overTablet {
-      max-width: 339px;
-      padding: 18px;
-    }
-    @include mobile {
-      max-width: 270px;
-      padding: 12px;
-    }
-  }
 }
 
 .caution-wrap {
@@ -90,5 +88,46 @@
   .txt {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+
+.serviceVieModal {
+  font-size: 20px;
+  font-weight: 600;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  &._finish {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  &._cancel {
+    color: #8E8E8E;
+    border-color: #8E8E8E;
+  }
+}
+
+.custom_outline-btn {
+  &.outline-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    border-color: $secondary-color;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @include overTablet {
+      max-width: 339px;
+      padding: 18px;
+    }
+    @include mobile {
+      max-width: 270px;
+      padding: 12px;
+    }
   }
 }
