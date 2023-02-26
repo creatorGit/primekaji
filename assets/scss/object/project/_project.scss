@@ -1,7 +1,6 @@
 @import "header-img";
 
 .p-main-title {
-  color: #312200;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0.05rem;
@@ -16,7 +15,6 @@
   }
 }
 .p-article-title {
-  color: #312200;
   letter-spacing: 0.05rem;
   font-weight: 500;
   @include overTablet {
@@ -38,7 +36,7 @@
 }
 .p-main-desc {
   @include overTablet {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
   }
   @include mobile {
@@ -47,3 +45,50 @@
   }
 }
 
+.two-btn-wrap {
+  max-width: 745px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;  
+  @include overTablet {
+    column-gap: 67px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile {
+    row-gap: 15px;
+    grid-template-columns: auto;
+  }
+  .outline-btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    border-color: $secondary-color;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @include overTablet {
+      max-width: 339px;
+      padding: 18px;
+    }
+    @include mobile {
+      max-width: 270px;
+      padding: 12px;
+    }
+  }
+}
+
+.caution-wrap {
+  text-align: center;
+  color: #AEA6BC;
+  letter-spacing: 0.1rem;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 600;
+  .caution-mark {
+    font-size: 76px;
+    line-height: 89px;
+  }
+  .txt {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

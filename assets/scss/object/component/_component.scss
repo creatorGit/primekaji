@@ -3,6 +3,7 @@
 @import "media";
 @import "sns-links";
 @import "form";
+@import "modal";
 
 
 .grid-lg-4 {
@@ -123,7 +124,7 @@
   column-gap: 5px;
   .message-num {
     font-size: 12px;
-    color: #312200;
+    color: $primary-color;
     letter-spacing: .05rem;
     line-height: 14px;
   }
@@ -163,6 +164,8 @@
 .c-view-more-btn {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  border: none;
   @include overTablet {
     max-width: 339px;
     padding-top: 18px;
@@ -194,14 +197,19 @@
     }
   }
   p {
-    font-size: 18px;
+    @include overTablet {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
     color: #fff;
   }
 }
 
 .card-wrap {
   @include desktop {
-    gap: 30px;
+    gap: 25px;
   }
   @include tablet {
     gap: 20px;
@@ -211,35 +219,83 @@
   }
 }
 .card-item {
-  padding: 15px;
   border-radius: 6px;
   border: 1px solid #E2E2E2;
-  column-gap: 10px;
+  position: relative;
   @media screen and (min-width: 961px) {
-    grid-template-columns: 1fr 2.2fr;
+    column-gap: 8px;
+    padding: 15px;
   }
   @media screen and (max-width: 960px) {
-    grid-template-columns: auto;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 10px;
+  }
+  &.hasCheckMark {
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../images/icons/check.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      @include overTablet {
+        width: 46px;
+        height: 46px;
+        top: -8px;
+        right: -8px;
+      }
+      @include mobile {
+        width: 39px;
+        height: 39px;
+        top: -7px;
+        right: -5px;
+      }
+    }
   }
   .card-title {
-    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.05rem;
     color: #AEA6BC;
+    margin-bottom: 7px;
+    @media screen and (min-width: 961px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 960px) {
+      font-size: 17px;
+      text-align: center;
+    }
   }
   .card-detail {
     p {
-      font-size: 15px;
-      color: #312200;
-      margin-top: 7px;
+      margin-top: 7px;  
+      @include overTablet {
+        font-size: 15px;
+      }
+      @include mobile {
+        font-size: 13px;
+      }
     }
   }
   .img-box {
+    flex: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: 961px) {
+      width: 25%;
+    }
     img {
       max-width: 100%;
+      &.login-img {
+        @media screen and (max-width: 960px) {
+          width: 40px;
+        }
+      }
+    }
+    @media screen and (max-width: 960px) {
+      height: 50px;
     }
   }
 }

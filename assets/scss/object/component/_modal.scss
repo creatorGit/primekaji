@@ -1,0 +1,127 @@
+.modal-wrap {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  &.visible {
+    pointer-events: initial; 
+    .modal {
+      transform: scale(1);
+      opacity: 1; 
+    }
+    .mask {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .caution-wrap {
+    @include desktop {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      margin-bottom: 18px;
+    }
+  }
+  .mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .3s; 
+  }
+  .modal {
+    background: #fff;
+    position: relative;
+    transition: all .3s;
+    transform: scale(0.8);
+    opacity: 0;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    color: $primary-color;
+    margin: auto;
+    display: block;
+    height: auto;
+    border-radius: 12px;
+    overflow-y: auto;
+    @include desktop {
+      padding: 55px 30px 80px;
+    }
+    @include tablet {
+      padding: 45px 20px 60px;
+    }
+    @include mobile {
+      padding: 30px 20px 50px;
+    }
+    & > div {
+      height: 100%;
+      h2 {
+        @include overTablet {
+          font-size: 28px;
+          margin-bottom: 40px;
+        }
+        @include mobile {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .close-btn {
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .crossBtn {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: 24px;
+      line-height: 1;
+      color: #888;
+      cursor: pointer;
+      @include mobile {
+        right: 20px;
+        top: 20px;
+      }
+    }
+    .modal__inner__contents {
+      p {
+        @include overTablet {
+          font-size: 16px;
+          text-align: center;
+        }
+        @include mobile {
+          font-size: 15px;
+        }
+        &.note {
+          @include overTablet {
+            font-size: 14px;
+            margin-top: 14px;
+          }
+          @include mobile {
+            font-size: 12px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
