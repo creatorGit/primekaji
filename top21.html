@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>メールアドレスの変更</title>
+  <title>レビュー投稿</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">登録内容</li>
+        <li class="breadcrumb-item">レビュー投稿</li>
       </ul>
     </div>
   </div>
@@ -87,29 +87,96 @@
   <div class="l-main">
     <div id="main" class="container">
       <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort active">マイページ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000">登録内容</a>
       </div>
       <div class="main-col">
         <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">メールアドレスの変更</h2>
-          <p class="p-main-desc animated fadeInUpShort">新たに登録したいメールアドレスを入力してください。</p>
+          <h2 class="p-main-title animated fadeInDownShort">レビューを投稿しましょう</h2>
         </div>
-        <div class="container-inner">
-          <form action="" class="form animatedParent">
-            <div class="form-wrap _box-shadow bg-white u-brl animated fadeInLeftShort">
-              <fieldset class="grid">
-                <label for="email">メールアドレス</label>
-                <input id="" name="email" type="text" placeholder="例) example@abc.com">
-              </fieldset>
-            </div>
-            <div class="animated fadeInUpShort">
-              <input type="submit" class="c-view-more-btn primary-btn-brown mt-60" value="送信する">
-            </div>
-          </form>
+        <div class="container-inner animatedParent">
+          <div class="review-box u-br bg-white animated fadeInLeftShort">
+            <h3 class="c-second-title">5段階評価</h3>
+            <form action="" class="form">
+              <p class="mt-2 required-2">利用したサービスについて★（5段階）で評価しましょう。<span>必須</span></p>
+              <div class="star-review-wrap flex align-items-end">
+                <div class="rate">
+                  <input type="radio" id="star5" name="rate" value="5" />
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4" />
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3" />
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2" />
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1" />
+                  <label for="star1" title="text">1 star</label>
+                </div>
+                <p class="review-mark">(<span>4.0</span>)</p>
+              </div>
+
+              <p class="mt-45 optional">利用したサービス・スタッフについてレビューを投稿しましょう。<span>任意</span></p>
+              <textarea name="review" class="mt-20" id="" cols="30" rows="5" placeholder="レビューを書く"></textarea>
+              <div class="image-upload-1 mt-20">
+                <label for="reviewImage" class="flex align-items-center"><img src="assets/images/icons/file-2.svg" alt="file-image">画像を添付する（JPEG/PNG）</label>
+                <input type="file" name="reviewImage">
+              </div>
+
+              <div class="used-plan mt-45">
+                <h3 class="used-plan-ttl">ご利用したプラン</h3>
+                <div class="grid mt-20">
+                  <div class="descColumn">
+                    <ul class="meta-tags flex align-items-center flex-wrap">
+                      <li class="meta-tag"><span class="meta cat cat-own" data-href="!#cat" title="掃除代行">掃除代行</span></li>
+                    </ul>
+                    <p class="note">日々のおうちのお掃除ならお任せください！</p>
+                    <h3 class="plan-title">【水周りのお掃除セットプラン！】</h3>
+                    <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+                    <a href="!#" class="plan-link">詳細をみる</a>
+                  </div>
+                  <div class="reviewColumn">
+                    <div class="img-box">
+                      <img src="assets/images/service-img.jpg" alt="service">
+                    </div>
+                    <div>
+                      <p class="title">テスト家事代行</p>
+                      <div class="grid">
+                        <div class="star-review-wrap flex align-items-center">
+                          <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <p class="review-mark">(<span>4.0</span>)</p>
+                        </div>
+                        <div class="message-num-wrap flex align-items-center float-left">
+                          <img src="assets/images/icons/message.svg" alt="message icon">
+                          <p class="message-num"><span>279</span>件</p>
+                        </div>
+                        <div class="price-time">
+                          <p class="price">3,000円</p>
+                          <div class="flex align-items-center justify-content-center">
+                            <span>2h</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid one-btn-wrap mt-45">
+                <input type="submit" class="outline-btn custom_outline-btn" value="新規会員登録はこちら">
+              </div>
+            </form>
+          </div>          
+          <div class="animated fadeInUpShort mt-60">
+            <a href="!#" class="c-view-more-btn primary-btn-brown">一覧へ戻る</a>
+          </div>
         </div>
       </div>
     </div>

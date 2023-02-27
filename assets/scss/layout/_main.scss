@@ -69,15 +69,6 @@
   }
 }
 
-.login-pw-wrap {
-  @include overTablet {
-    margin-top: 25px;
-  }
-  @include mobile {
-    margin-top: 12px;
-  }
-}
-
 ._box-shadow {
   @include overTablet {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -256,5 +247,101 @@
         font-size: 10px;
       }
     }
+  }
+}
+
+.thank-you-box {
+  @include overTablet {
+    padding: 60px;
+  }
+  @include mobile {
+    padding: 40px 12px;
+  }
+}
+
+.inform-box {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #E9EAE9;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @include overTablet {
+    padding: 50px;
+  }
+  @include mobile {
+    padding: 30px 12px;
+  }
+  .inform-text {
+    font-weight: 500;
+    font-size: 20px;
+    @include overTablet {
+      margin-top: 25px;
+    }
+    @include mobile {
+      margin-top: 18px;
+    }
+  }
+  .inform-text-2 {
+    font-weight: 500;
+    font-size: 16px;
+    @include overTablet {
+      margin-top: 20px;
+    }
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+  a {
+    color: #3E80DB;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.not-received-mail {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  .flex {
+    column-gap: 15px;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    justify-content: center;
+  }
+  p {
+    a {
+      color: #3E80DB;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  }
+}
+
+.signup-box {
+  .form-wrap {
+    @include overTablet {
+      padding: 25px;
+      border-radius: 12px;
+    }
+    @include mobile {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+
+.review-box {
+  @include overTablet {
+    padding: 32px 30px 50px;
+    border-radius: 6px;
+  }
+  @include mobile {
+    padding: 19px 25px 40px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }

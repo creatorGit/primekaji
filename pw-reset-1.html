@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>メールアドレスの変更</title>
+  <title>メールを確認</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">登録内容</li>
+        <li class="breadcrumb-item">メールを確認</li>
       </ul>
     </div>
   </div>
@@ -86,30 +86,25 @@
 
   <div class="l-main">
     <div id="main" class="container">
-      <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
-      </div>
       <div class="main-col">
         <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">メールアドレスの変更</h2>
-          <p class="p-main-desc animated fadeInUpShort">新たに登録したいメールアドレスを入力してください。</p>
+          <h2 class="p-main-title animated fadeInLeftShort">メールを確認</h2>
+          <p class="p-main-desc animated fadeInUpShort">登録いただいたメールアドレス宛にメールを送りました。<br>届いたメールに記載されているURLをクリックしてパスワードの再設定を完了させてください。</p>
         </div>
-        <div class="container-inner">
-          <form action="" class="form animatedParent">
-            <div class="form-wrap _box-shadow bg-white u-brl animated fadeInLeftShort">
-              <fieldset class="grid">
-                <label for="email">メールアドレス</label>
-                <input id="" name="email" type="text" placeholder="例) example@abc.com">
-              </fieldset>
+        <div class="container-inner animatedParent mt-100">          
+          <div class="inform-box animated fadeInRightShort mb-70">
+            <img src="assets/images/icons/envelope.svg" alt="icon">
+            <p class="inform-text">プライムカジ<br>パスワード再設定のお知らせ</p>
+            <p class="inform-text-2">メールのURLをクリックしてください。</p>
+            <a href="!#">http://xxxxx.xxxxxxx/</a>
+          </div>
+          <div class="not-received-mail animated fadeInUpShort">
+            <div class="flex align-items-center mb-30">
+              <img src="assets/images/icons/question.svg" alt="icon">
+              <p>メールが届かない場合</p>
             </div>
-            <div class="animated fadeInUpShort">
-              <input type="submit" class="c-view-more-btn primary-btn-brown mt-60" value="送信する">
-            </div>
-          </form>
+            <p>迷惑メールに振り分けられてしまっている場合があります。また、受信拒否などの設定をしている場合には@primekaji.comからのメールが届くように設定を変更してもう一度パスワード変更をしてください。それでも問題が解決しない場合、<a href="!#">こちら</a>よりお問い合わせください。</p>
+          </div>
         </div>
       </div>
     </div>

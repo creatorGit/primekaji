@@ -251,3 +251,280 @@
     overflow-x: auto;
   }
 }
+
+.txt-a-b-link {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  a {
+    color: #3E80DB;
+    text-decoration: underline;
+  }
+}
+
+.about-flow {
+  @include overTablet {
+    border: 5px solid #EEEFEE;
+    padding: 35px;
+  }
+  @include mobile {
+    border: 3px solid #EEEFEE;
+    padding: 15px;
+  }
+  .ttl-sec {
+    font-weight: 500;
+    @include overTablet {
+      column-gap: 18px;
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 20px;
+      column-gap: 12px;
+    }
+  }
+  .desc {
+    @include overTablet {
+      font-size: 16px;
+    }
+  }
+  .link-box {
+    a {
+      column-gap: 12px;
+      @include overTablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+      span {
+        font-size: 12px;
+        color: #CBBFCB;
+      }
+      &:hover {
+        text-decoration: none;
+        span {
+          color: #3E80DB;
+        }
+      }
+    }
+  }
+}
+
+p {
+  &.required-2 {
+    letter-spacing: 0.1rem;
+    @include overTablet {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
+    span {
+      font-size: 12px;
+      color: #fff;
+      letter-spacing: 0.05rem;
+      background-color: $secondary-color;
+      border-radius: 4px;
+      @include overTablet {
+        line-height: 27px;
+        padding: 0 5px 2px;
+      }
+      @include mobile {
+        line-height: 22px;
+        padding: 0 4px 1px;
+      }
+    }
+  }
+  &.optional {
+    letter-spacing: 0.1rem;
+    @include overTablet {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
+    span {
+      font-size: 12px;
+      color: #fff;
+      letter-spacing: 0.05rem;
+      background-color: #C6C6C6;
+      border-radius: 4px;
+      @include overTablet {
+        line-height: 27px;
+        padding: 0 5px 2px;
+      }
+      @include mobile {
+        line-height: 22px;
+        padding: 0 4px 1px;
+      }
+    }
+  }
+}
+
+.used-plan {
+  background-color: #F8F8F8;
+  @include overTablet {
+    padding: 24px 34px 27px;
+  }
+  @include mobile {
+    padding: 14px 12px 15px;
+  }
+  .used-plan-ttl {
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    position: relative;
+    @include overTablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 19px;
+      padding-left: 10px;
+    }
+    &::before {
+      content: '';
+      background-color: #CBBFCB;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include overTablet {
+        width: 18px;
+        height: 4px;
+        left: -34px;
+      }
+      @include mobile {
+        left: -12px;
+        width: 15px;
+        height: 3px;
+      }
+    }
+  }
+  .meta-tags {
+    margin-top: 0;
+  }
+  & > .grid {
+    @media screen and (min-width: 961px) {
+      grid-template-columns: 1fr 395px;
+      column-gap: 25px;
+    }
+    @media screen and (max-width: 960px) {
+      grid-template-columns: auto;
+      row-gap: 15px;
+    }
+    .descColumn {
+      letter-spacing: 0.05rem;
+      .note {
+        @include overTablet {
+          font-size: 18px;
+        }
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+      .plan-title {
+        @include overTablet {
+          font-size: 22px;
+        }
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      .desc {
+        @include overTablet {
+          font-size: 15px;
+          margin-top: 12px;
+        }
+        @include mobile {
+          margin-top: 6px;
+        }
+      }
+      .plan-link {
+        color: #3E80DB;
+        text-decoration: underline;
+        display: inline-block;
+        font-weight: 500;
+        @include overTablet {
+          margin-top: 15px;
+        }
+        @include mobile {
+          margin-top: 8px;
+        }
+      }
+    }
+    .reviewColumn {
+      display: grid;
+      @include overTablet {
+        grid-template-columns: 200px 1fr;
+        column-gap: 20px;
+      }
+      @include mobile {
+        grid-template-columns: 140px 1fr;
+        column-gap: 12px;
+      }
+      .title {
+        @include overTablet {
+          font-size: 18px;
+        }
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+      & > div > .grid {
+        @include overTablet {
+          margin-top: 8px;
+        }
+        @include mobile {
+          margin-top: 4px;
+        }
+        .star-review-wrap {
+          .fa-star {
+            @include overTablet {
+              font-size: 22px;
+            }
+          }
+        }
+        .message-num-wrap {
+          @include overTablet {
+            margin-top: 8px;
+            margin-bottom: 8px;
+          }
+          @include mobile {
+            margin-top: 4px;
+            margin-bottom: 4px;
+          }
+        }
+        .price-time {
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          .price {
+            letter-spacing: 0.05rem;
+            line-height: 1;
+            margin-top: -3px;
+            @include overTablet {
+              font-size: 34px;
+            }
+            @include mobile {
+              font-size: 23px;
+            }
+          }
+          & > div {
+            span {
+              letter-spacing: 0.1rem;
+              background-color: #E3E3E3;
+              padding: 2px 4px;
+              text-align: center;
+              border-radius: 2px;
+              @include overTablet {
+                font-size: 15px;
+              }
+              @include mobile {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

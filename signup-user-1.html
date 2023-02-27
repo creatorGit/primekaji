@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>メールアドレスの変更</title>
+  <title>新規会員登録</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">登録内容</li>
+        <li class="breadcrumb-item">新規会員登録</li>
       </ul>
     </div>
   </div>
@@ -86,30 +86,29 @@
 
   <div class="l-main">
     <div id="main" class="container">
-      <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
-      </div>
       <div class="main-col">
-        <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">メールアドレスの変更</h2>
-          <p class="p-main-desc animated fadeInUpShort">新たに登録したいメールアドレスを入力してください。</p>
-        </div>
         <div class="container-inner">
-          <form action="" class="form animatedParent">
-            <div class="form-wrap _box-shadow bg-white u-brl animated fadeInLeftShort">
-              <fieldset class="grid">
-                <label for="email">メールアドレス</label>
-                <input id="" name="email" type="text" placeholder="例) example@abc.com">
-              </fieldset>
+          <div class="login-form u-brl _box-shadow bg-white">
+            <div class="animatedParent text-center">
+              <h2 class="p-main-title animated fadeInDownShort">新規会員登録</h2>
+              <p class="p-main-title-en animated fadeInUpShort">Member registration</p>
+              <div class="alert-box animated fadeInUpShort">
+                <p class="alert-text">メールアドレスで登録</p>
+              </div>
             </div>
-            <div class="animated fadeInUpShort">
-              <input type="submit" class="c-view-more-btn primary-btn-brown mt-60" value="送信する">
-            </div>
-          </form>
+            <form action="" class="form mt-25 animatedParent">
+              <div class="form-wrap">
+                <fieldset class="animated fadeInUpShort">
+                  <input id="" name="email" type="text" placeholder="メールアドレス">
+                </fieldset>
+              </div>
+              <p class="mt-25 animated fadeInLeftShort">※携帯電話のメールのドメイン指定受信をご利用の方は、「@primekaji.com」からのメールを受信できるようにしてください。</p>
+              <div class="grid one-btn-wrap mt-45 mb-40 animated fadeInUpShort delay-250">
+                <input type="submit" class="c-view-more-btn primary-btn-brown" value="新規会員登録">
+              </div>
+              <p class="txt-a-b-link text-center animated fadeInRightShort">ボタンをクリックすると<a href="!#">利用規約</a>に同意したことになります。</p>
+            </form>
+          </div>
         </div>
       </div>
     </div>

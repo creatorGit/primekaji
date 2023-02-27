@@ -87,3 +87,14 @@ function pushHideButton() {
     btnEye.className = "fa fa-eye-slash toggle-eyes";
   }
 }
+function pushHideButton2() {
+  var txtPass = document.getElementById("textPassword-2");
+  var btnEye = document.getElementById("buttonEye-2");
+  if (txtPass.type === "text") {
+    txtPass.type = "password";
+    btnEye.className = "fa fa-eye toggle-eyes";
+  } else {
+    txtPass.type = "text";
+    btnEye.className = "fa fa-eye-slash toggle-eyes";
+  }
+}
