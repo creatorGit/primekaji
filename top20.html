@@ -18,10 +18,14 @@
 
   <!-- FontAwesome 読み込み -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   
   <!-- stylesheetファイル 読み込み -->
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body id="body" class="favorite">
@@ -89,17 +93,708 @@
       <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
         <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-500 active">予約状況の確認</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000">登録内容</a>
       </div>
       <div class="main-col">
         <div class="animatedParent">
           <h2 class="p-main-title animated fadeInLeftShort">予約状況の確認一覧</h2>
         </div>
-        <div class="container-inner">
-          <input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?">
-          <input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?">
+        <div class="container-inner animatedParent">
+          <!-- <input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?">
+          <input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"> -->
+          <ul class="list_items_d mb-25 animated fadeInDownShort">
+            <li class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">お問い合わせ</li>
+            <li>|</li>
+            <li class="tablinks" onclick="openTab(event, 'tab2')">予約申し込み</li>
+            <li>|</li>
+            <li class="tablinks" onclick="openTab(event, 'tab3')">予約確定</li>
+            <li>|</li>
+            <li class="tablinks" onclick="openTab(event, 'tab4')">完了・キャンセル</li>
+          </ul>
+      
+          <div class="list_items_d_pc mb-60">
+            <select class="form-select tab" aria-label="Default select">
+              <option value="tab1">お問い合わせ</option>
+              <option value="tab2">予約申し込み</option>
+              <option value="tab3">予約確定</option>
+              <option value="tab4">完了・キャンセル</option>
+            </select>
+          </div>
+
+          <div class="tabcontent" id="tab1">
+            <div class="item-table-wrap no_sp">
+              <div class="flex-table-item">
+                <div class="c-col c-col-50">
+                  <div class="c-head">
+                    サービス内容
+                  </div>
+                  <div class="c-body">
+                    <div class="flex">
+                      <div class="col-5 col-md-4 text-left p-0">
+                        <img src="assets\images\service-img.jpg" alt="">
+                      </div>
+                      <div class="col text-left p-0">
+                        <div class="c-badge contact">
+                          問い合わせ：R123987
+                        </div>
+                        <div class="c-title">
+                          水周りのお掃除セットプラン
+                        </div>
+                        <div class="c-sub">
+                          テスト家事代行
+                        </div>
+                        <div class="c-target">
+                          <a href="">メッセージをみる</a>
+                          <a href="">レビューを書く</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pc-item-info">
+                      <div class="pc-title">
+                        水周りのお掃除セットプラン
+                      </div>
+                      <div class="pc-sub">
+                        テスト家事代行
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    相談・申込日時
+                  </div>
+                  <div class="c-body">
+                    <div class="date">2022.12.12</div>
+                    <div class="flex" ><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                    <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    金額
+                  </div>
+                  <div class="c-body c-support">
+                    <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                    <div class="target"><a href="http://">明細をみる</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-table-wrap no_pc">
+              <div id="g2-slider" class="reviews">
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge application-reservation">
+                                予約申込み：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge contact">
+                                問い合わせ：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge confirm-reservation">
+                                予約確定：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge cancel">
+                                キャンセル：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge finish">
+                                完了：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g2-slide review">
+                  <div class="review__wrapper grid">
+                    <div class="flex-table-item">
+                      <div class="c-col c-col-50">
+                        <div class="c-head">
+                          サービス内容
+                        </div>
+                        <div class="c-body">
+                          <div class="flex">
+                            <div class="col-5 col-md-4 text-left p-0">
+                              <img src="assets\images\service-img.jpg" alt="">
+                            </div>
+                            <div class="col text-left p-0">
+                              <div class="c-badge finish">
+                                完了：R123987
+                              </div>
+                              <div class="c-title">
+                                水周りのお掃除セットプラン
+                              </div>
+                              <div class="c-sub">
+                                テスト家事代行
+                              </div>
+                              <div class="c-target">
+                                <a href="">メッセージをみる</a>
+                                <a href="">レビューを書く</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pc-item-info">
+                            <div class="pc-title">
+                              水周りのお掃除セットプラン
+                            </div>
+                            <div class="pc-sub">
+                              テスト家事代行
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          相談・申込日時
+                        </div>
+                        <div class="c-body">
+                          <div class="date">2022.12.12</div>
+                          <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                          <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                        </div>
+                      </div>
+                      <div class="c-col">
+                        <div class="c-head">
+                          金額
+                        </div>
+                        <div class="c-body c-support">
+                          <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                          <div class="target"><a href="http://">明細をみる</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="g2-slider-pagination reviews-pagination text-center mt-45">
+                <div class="container">
+                  <div class="g2-slider-pagination__wrapper">
+                    <button class="prev slick-arrow">◀</button>
+                    <ul id="g2-slider-pagination-list">pagination here</ul>
+                    <button class="next slick-arrow">▶</button>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
+          <div class="tabcontent" id="tab2">
+            <div class="item-table-wrap no_sp">
+              <div class="flex-table-item top-item">
+                <div class="c-col c-col-50">
+                  <div class="c-head">
+                    サービス内容
+                  </div>
+                  <div class="c-body">
+                    <div class="flex">
+                      <div class="col-5 col-md-4 text-left p-0">
+                        <img src="assets\images\service-img.jpg" alt="">
+                      </div>
+                      <div class="col text-left p-0">
+                        <div class="c-badge application-reservation">
+                          予約申込み：R123987
+                        </div>
+                        <div class="c-title">
+                          水周りのお掃除セットプラン
+                        </div>
+                        <div class="c-sub">
+                          テスト家事代行
+                        </div>
+                        <div class="c-target">
+                          <a href="">メッセージをみる</a>
+                          <a href="">レビューを書く</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pc-item-info">
+                      <div class="pc-title">
+                        水周りのお掃除セットプラン
+                      </div>
+                      <div class="pc-sub">
+                        テスト家事代行
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    相談・申込日時
+                  </div>
+                  <div class="c-body">
+                    <div class="date">2022.12.12</div>
+                    <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                    <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    金額
+                  </div>
+                  <div class="c-body c-support">
+                    <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                    <div class="target"><a href="http://">明細をみる</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="tab3">
+            <div class="item-table-wrap no_sp">
+              <div class="flex-table-item top-item">
+                <div class="c-col c-col-50">
+                  <div class="c-head">
+                    サービス内容
+                  </div>
+                  <div class="c-body">
+                    <div class="flex">
+                      <div class="col-5 col-md-4 text-left p-0">
+                        <img src="assets\images\service-img.jpg" alt="">
+                      </div>
+                      <div class="col text-left p-0">
+                        <div class="c-badge confirm-reservation">
+                          予約確定：R123987
+                        </div>
+                        <div class="c-title">
+                          水周りのお掃除セットプラン
+                        </div>
+                        <div class="c-sub">
+                          テスト家事代行
+                        </div>
+                        <div class="c-target">
+                          <a href="">メッセージをみる</a>
+                          <a href="">レビューを書く</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pc-item-info">
+                      <div class="pc-title">
+                        水周りのお掃除セットプラン
+                      </div>
+                      <div class="pc-sub">
+                        テスト家事代行
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    相談・申込日時
+                  </div>
+                  <div class="c-body">
+                    <div class="date">2022.12.12</div>
+                    <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                    <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    金額
+                  </div>
+                  <div class="c-body c-support">
+                    <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                    <div class="target"><a href="http://">明細をみる</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent" id="tab4">
+            <div class="item-table-wrap no_sp">
+              <div class="flex-table-item top-item">
+                <div class="c-col c-col-50">
+                  <div class="c-head">
+                    サービス内容
+                  </div>
+                  <div class="c-body">
+                    <div class="flex">
+                      <div class="col-5 col-md-4 text-left p-0">
+                        <img src="assets\images\service-img.jpg" alt="">
+                      </div>
+                      <div class="col text-left p-0">
+                        <div class="c-badge cancel">
+                          キャンセル：R123987
+                        </div>
+                        <div class="c-title">
+                          水周りのお掃除セットプラン
+                        </div>
+                        <div class="c-sub">
+                          テスト家事代行
+                        </div>
+                        <div class="c-target">
+                          <a href="">メッセージをみる</a>
+                          <a href="">レビューを書く</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pc-item-info">
+                      <div class="pc-title">
+                        水周りのお掃除セットプラン
+                      </div>
+                      <div class="pc-sub">
+                        テスト家事代行
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    相談・申込日時
+                  </div>
+                  <div class="c-body">
+                    <div class="date">2022.12.12</div>
+                    <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                    <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    金額
+                  </div>
+                  <div class="c-body c-support">
+                    <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                    <div class="target"><a href="http://">明細をみる</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-table-item">
+                <div class="c-col c-col-50">
+                  <div class="c-head">
+                    サービス内容
+                  </div>
+                  <div class="c-body">
+                    <div class="flex">
+                      <div class="col-5 col-md-4 text-left p-0">
+                        <img src="assets\images\service-img.jpg" alt="">
+                      </div>
+                      <div class="col text-left p-0">
+                        <div class="c-badge finish">
+                          完了：R123987
+                        </div>
+                        <div class="c-title">
+                          水周りのお掃除セットプラン
+                        </div>
+                        <div class="c-sub">
+                          テスト家事代行
+                        </div>
+                        <div class="c-target">
+                          <a href="">メッセージをみる</a>
+                          <a href="">レビューを書く</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pc-item-info">
+                      <div class="pc-title">
+                        水周りのお掃除セットプラン
+                      </div>
+                      <div class="pc-sub">
+                        テスト家事代行
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    相談・申込日時
+                  </div>
+                  <div class="c-body">
+                    <div class="date">2022.12.12</div>
+                    <div class="flex"><button class="btn-1">完 了</button><input type="button" class="serviceVieModal _finish modalShowBtn" data-target="#serviceFinish" value="?"></div>
+                    <div class="flex"><button class="btn-2">キャンセル</button><input type="button" class="serviceVieModal _cancel modalShowBtn" data-target="#serviceCancel" value="?"></div>
+                  </div>
+                </div>
+                <div class="c-col">
+                  <div class="c-head">
+                    金額
+                  </div>
+                  <div class="c-body c-support">
+                    <div class="price">9,209<span>円</span><span class="dup">(税込)</span></div>
+                    <div class="target"><a href="http://">明細をみる</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -223,6 +918,7 @@
   
   <!-- JQuery 読み込み -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/css3-animate-it.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

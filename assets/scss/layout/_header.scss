@@ -19,13 +19,10 @@ header {
 .nav-menu {
   .menu-wrap {
     @media screen and (min-width: 1201px) {
-      column-gap: 18px;
+      column-gap: 10px;
     }
     @media screen and (max-width: 1200px) {
-      column-gap: 15px;
-      .primary-btn-brown, .primary-btn-purple {
-        font-size: 16px !important;
-      }
+      column-gap: 10px;
     }
     a {
       font-size: 15px;
@@ -111,7 +108,7 @@ header {
   img {
     margin-left: auto;
     margin-right: auto;
-    width: 28px;
+    width: 24px;
   }
 }
 

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>本人確認書類の登録</title>
+  <link rel="icon" href="assets/images/icons/favicon.png">
+
+  <!-- google fonts 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- BootStrap 読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- FontAwesome 読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  
+  <!-- stylesheetファイル 読み込み -->
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="body" class="favorite">
+  <!-- ヘッダー開始 -->
+  <div class="header-txt-wrap bg-white">
+    <div class="container">
+      <p class="header-txt">高品質・信頼感を大切にした、家事代行マッチングサービス「プライムカジ」</p>
+    </div>
+  </div>
+  <header id="header" class="position-relative">    
+    <div class="container">
+      <nav id="nav-main" class="flex align-items-center justify-content-between">
+        <div class="header-logo">
+          <a href="/" class="logo-link u-hover-opacity">
+            <img src="assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
+          </a>
+        </div>
+        <div id="nav-menu" class="nav-menu">
+          <div class="menu-mask"></div>
+          <button class="menu-close-btn">
+            <i class="fa fa-times"></i>
+          </button>
+          <ul class="menu-wrap flex align-items-center">
+            <li><a href="!#">プライムカジとは？</a></li>
+            <li><a href="!#">ご利用方法</a></li>
+            <li><a href="!#">カテゴリ一覧</a></li>
+            <li><a href="!#">よくある質問</a></li>
+            <li>
+              <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
+                <img src="assets/images/icons/login.svg" alt="login-icon">
+                <span>ログイン</span>
+              </a>
+            </li>
+            <li><a href="!#" class="signup-free-btn primary-btn-brown">無料会員登録</a></li>
+            <li><a href="!#" class="staff-signup-btn primary-btn-purple">スタッフ登録はこちら</a></li>
+          </ul>
+        </div>
+        <div class="burger-wrap u-tab-sp-show">
+          <button id="target-burger" class="target-burger" type="button">
+            <ul class="buns">
+              <li class="bun"></li>
+              <li class="bun"></li>
+              <li class="bun"></li>
+            </ul>
+          </button>
+        </div>
+      </nav>        
+    </div>
+  </header>
+  <!-- ヘッダー終了 -->
+
+  <!-- パンくずリスト開始 -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
+        <li class="breadcrumb-item">本人確認書類の登録</li>
+      </ul>
+    </div>
+  </div>
+  <!-- パンくずリスト終了 -->
+
+  <div class="l-main">
+    <div id="main" class="container">
+      <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
+        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
+      </div>
+      <div class="main-col">
+        <div class="animatedParent">
+          <h2 class="p-main-title animated fadeInLeftShort">本人確認書類の登録</h2>
+          <p class="p-main-desc animated fadeInUpShort">本人確認書類の登録はカンタン３ステップで完了できます。</p>
+        </div>
+        <form action="" method="" class="form animatedParent">
+          <div class="step-1 mt-45 animated fadeInUpShort">
+            <div class="card-skeleton">
+              <div class="card-header">step1</div>
+              <div class="card-wrap">
+                <div class="">
+                  <h4 class="p-sub-title flex"><img src="assets/images/icons/id-prepare.svg" alt="icon"><span>以下の本人確認が行えるいずれかの書類をお手元にご準備ください。</span></h4>
+                  <p class="p-sub-title-2 mt-20">登録する書類を１つお選びください。</p>
+      
+                  <div class="id-card-wrap bg-white mt-30">
+                    <ul class="grid">
+                      <li>
+                        <img src="assets/images/card.png" alt="card">
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>運転免許証　裏＆表</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="運転免許証　裏＆表">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                      <li>
+                        <img src="assets/images/card2.png" alt="card">		
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>健康保険証</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="健康保険証">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                      <li>
+                        <img src="assets/images/card3.png" alt="card">
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>後期高齢者医療被保険者証</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="後期高齢者医療被保険者証">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                      <li>
+                        <img src="assets/images/card4.png" alt="card">	
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>マイナンバー　表面</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="マイナンバー　表面">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                      <li>
+                        <img src="assets/images/card5.png" alt="card">
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>外国人登録証明書</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="外国人登録証明書">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                      <li>
+                        <img src="assets/images/card6.png" alt="card">
+                        <fieldset class="id-card-sort-radio">
+                          <label class="radio">
+                            <span>外国人登録証明書</span>
+                            <input type="radio" id="" class="" name="idCardSort" value="外国人登録証明書">
+                            <span class="checkmark"></span>
+                          </label>
+                        </fieldset>
+                      </li>
+                    </ul>
+                  </div>
+      
+                  <div class="bg-c-secondary border-0 card-info mt-35">
+                    <div class="flex mb-3">
+                      <div><span>●</span></div>
+                      <div class="ml-2">
+                        <p class="title">法人登録の場合</p> 
+                        <P class="sub">履歴事項全部証明書をご準備ください。</P> 
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <div><span>●</span></div>
+                      <div class="ml-2">
+                      <p class="title">身分証にご登録住所の記載がない場合</p> 
+                      <P class="sub">身分証にご登録住所の記載がない場合は身分証と合わせて<br>
+                          ご登録住所を証明できる補足書類の写真のご提出が必要です。<br>
+                          例) 公共料金の領収書、賃貸借契約書<br>
+                          ※補足書類には、ご登録ご本人の名前の記載が確認できる資料をご準備ください。</P>	
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-2 animated fadeInUpShort">
+            <div class="card-skeleton">
+              <div class="card-header">step2</div>
+              <div class="card-wrap">
+                <div class="">
+                  <h4 class="p-sub-title _w flex"><img src="assets/images/icons/icon-up.png" alt="icon" width="35px"><span>書類上の情報が確認できるように全体を撮影・データのアップロード</span></h4>
+                  <p class="p-sub-title-2 mt-20">STEP１で選択した書類を撮影して、データをアップロードしてください。</p>
+                  
+                  <div class="drive-id mt-30 bg-whiter">
+                    <h4>運転免許証</h4>
+                    <p class="mt-2">身分証の表面・裏面がはっきりとわかるよう撮影してください。</p>
+                    <div class="flex mt-3 group-photo">
+                      <div>
+                        <img src="assets/images/card.png" alt="card-image">
+                      </div>
+                      <div>
+                        <img src="assets/images/card2.png" alt="card-image">
+                      </div>	
+                    </div>
+                  </div>
+      
+                  <div class="row mt-35">
+                    <div class="col">
+                      <label for="file-btn-1"><img src="assets/images/img23.png" alt="image-upload"></label>
+                    </div>
+                    <div class="col">
+                      <label for="file-btn-2"><img src="assets/images/img23.png" alt="image-upload"></label>
+                    </div>
+                  </div>
+      
+                  <div class="row mt-30">
+                    <div class="col flex align-items-baseline">
+                      <fieldset class="id-image-check">
+                        <label class="checkbox" for="idImageCheck">
+                          <span>登録した画像が鮮明であり、氏名・住所・生年月日・有効期限が確認できる状態となっていることを確認しました。</span>
+                          <input type="checkbox" id="" class="" name="idImageCheck" value="">
+                          <span class="checkmark"></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-3 animated fadeInUpShort">
+            <div class="card-skeleton">
+              <div class="card-header">step3</div>
+              <div class="card-wrap">
+                <div class="">
+                  <h4 class="p-sub-title _w flex"><img src="assets/images/icons/icon-g.png" alt="icon" width="35"><span>セルフィー画像の撮影・データのアップロード</span></h4>
+                  <p class="p-sub-title-2 mt-20">（スマートフォン等のモバイル端末から登録するとスムーズです。）</p>
+                  <p class="p-main-desc mt-25">スマートフォンのカメラをインカメラにし、身分証の表面を自分の胸の前に持ち、一緒に撮影してください。</p>
+
+                  <div class="bg-c-secondary border-0 card-info mt-35">
+                    <div class="flex">
+                        <p class="sub">※この際、身分証の情報が光や影、指で隠れないように注意してください。<br>
+                            ※ご自身の顔も正面を向いて撮影してください。<br>
+                            ※画像は本人確認にのみ使用し、公開されません。お化粧やお洋服などのご配慮は不要です。</p> 
+                    </div>
+                  </div>
+
+                  <div class="group-photo mt-30">
+                    <img src="assets/images/image-sample.jpg" alt="image-sample">
+                  </div>
+
+                  <div class="group-photo mt-30">
+                    <label for="file-btn-3"><img src="assets/images/img23.png" alt="image-upload"></label>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col flex align-items-baseline">
+                      <fieldset class="id-image-check id-content-check">
+                        <label class="checkbox" for="idContentCheck">
+                          <span>ご本人様の顔とご登録の身分証が正面を向いており、身分証の記載が隠れていないことを確認しました。</span>
+                          <input type="checkbox" id="" class="" name="idContentCheck" value="">
+                          <span class="checkmark"></span>
+                        </label>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-80">
+            <h4 class="custom-title-bottom mb-30">申請後、承認まで今しばらくお待ちください！</h4>
+            <input type="file" id="file-btn-1" hidden/>
+            <input type="file" id="file-btn-2" hidden/>
+            <input type="file" id="file-btn-3" hidden/>
+            <input type="submit" class="outline-btn custom_outline-btn" value="保存して申請する">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <!-- サービス完了 -->
+  <div class="modal-wrap" id="serviceFinish">
+    <div class="mask"></div>
+    <div class="modal">
+      <div class="modal__inner">
+        <button type="button" class="crossBtn">&times;</button>
+        <div class="caution-wrap grid">
+          <span class="caution-mark">？</span>
+          <span class="txt">What’s</span>
+        </div>
+        <h2 class="text-center">サービス完了ボタンとは</h3>
+        <div class="modal__inner__contents">
+          <p>サービス施行が完了したものは完了ボタンを押してください。</p>
+          <p class="note">※施行予定日より〇日経過した場合、自動でサービスが完了されます。</p>
+        </div>
+        <div class="mt-60">
+          <button type="button" class="close-btn c-view-more-btn primary-btn-brown">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- サービスキャンセル -->
+  <div class="modal-wrap" id="serviceCancel">
+    <div class="mask"></div>
+    <div class="modal">
+      <div class="modal__inner">
+        <button type="button" class="crossBtn">&times;</button>
+        <div class="caution-wrap grid">
+          <span class="caution-mark">？</span>
+          <span class="txt">What’s</span>
+        </div>
+        <h2 class="text-center">サービスキャンセルボタンとは</h3>
+        <div class="modal__inner__contents">
+          <p>サービス施行が完了したものは完了ボタンを押してください。</p>
+          <p class="note">※施行予定日より〇日経過した場合、自動でサービスが完了されます。</p>
+        </div>
+        <div class="mt-60">
+          <button type="button" class="close-btn c-view-more-btn primary-btn-brown">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal -->
+
+  <!-- フッター開始 -->
+  <footer class="footer mt-120">
+    <div class="footer-nav-1">
+      <div class="container">
+        <div class="grid">
+          <div class="footer-logo">
+            <a href="/" class="u-hover-opacity"><img src="assets/images/footer_logo.svg" alt="LOGO"></a>
+          </div>
+          <div class="p-footer-nav flex">
+            <div>
+              <a href="" class="footer-nav-label">カテゴリから探す</a>
+              <div class="f-menu-wrap">
+                <p class="f-menu-wrap-label">通常カテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix">
+                  <li class="menu-item">
+                    <a href="!#" class="link">料理代行</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">整理収納</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ベビー・キッズシッター</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">チケットプレゼントのコンサート</a>
+                  </li>
+                </ul>
+                <p class="f-menu-wrap-label">プロカテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix mt-2">
+                  <li class="menu-item">
+                    <a href="!#" class="link">出張シェフ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ハウスクリーニング</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">プライムカジとは？</a>
+              <a href="!#" class="footer-nav-label">ご利用方法</a>
+              <a href="!#" class="footer-nav-label">安心・安全の取り組み</a>
+              <a href="!#" class="footer-nav-label">新規登録</a>
+              <a href="!#" class="footer-nav-label">ログイン / マイページ</a>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">お知らせ</a>
+              <a href="!#" class="footer-nav-label">ブログ</a>
+              <a href="!#" class="footer-nav-label">よくあるご質問</a>
+              <a href="!#" class="footer-nav-label">お問い合わせ</a>
+              <a href="!#" class="footer-nav-label">家事代行スタッフ募集について</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-nav-2 text-center">
+      <nav class="align-items-center justify-content-center">
+        <a href="" class="footer-nav-2-link">会社概要</a>
+        <a href="" class="footer-nav-2-link">利用規約</a>
+        <a href="" class="footer-nav-2-link">特定商取引法に基づく表記</a>
+        <a href="" class="footer-nav-2-link">個人情報保護方針</a>
+      </nav>
+      <p class="c-copyright">Copyright &copy; 2023 prime kaji All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- フッター終了 -->
+  
+  <!-- JQuery 読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="assets/js/css3-animate-it.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

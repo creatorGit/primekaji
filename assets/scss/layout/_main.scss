@@ -1,12 +1,9 @@
 .container {
-  @include desktop {
-    max-width: 1310px !important;
+  @media screen and (max-width: 1200px) {
+    max-width: 100% !important;
   }
 }
 .container-inner {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
   @include desktop {
     margin-top: 45px;
   }
@@ -293,7 +290,7 @@
       margin-top: 10px;
     }
   }
-  a {
+  p.b-color {
     color: #3E80DB;
     display: block;
     margin-top: 4px;
@@ -343,5 +340,986 @@
     padding: 19px 25px 40px;
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+
+.list_items_d_pc{
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.list_items_d{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  @include mobile {
+    display: none;
+
+  }
+    li{
+      padding-right: 20px;
+      color: #807C75;
+      &.active{
+        color: $primary-color;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      &.tablinks{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+}
+
+.item-table-wrap{
+  &.no_sp{
+    @include mobile{
+      display: none;
+    }
+  }
+  &.no_pc{
+    @include overTablet {
+      display: none;
+    }
+    @include mobile{
+      display: block;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div{
+    &:not(:first-child){
+        .c-col{
+          .c-head{
+            @include overTablet {
+              display: none;
+            }
+            @include mobile {
+              display: block;
+            }
+          }
+        }
+    }
+  }
+}
+
+.flex-table-item{
+  display: flex;
+  background-color: white;
+  &:first-of-type {
+    .c-body {
+      @include overTablet {
+        height: calc(100% - 57px);
+      }
+    }
+  }
+  &:not(:first-of-type) {
+    @include overTablet {
+      .c-body {
+        height: 100%;
+      }
+    }
+  }
+  @include overTablet {
+    &:last-of-type {
+      border-bottom: 1px solid #E2E2E2;
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+  .c-col-50{
+    @include overTablet {
+      width: 50% !important;
+      border-left: 1px solid #E2E2E2;
+    }
+    @include mobile {
+      width: 100% !important;
+    }
+  }
+  .c-col{
+    @include overTablet {
+      border-top: 1px solid #E2E2E2;
+      border-right: 1px solid #E2E2E2;
+      &:not(.c-col-50) {
+        width: 25%;
+      }
+    }
+    @include mobile {
+      width: 100%;      
+      border-top: 1px solid #E2E2E2;
+    }
+    &:not(:first-of-type) {
+      .c-body {
+        & > .flex {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    &:first-of-type {
+      .c-body {
+        & > .flex {
+          @include overTablet {
+            column-gap: 25px;
+          }
+          @include mobile {
+            column-gap: 15px;
+          }
+          .col-5 {
+            @include mobile {
+              max-width: 39% !important;
+            }
+          }
+          .col {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            @include mobile {
+              row-gap: 5px;
+            }
+          }
+        }
+      }
+    }
+    .c-head{
+      background-color: #F4F4F4;
+      text-align: center;
+      letter-spacing: 0.05rem;
+      @include overTablet {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 0;
+      }
+      @include mobile {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 12px 0;
+      }
+    }
+    .c-body{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      @include overTablet {
+        padding: 20px;
+        row-gap: 10px;
+      }
+      @include mobile {
+        padding: 15px;
+        row-gap: 6px;
+      }
+      div{
+        button{
+          width: 80%;
+          border: none;
+          color: white;
+          border-radius: 6px;
+          padding: 4px 0;
+          font-size: 17px;
+          font-weight: normal;
+          margin-right: 8px;
+          &.btn-1{
+            background-color: #CDBC95;
+          }
+          &.btn-2{
+            background-color: #8E8E8E;
+          }
+          @include mobile {
+            padding: 10px 0;
+          }
+        }
+        &.price{
+          font-size: 30px;
+          font-weight: 600;
+          color: #312200;
+          span{
+            font-size: 20px;
+            &.dup{
+              font-size: 15px;
+              font-weight: normal;
+            }
+          }
+        }
+        &.target{
+          a{
+            font-size: 14px;
+            font-weight: 500;
+            color: #3E80DB;
+            text-decoration: underline;
+          }
+        }
+        &.date{
+          font-size: 16px;
+          font-weight: normal;
+          color: #312200;
+        }
+        &.c-badge{
+          letter-spacing: 0.1rem;
+          padding: 4px 8px;
+          color: white;
+          display: inline-block;
+          border-radius: 4px;
+          @include overTablet {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @include mobile {
+            font-size: 15px;
+            line-height: 17px;
+          }
+          &.application-reservation{
+            background-color: #AEA6BC;
+          }
+          &.contact{
+            background-color: #B2C643;
+          }
+          &.confirm-reservation{
+            background-color: #B19D70;
+          }
+          &.cancel{
+            background-color: #4F7EA5;
+          }
+          &.finish{
+            background-color: #D98511;
+          }
+        }
+        &.c-title{
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 6px;
+          @include mobile {
+            display: none;
+          }
+          @include tablet {
+            display: none;
+          }
+        }
+        &.pc-title{
+          font-weight: 500;
+          text-align: left;
+          @include overTablet {
+            font-size: 22px;
+          }
+          @include mobile {
+            font-size: 17px;
+          }
+        }
+        &.c-sub{
+          font-size: 16px;
+          letter-spacing: 0.05rem;
+          margin-top: 7px;
+          @include mobile {
+            display: none;
+          }
+          @include tablet {
+            display: none;
+          }
+        }
+        &.pc-sub{
+          font-weight: normal;
+          text-align: left;
+          @include overTablet {
+            font-size: 16px;
+          }
+          @include mobile {
+            font-size: 13px;
+          }
+        }
+        &.c-target{
+          display: flex;
+          gap: 15px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #3E80DB;
+          text-decoration: underline;
+          text-align: left;
+          margin-top: 6px;
+          @include tablet {
+            flex-direction: column;
+            gap: 2px;
+            padding-top: 3px;
+          }
+          @include mobile {
+            flex-direction: column;
+            gap: 2px;
+          }
+        }
+        &.pc-item-info{
+          display: none;
+          @include mobile {
+            display: block;
+          }
+          @include tablet {
+            display: block;
+          }
+        }
+      }
+    }
+    .c-support{
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      @include mobile {
+        align-items: center;
+      }
+    }
+  }
+}
+
+.pagi{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 10px;
+      background-color: #E5E1D8;
+      border-radius: 50%;
+      height: 60px;
+      display: flex;
+      width: 60px;
+      margin: 8px;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        height: 40px;
+        width: 40px;
+      }
+      &.shift-page{
+        background-color: unset;
+      }
+      &.dot3{
+        background-color: unset;
+        font-size: 50px;
+        justify-content: center;
+        align-items: end;
+        @include mobile {
+          align-items: center;
+          height: 0;
+        }
+        a{
+          color: #B19D70;
+          font-size: 50px;
+          margin: -5px 0;
+          &:hover{
+            color: white;
+            text-decoration: none !important;
+          }
+        }
+      }
+      &.active{
+        background-color: #B19D70;
+      }
+      &:hover{
+        background-color: #B19D70;
+        color: white;
+        text-decoration: none !important;
+      }
+      a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 30px;
+      }
+    }
+  }
+}
+.d-btn{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #B19D70;
+}
+.table-label{
+  @include overTablet {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+  @include mobile {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  letter-spacing: 0.1rem;
+}
+.c-table-1, .c-table-2{
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    @include mobile{
+      display: block;
+      width: 100%;
+    }
+    thead{
+      @include mobile{
+        display: none;
+      }
+    }
+    tbody{
+      @include mobile{
+        display: block;
+        width: 100%;
+      }
+    }
+    td {
+      height: 100%;
+      @include overTablet {
+        &:first-of-type {
+          padding: 26px 50px;
+          border-top: none;
+          border-right: none;
+        }
+        font-size: 20px;
+        &:not(:first-of-type) {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+      @include mobile {
+        &:first-of-type {
+          padding: 14px 17px 14px 45%;
+        }
+        font-size: 16px;
+      }
+      border: 1px solid #E2E2E2;
+      text-align: center;
+    }
+    th{
+      @include overTablet {
+        padding: 17px;
+        font-size: 20px;
+        &:not(:last-of-type) {
+          border-right: none;
+        }
+      }
+      @include mobile {
+        padding: 15px;
+        font-size: 16px;
+      }
+      border: 1px solid #E2E2E2;
+      text-align: center;
+      background-color: #F4F4F4;
+      font-weight: 500;
+    }
+    tr{
+      @include overTablet {
+        display: grid;
+        grid-template-columns: 1fr 120px 200px;
+        align-items: center;
+      }
+      @include mobile{
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+      }
+    }
+    td{
+      &.price{
+        font-weight: 500;
+        @include overTablet {
+          font-size: 30px;
+        }
+        @include mobile{
+          font-size: 18px;
+        }
+        span{
+          @include overTablet {
+            font-size: 20px;
+          }
+          @include mobile{
+            font-size: 15px;
+          }
+          &.dup{
+            @include overTablet {
+              font-size: 15px;
+            }
+            @include mobile{
+              font-size: 12px;
+            }
+            font-weight: 400;
+          }
+        }
+      }
+      @include mobile{
+        padding-left: 45%;
+        text-align: left !important;
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before{
+          content: attr(data-label);
+          display: flex;
+          align-items: center;
+          position: absolute;
+          background-color: #F4F4F4;
+          left: 0;
+          width: 40%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: 500;
+          text-align: left;
+          height: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      &:not(:first-of-type) {
+        border-top: none;
+      }
+      &:nth-of-type(2) {
+        @include overTablet {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+.c-table-3{
+  ul{
+    @include overTablet {
+      grid-template-columns: 1fr 120px 200px;
+    }
+    @include mobile {
+      grid-template-columns: 40% 60%;
+      li {
+        width: 100% !important;
+      }
+    }
+    li{
+      padding: 12px 15px;
+      border: 1px solid #E2E2E2;
+      text-align: center;
+      text-align: right;
+      font-weight: 500;
+      @include overTablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+      &.price{
+        font-weight: 500;
+        @include overTablet {
+          font-size: 30px;
+        }
+        @include mobile{
+          font-size: 18px;
+          text-align: left;
+        }
+        span{
+          @include overTablet {
+            font-size: 20px;
+          }
+          @include mobile{
+            font-size: 15px;
+          }
+          &.dup{
+            @include overTablet {
+              font-size: 15px;
+            }
+            @include mobile{
+              font-size: 12px;
+            }
+            font-weight: 400;
+          }
+        }
+      }
+      &:nth-child(1){
+        border: 0;
+        @include mobile{
+          display: none;
+        }
+      }
+      &:nth-child(2){
+        background-color: #F4F4F4;
+        border-right: none;
+        @include mobile{
+          width: 40%;
+        }
+      }
+      &:nth-child(3){
+        background-color: white;
+        @include mobile{
+          width: 60%;
+          border-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.comment-box{
+  display: flex;
+  align-items: center;
+  border: 1px solid #E2E2E2;
+  padding: 12px 15px;
+  @include mobile{
+    align-items: start;
+  }
+  .label{
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    @include overTablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+  .textbox{
+    flex: 1;
+    textarea{
+      border: none;
+      background-color: unset;
+      width: 100%;
+    }
+  }
+}
+
+.checkout-card{
+  background-color: #F8F8F8;
+  color: #312200;
+  border: 1px solid #E2E2E2;
+  line-height: 2.3;
+  .eta{
+    font-size: 16px;
+    font-weight: normal;
+    @include mobile{
+      display: none;
+    }
+  }
+  .eta-pc{
+    line-height: 1.5;
+    font-weight: normal;
+    @include overTablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+  .title{
+    font-size: 24px;
+    font-weight: 500;
+    @include mobile{
+      display: none;
+    }
+  }
+  .title-pc{
+    @include overTablet {
+      font-size: 24px;
+      margin-top: 6px;
+    }
+    @include mobile {
+      font-size: 19px;
+      margin-top: 3px;
+    }
+    font-weight: 500;
+  }
+  .sub{
+    @include overTablet {
+      font-size: 17px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
+    font-weight: normal;
+  }
+  .np{
+    font-size: 26px;
+    line-height: 36px;
+    column-gap: 5px;
+    span{
+      background-color: #E3E3E3;
+      font-size: 15px;
+      border-radius: 2px;
+      padding: 0 3px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -3px;
+    }
+  }
+  div.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-top: 3px;
+    p{
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.step-1, .step-2, .step-3{
+  .card-skeleton{
+    border-left: 1px solid #AEA6BC;
+    .border{
+      border: 1px solid #CBBFCB;
+      border-radius: 10px;
+      .group-photo {
+        @include overTablet {
+          column-gap: 20px;
+        }
+        @include mobile {
+          column-gap: 10px;
+        }
+      }
+    }
+    .card-header{
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: white;
+      background-color: #CBBFCB;
+      font-family: 'Noto Serif JP', sans-serif;
+      border-radius: 0 !important;
+      @include overTablet {
+        font-size: 30px;
+      }
+      @include mobile {
+        font-size: 20px;
+        line-height: 1;
+      }
+    }
+    .card-body{
+      h4{
+        font-size: 23px;
+        font-weight: 500;
+        color: #312200;
+        @include mobile{
+          font-size: 19px;
+        }
+      }
+      h6{
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+        color: #312200;
+        @include mobile{
+          font-size: 18px;
+        }
+      }
+    }
+    
+    .bg-c-secondary{
+      background-color: #E8E8E8;
+      border-radius: 10px;
+      max-width: 765px;
+      @include overTablet {
+        padding: 30px;
+      }
+      @include mobile {
+        padding: 20px 12px;
+      }
+      & > div {
+        & > div {
+          span {
+            display: block;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+  .card-info{
+    .sub{
+      @include overTablet {
+        font-size: 16px;
+      }
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    .title{
+      @include overTablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+      font-weight: 500;
+    }
+  }
+  label{
+    font-size: 16px;
+  }
+  .card-wrap {
+    @include overTablet {
+      padding: 26px 26px 50px 26px;
+    }
+    @include mobile {
+      padding: 20px 12px 40px 12px;
+    }
+  }
+}
+.step-3 {
+  .card-wrap {
+    padding-bottom: 0 !important;
+  }
+}
+
+.purchase-invoice {
+  @include overTablet {
+    padding: 45px;
+    border-radius: 6px;
+  }
+  @include mobile {
+    padding: 16px 14px 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .d-btn {
+    a {
+      column-gap: 10px;
+      font-weight: 500;
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      @include overTablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 15px;
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+  .table {
+    margin-bottom: 0;
+  }
+}
+
+.purchase-return-btn {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: right;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    span {
+      font-size: 0.75rem;
+      color: #CBBFCB;
+    }
+  }
+}
+
+.custom-title-bottom {
+  font-weight: 500;
+  @include overTablet {
+    font-size: 23px;
+  }
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.id-card-sort-radio {
+  padding: 0 !important;
+  display: inline-block;
+  .radio {
+    display: inline-block !important;
+  }
+}
+
+.id-card-wrap {
+  max-width: 765px;
+  border-radius: 10px;
+  border: 1px solid #CBBFCB;
+  @include overTablet {
+    padding: 30px;
+  }
+  @include mobile {
+    padding: 15px 10px;
+  }
+  ul {
+    @include overTablet {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    justify-content: center;
+    li {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      row-gap: 10px;
+      img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.drive-id {
+  border-radius: 10px;
+  border: 1px solid #AEA6BC;
+  max-width: 660px;
+  @include overTablet {
+    padding: 26px;
+  }
+  @include mobile {
+    padding: 15px 12px;
+  }
+  h4 {
+    font-weight: 500;
+    @include overTablet {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  p {
+    @include overTablet {
+      font-size: 16px;
+    }
+  }
+  .flex {
+    column-gap: 15px;
+  }
+}
+
+.id-image-check {
+  padding: 0 !important;
+  label {
+    span {
+      @include overTablet {
+        font-size: 16px;
+      }
+    }
   }
 }

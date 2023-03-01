@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>新規会員登録</title>
-  <link rel="icon" href="assets/images/icons/favicon.png">
+  <title>メールを確認</title>
+  <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   
   <!-- stylesheetファイル 読み込み -->
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body id="body" class="favorite">
@@ -36,7 +36,7 @@
       <nav id="nav-main" class="flex align-items-center justify-content-between">
         <div class="header-logo">
           <a href="/" class="logo-link u-hover-opacity">
-            <img src="assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
+            <img src="/assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
           </a>
         </div>
         <div id="nav-menu" class="nav-menu">
@@ -51,7 +51,7 @@
             <li><a href="!#">よくある質問</a></li>
             <li>
               <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
-                <img src="assets/images/icons/login.svg" alt="login-icon">
+                <img src="/assets/images/icons/login.svg" alt="login-icon">
                 <span>ログイン</span>
               </a>
             </li>
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">新規会員登録</li>
+        <li class="breadcrumb-item">メールを確認</li>
       </ul>
     </div>
   </div>
@@ -88,38 +88,22 @@
     <div id="main" class="container">
       <div class="main-col">
         <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">新規会員登録完了</h2>
+          <h2 class="p-main-title animated fadeInLeftShort">メールを確認</h2>
+          <p class="p-main-desc animated fadeInUpShort">登録いただいたメールアドレス宛にメールを送りました。<br>届いたメールに記載されているURLをクリックしてパスワードの再設定を完了させてください。</p>
         </div>
-        <div class="container-inner">
-          <div class="thank-you-box u-brl _box-shadow bg-white">
-            <div class="animatedParent text-center">
-              <div class="mb-30">
-                <img src="assets/images/header_logo.svg" alt="logo">
-              </div>
-              <p class="p-main-title-en animated fadeInUpShort" style="margin-top: 0; margin-bottom: 10px">Thank you!</p>              
-              <h2 class="p-main-title animated fadeInDownShort">本登録が完了しました</h2>
-              <div class="alert-box animated fadeInUpShort mt-35">
-                <p class="alert-text">ありがとうございます。<br>プライムカジのサービスを、お楽しみ下さい！</p>
-              </div>
+        <div class="container-inner animatedParent mt-100">          
+          <div class="inform-box animated fadeInRightShort mb-70">
+            <img src="/assets/images/icons/envelope.svg" alt="icon">
+            <p class="inform-text">プライムカジ<br>パスワード再設定のお知らせ</p>
+            <p class="inform-text-2">メールのURLをクリックしてください。</p>
+            <p class="b-color">http://xxxxx.xxxxxxx/</p>
+          </div>
+          <div class="not-received-mail animated fadeInUpShort">
+            <div class="flex align-items-center mb-30">
+              <img src="/assets/images/icons/question.svg" alt="icon">
+              <p>メールが届かない場合</p>
             </div>
-            <div class="about-flow animatedParent mt-45">
-              <div class="flex ttl-sec animated fadeInDownShort align-items-center">
-                <div class="img-box flex align-items-center">
-                  <img src="assets/images/icons/megaphone.svg" alt="megaphone">
-                </div>
-                <p class="flow-title">今後のフローについて</p>
-              </div>
-              <p class="desc mt-20 animated fadeInLeftShort">プライムカジのサービス予約をご利用頂くためには、マイページへログイン頂き、基本情報のご登録・本人確認書類のご提出の登録をして頂く必要がございます。申請後、承認のご連絡が届きましたら、実際にサービスのご予約へとお進み頂けます。</p>
-              <div class="link-box mt-3 animated fadeInRightShort">
-                <a href="!#" class="flex align-items-center justify-content-end">ご利用方法を確認する<span>▶</span></a>
-              </div>
-            </div>
-            <form action="" class="form mt-45 animatedParent">
-              <div class="grid two-btn-wrap animated fadeInUpShort mt-60">
-                <a href="!#" class="outline-btn custom_outline-btn">TOPに戻る</a>
-                <a href="!#" class="c-view-more-btn primary-btn-brown">マイページへ</a>
-              </div>              
-            </form>
+            <p>迷惑メールに振り分けられてしまっている場合があります。また、受信拒否などの設定をしている場合には@primekaji.comからのメールが届くように設定を変更してもう一度パスワード変更をしてください。それでも問題が解決しない場合、<a href="!#">こちら</a>よりお問い合わせください。</p>
           </div>
         </div>
       </div>
@@ -132,7 +116,7 @@
       <div class="container">
         <div class="grid">
           <div class="footer-logo">
-            <a href="/" class="u-hover-opacity"><img src="assets/images/footer_logo.svg" alt="LOGO"></a>
+            <a href="/" class="u-hover-opacity"><img src="/assets/images/footer_logo.svg" alt="LOGO"></a>
           </div>
           <div class="p-footer-nav flex">
             <div>
@@ -198,8 +182,8 @@
   
   <!-- JQuery 読み込み -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="assets/js/css3-animate-it.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/css3-animate-it.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

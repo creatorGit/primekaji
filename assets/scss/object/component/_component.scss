@@ -37,14 +37,6 @@
       padding-bottom: 20px;
     }
   }
-  .container {
-    @include desktop {
-      max-width: 1310px !important;
-    }
-    @include underDesktop {
-      max-width: 100% !important;
-    }
-  }
 }
 
 .articles {
@@ -92,6 +84,9 @@
       &:hover {
         box-shadow: 0 5px 10px rgb(0 0 0 / 19%), 0 3px 4px rgb(0 0 0 / 23%);
         text-decoration: none;
+        .p-article-title {
+          color: $primary-color;
+        }
       }
     }
   }
@@ -142,7 +137,7 @@
     content: '★';
   }
   .rate > input:checked ~ label {
-    color: $secondary-color;    
+    color: #ffc700;    
   }
   .rate:not(:checked) > label:hover,
   .rate:not(:checked) > label:hover ~ label {
@@ -343,6 +338,15 @@
       height: 50px;
     }
   }
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+    .card-detail {
+      p {
+        color: $primary-color;
+      }
+    }
+  }
 }
 
 .image-upload-1 {
@@ -367,16 +371,19 @@
     padding: 3px 0 3px 10px;
     color: #654D65;
     @include overTablet {
-      font-size: 20px;
-      column-gap: 18px;
+      font-size: 16px;
+      column-gap: 10px;
     }
     @include mobile {
-      font-size: 15px;
-      column-gap: 12px;
+      font-size: 14px;
+      column-gap: 8px;
     }
     img {
-      @include mobile {
+      @include overTablet {
         width: 20px;
+      }
+      @include mobile {
+        width: 18px;
       }
     }
   }
