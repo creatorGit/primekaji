@@ -16,6 +16,15 @@
   }
 }
 
+.u-pc-tab-show {
+  @include overTablet {
+    display: block;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
 .u-tab-sp-show {
   @include desktop {
     display: none;

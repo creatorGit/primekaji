@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>マイページ</title>
-  <link rel="icon" href="assets/images/icons/favicon.png">
+  <title>メッセージ</title>
+  <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   
   <!-- stylesheetファイル 読み込み -->
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body id="body" class="favorite">
@@ -36,7 +36,7 @@
       <nav id="nav-main" class="flex align-items-center justify-content-between">
         <div class="header-logo">
           <a href="/" class="logo-link u-hover-opacity">
-            <img src="assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
+            <img src="/assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
           </a>
         </div>
         <div id="nav-menu" class="nav-menu">
@@ -51,7 +51,7 @@
             <li><a href="!#">よくある質問</a></li>
             <li>
               <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
-                <img src="assets/images/icons/login.svg" alt="login-icon">
+                <img src="/assets/images/icons/login.svg" alt="login-icon">
                 <span>ログイン</span>
               </a>
             </li>
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">マイページ</li>
+        <li class="breadcrumb-item">メッセージ</li>
       </ul>
     </div>
   </div>
@@ -87,15 +87,68 @@
   <div class="l-main">
     <div id="main" class="container">
       <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort active">マイページ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-250 active">メッセージ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-1000">登録内容</a>
       </div>
 
       <div class="main-col">
-        
+        <div class="animatedParent">
+          <div class="flex align-items-center justify-content-between">
+            <h2 class="p-main-title animated fadeInLeftShort">メッセージ詳細</h2>
+            <a href="!#" class="message-list-link flex align-items-center">一覧へ戻る<span>▶</span></a>
+          </div>
+          <div class="message-detail-contents _other mt-35">
+            <div class="message-heading">
+              <div class="c-badge application-reservation _white-border">
+                予約申込み：R123987
+              </div>
+              <h3 class="title">テスト家事代行</h3>
+            </div>
+            <div class="message-main">
+              <div class="flex align-items-center">
+                <div class="img-box">
+                  <img src="/assets/images/profile-img-2.png" alt="profile">
+                </div>
+                <div class="message-detail">
+                  <p class="time">2022年03月03日 11:00</p>
+                  <p class="message u-pc-tab-show">エアコンクリーニングを依頼しました。</p>
+                </div>
+              </div>
+              <p class="message u-sp-show">エアコンクリーニングを依頼しました。</p>
+            </div>
+          </div>
+          <div class="message-detail-contents _me bg-white">
+            <div class="message-main">
+              <div class="flex flex-row-reverse align-items-center">
+                <div class="img-box">
+                  <img src="/assets/images/profile-img.png" alt="profile">
+                </div>
+                <div class="message-detail text-right">
+                  <p class="time">2022年03月03日 11:00</p>
+                  <p class="message u-pc-tab-show">この文言はダミーです。この文言はダミーです。</p>
+                </div>
+              </div>
+              <p class="message u-sp-show">この文言はダミーです。この文言はダミーです。</p>
+            </div>
+          </div>
+          <form action="" class="form message-form bg-white">
+            <textarea name="message" id="" cols="30" rows="5" placeholder="テキスト入力はこちら。ドラッグ＆ドロップで添付（JPEG）も可能です。"></textarea>
+            <div class="clearfix">
+              <div class="float-left mt-20">
+                <div class="image-upload-1">
+                  <label for="reviewImage" class="flex align-items-center border-none"><img src="assets/images/icons/file-2.svg" alt="file-image">ファイルを添付する</label>
+                  <input type="file" name="reviewImage">
+                </div>
+              </div>
+              <div class="float-right">
+                <input type="submit" class="primary-btn-purple" value="送信する">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

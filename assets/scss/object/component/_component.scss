@@ -386,6 +386,10 @@
         width: 18px;
       }
     }
+    &.border-none {
+      border: none;
+      padding: 0;
+    }
   }
 }
 

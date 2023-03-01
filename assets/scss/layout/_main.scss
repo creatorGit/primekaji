@@ -565,36 +565,7 @@
           font-weight: normal;
           color: #312200;
         }
-        &.c-badge{
-          letter-spacing: 0.1rem;
-          padding: 4px 8px;
-          color: white;
-          display: inline-block;
-          border-radius: 4px;
-          @include overTablet {
-            font-size: 14px;
-            line-height: 20px;
-          }
-          @include mobile {
-            font-size: 15px;
-            line-height: 17px;
-          }
-          &.application-reservation{
-            background-color: #AEA6BC;
-          }
-          &.contact{
-            background-color: #B2C643;
-          }
-          &.confirm-reservation{
-            background-color: #B19D70;
-          }
-          &.cancel{
-            background-color: #4F7EA5;
-          }
-          &.finish{
-            background-color: #D98511;
-          }
-        }
+        
         &.c-title{
           font-size: 22px;
           font-weight: 500;
@@ -1320,6 +1291,513 @@
       @include overTablet {
         font-size: 16px;
       }
+    }
+  }
+}
+
+.c-badge{
+  letter-spacing: 0.1rem;
+  padding: 4px 8px;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  &._white-border {
+    border: 1px solid #fff;
+  }
+  @include overTablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include mobile {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  &.application-reservation{
+    background-color: #AEA6BC;
+  }
+  &.contact{
+    background-color: #B2C643;
+  }
+  &.confirm-reservation{
+    background-color: #B19D70;
+  }
+  &.cancel{
+    background-color: #4F7EA5;
+  }
+  &.finish{
+    background-color: #D98511;
+  }
+}
+
+.message-item {
+  border: 1px solid #E2E2E2;
+  @include overTablet {
+    padding: 27px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include mobile {
+    padding: 16px 12px;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 10px;
+  }
+  &:not(:last-of-type) {
+    @include overTablet {
+      margin-bottom: 23px;
+    }
+    @include mobile {
+      margin-bottom: 14px;
+    }
+  }
+  .img-box {
+    @include overTablet {
+      width: 92px;
+    }
+    @include mobile {
+      width: 86px;
+    }
+    img {
+      border-radius: 50%;
+      // border: 4px solid #F4F4F4;
+    }
+  }
+  .message-main {
+    @include overTablet {
+      column-gap: 27px;
+    }
+    @include mobile {
+      column-gap: 10px;
+    }
+    .message-detail {
+      .flex {
+        @include overTablet {
+          align-items: center;
+          column-gap: 15px;
+        }
+        @include mobile {
+          gap: 5px;
+        }
+      }
+      .staff-name {
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        @include overTablet {
+          font-size: 20px;
+          margin-top: 7px;
+        }
+        @include mobile {
+          font-size: 15px;
+          margin-top: 2px;
+        }
+      }
+      .message-content {
+        font-weight: 500;
+        @include overTablet {
+          font-size: 16px;
+        }
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .message-link {
+    color: #AEA6BC;
+    letter-spacing: 0.05rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    span {
+      font-size: 0.75em;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $secondary-color;
+    }
+  }
+}
+
+.message-list-link {
+  column-gap: 12px;
+  span {
+    color: #AEA6BC;
+    font-size: 0.75em;
+  }
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+    span {
+      color: inherit;
+    }
+  }
+}
+
+.message-form {
+  border-top: 1px solid #E0E0E0;
+  @include overTablet {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  @include overTablet {
+    padding: 30px;
+  }
+  @include mobile {
+    padding: 15px 15px 50px 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.message-detail-contents {
+  overflow: hidden;
+  @include mobile {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .message-main {
+    @include overTablet {
+      padding: 55px 50px;
+    }
+    @include mobile {
+      padding: 18px 15px;
+    }
+    & > .flex {
+      @include overTablet {
+        column-gap: 30px;
+      }
+      @include mobile {
+        column-gap: 13px;
+      }
+    }  
+    .message {
+      @include overTablet {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      @include mobile {
+        font-size: 17px;
+        margin-top: 8px;
+      }
+    }
+    .time {
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+  &._other {
+    @include overTablet {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .message-main {
+      background-color: #F2EFF2;
+      & > .flex {
+        @include overTablet {
+          column-gap: 30px;
+        }
+        @include mobile {
+          column-gap: 13px;
+        }
+        .message-detail {
+          @include overTablet {
+            padding-left: 35px;
+            position: relative;
+            &::before {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 6px 10px 6px 0;
+              border-color: transparent #CBBFCB transparent transparent;
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            &::after {
+              content: '';
+              display: block;
+              width: 5px;
+              height: 100%;
+              position: absolute;
+              left: 10px;
+              top: 0;
+              background-color: #CBBFCB;
+            }
+          }
+        }
+      }
+    }
+  }
+  &._me {
+    .message-detail {
+      @include overTablet {
+        padding-right: 35px;
+        position: relative;
+        &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 0 6px 10px;
+          border-color: transparent transparent transparent $secondary-color;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 100%;
+          position: absolute;
+          right: 10px;
+          top: 0;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .message-heading {
+    background-color: #CBBFCB;
+    @include overTablet {
+      padding: 25px;
+    }
+    @include mobile {
+      padding: 15px;
+    }
+    .title {
+      color: #fff;
+      @include overTablet {
+        font-size: 22px;
+        margin-top: 7px;
+      }
+      @include mobile {
+        font-size: 19px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.change-personal-info {
+  .form-wrap {
+    @include overTablet {
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    @include mobile {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    & > fieldset {
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #E9EAE9;
+      }
+      & > div {
+        & > .grid {
+          &:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+          row-gap: 5px;
+          @include desktop {
+            grid-template-columns: 200px 1fr;
+          }
+          label {
+            font-weight: 400 !important;
+            @include overTablet {
+              font-size: 16px !important;
+            }
+            @include mobile {
+              font-size: 15px !important;
+            }
+          }
+        }
+        fieldset {
+          padding: 0;
+          display: inline-block;
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+          label {
+            font-weight: 400 !important;
+            @include overTablet {
+              font-size: 16px !important;
+            }
+            @include mobile {
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+    }
+    & > .grid {
+      @include desktop {
+        grid-template-columns: 330px 1fr 97px !important;
+      }
+      @include tablet {
+        grid-template-columns: 280px 1fr 97px !important;
+      }
+      .change-id-btn {
+        padding: 4px 10px;
+        border-radius: 2px;
+        @include overTablet {
+          &.address-change-btn {
+            margin-top: auto;
+            margin-bottom: 12px;
+          }
+        }
+        @include mobile {
+          grid-row: 1 / 2;
+        }
+      }
+      &.required {
+        label {
+          &.flex {
+            @include mobile {
+              grid-row: 1 / 2;
+            }
+          }
+        }
+      }
+      &.optional {
+        .optional-label {
+          @include mobile {
+            grid-row: 1 / 2;
+          }
+        }
+        label {
+          @include mobile {
+            margin-top: 5px;
+            margin-bottom: 10px;
+          }
+        }
+        .form-note {
+          @include mobile {
+            width: calc(100% + 87px);
+          }
+        }
+        .change-id-btn {
+          @include mobile {
+            margin-top: 0;
+            margin-bottom: auto;
+          }
+        }
+      }
+      & > input, & > select, & > div:not(.optional-label) {
+        @include mobile {
+          grid-row: 2;
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+  }
+  .form-wrap-2 {
+    border: 5px solid #EEEFEE;
+    @include overTablet {
+      padding: 37px 40px;
+    }
+    @include mobile {
+      padding: 17px 12px;
+    }
+  }
+}
+
+.change-service-info {
+  .form-wrap {
+    @include overTablet {
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    @include mobile {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    & > fieldset {
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #E9EAE9;
+      }
+      & > div {
+        .grid {
+          &:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+          row-gap: 5px;
+          @include desktop {
+            grid-template-columns: 200px 1fr;
+          }
+          label {
+            font-weight: 400 !important;
+            @include overTablet {
+              font-size: 16px !important;
+            }
+            @include mobile {
+              font-size: 15px !important;
+            }
+          }
+        }
+        fieldset {
+          padding: 0;
+          display: inline-block;
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+          label {
+            font-weight: 400 !important;
+            @include overTablet {
+              font-size: 16px !important;
+            }
+            @include mobile {
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-note {
+  color: #9D9D9D;
+}
+
+.change-id-year-month-date {
+  align-items: center;
+  column-gap: 10px;
+  @include desktop {
+    grid-template-columns: 1fr 40px 1fr 40px 1fr 20px !important;
+  }
+  @include underDesktop {
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px !important;
+  }
+}
+
+.form-alert-1 {
+  padding: 7px 13px;
+  background-color: #EBE8E1;
+}
+.form-alert-2 {
+  padding: 7px 13px;
+  color: #fff;
+  background-color: $secondary-color;
+}
+
+.take-photo-list {
+  @include overTablet {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px;
+  }
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+  }
+  .image-upload-1 {
+    img {
+      width: 100%;
     }
   }
 }

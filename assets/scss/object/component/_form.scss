@@ -3,7 +3,7 @@ Form
 --------------------*/
 .form {
   .form-wrap {
-    .grid {
+    & > .grid {
       align-items: center;
       @include desktop {
         grid-template-columns: 330px 1fr;
@@ -162,6 +162,7 @@ Form
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      
       .checkmark {
         position: absolute;
         top: 0;
@@ -211,7 +212,7 @@ Form
       }
     }
     &.required {
-      label {
+      & > label {
         &.flex {
           @include overTablet {
             column-gap: 25px;
@@ -230,6 +231,29 @@ Form
           font-weight: 400;
           letter-spacing: 0.05rem;
           color: $secondary-color;
+        }
+      }
+    }
+    &.optional {
+      label {
+        &.flex {
+          @include overTablet {
+            column-gap: 25px;
+          }
+          @include mobile {
+            column-gap: 12px;
+          }
+          span {
+            @include overTablet {
+              font-size: 14px;
+            }
+            @include mobile {
+              font-size: 13px;
+            }
+            font-weight: 400;
+            letter-spacing: 0.05rem;
+            color: #D0D0D0;
+          }
         }
       }
     }
@@ -274,6 +298,47 @@ select {
   &:hover:not(:disabled) {
     border-color: $secondary-color;
     cursor: pointer;
+  }
+  @include desktop {
+    height: 57px;
+    padding: 16px 12px;
+    font-size: $small-text-size;
+  }
+  @include tablet {
+    height: 50px;
+    padding: 12px;
+    font-size: $small-text-size;
+  }
+  @include mobile {
+    height: 46px;
+    padding: 8px 12px;
+    font-size: $font-size-base;
+  }
+}
+.select-wrap {
+  position: relative;
+  display: block;
+  height: auto;
+  padding: 0;
+  width: 100%;
+  select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  span {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    font-size: 12px;
   }
 }
 
