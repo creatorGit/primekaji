@@ -1801,3 +1801,9 @@
     }
   }
 }
+
+.slice-articles {
+  & > li {
+    display: none;
+  }
+}

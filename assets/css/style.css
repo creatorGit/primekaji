@@ -2445,6 +2445,10 @@ header.fixed {
   width: 100%;
 }
 
+.slice-articles > li {
+  display: none;
+}
+
 footer {
   background-color: #9F8E9F;
   color: #fff;
