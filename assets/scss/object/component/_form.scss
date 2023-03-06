@@ -151,6 +151,30 @@ Form
       &.u-disabled {
         cursor: context-menu;
       }
+      &.select-all {
+        font-size: 20px;
+        padding-left: 45px;
+        line-height: 35px;
+        .checkmark {
+          width: 35px;
+          height: 35px;
+        }
+        input {
+          &:checked {
+            & ~ {
+              .checkmark {
+                &::after {
+                  left: 13px;
+                  top: 4px;
+                  width: 10px;
+                  height: 20px;
+                  border-width: 0 3px 3px 0;
+                }
+              }
+            }
+          }
+        }
+      }
     }  
     .radio {
       display: block;

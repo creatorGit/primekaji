@@ -38,6 +38,16 @@ $(window).scroll(function() {
     $('#header').removeClass('fixed');
     $('.l-main').css('margin-top',0);
   }
+
+  if($(window).scrollTop() > 150) {
+    $('#backToTop').fadeIn();
+  } else {
+    $('#backToTop').fadeOut();
+  }
+});
+$('#backToTop').click(function(e){
+  e.preventDefault();
+  $('html,body').animate({'scrollTop': 0}, 'slow');
 });
 
 // =============================== Modals =================================
@@ -317,4 +327,33 @@ $(function () {
 			scrollTop: $(this).offset().top - scrollHeight
 		}, 1500);
 	});
+});
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  let mySwiper1 = new Swiper('.prime-blog-container', {
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    slidesPerView: 3.5,
+    loop:false,
+    watchOverflow: true,
+     breakpoints: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      240: {
+        slidesPerView: 1.5,
+        spaceBetween: 12,
+      },
+      640: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: 45
+      },
+    }
+  });
 });

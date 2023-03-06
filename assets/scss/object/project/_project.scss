@@ -29,6 +29,18 @@
     margin-top: 5px;
   }
 }
+.p-main-title-en-2 {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 600;
+  color: #AEA6BC;
+  letter-spacing: 0.1rem;
+  @include overTablet {
+    font-size: 25px;
+  }
+  @include mobile {
+    font-size: 20px;
+  }
+}
 .p-article-title {
   letter-spacing: 0.05rem;
   font-weight: 500;
@@ -92,6 +104,22 @@
   }
   @include mobile {
     font-size: 16px;
+  }
+}
+
+.p-section-title {
+  font-family: 'Noto Serif JP', sans-serif;
+  @include desktop {
+    font-size: 38px;
+    letter-spacing: 0.1rem;
+  }
+  @include tablet {
+    font-size: 30px;
+    letter-spacing: 0.05rem;
+  }
+  @include mobile {
+    font-size: 20px;
+    letter-spacing: 0.05rem;
   }
 }
 
@@ -635,3 +663,71 @@ p {
 }
 
 // End of Slide
+
+
+#backToTop {
+  display: none;
+  div {
+    border: 3px solid #ADA6BA;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    &:hover {
+      cursor: pointer;
+    }
+    @include overTablet {
+      width: 63px;
+      height: 63px;
+      bottom: 17px;
+      right: 17px;
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 17px;
+    }
+    @include mobile {
+      width: 55px;
+      height: 55px;
+      bottom: 0;
+      right: 0;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.title-wrap {
+  .p-section-title {
+    position: relative;
+    @include overTablet {
+      padding-bottom: 40px;
+    }
+    @include mobile {
+      padding-bottom: 30px;
+    }
+    &::after {
+      content: '';
+      height: 15px;
+      display: block;
+      background-image: url('/assets/images/icons/title-border.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include overTablet {
+        width: 407px;
+      }
+      @include mobile {
+        width: 240px;
+      }
+    }
+  }
+}

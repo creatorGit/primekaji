@@ -16,14 +16,29 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.grid-lg-2 {
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .grid-md-3 {
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.grid-md-2 {
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .grid-sm-2 {
   @include mobile {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grid-sm-1 {
+  @include mobile {
+    grid-template-columns: 1fr;
   }
 }
 
