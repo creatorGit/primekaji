@@ -2739,7 +2739,18 @@ body {
     height: 100px;
     background-image: url('/assets/images/page-header-bg-sp.jpg');
   }
-  &::before, &::after {
+  // &::before, &::after {
+  //   content: '';
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   top: 0;
+  //   display: block;
+  // }
+  &::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -2749,21 +2760,19 @@ body {
     bottom: 0;
     top: 0;
     display: block;
-  }
-  &::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include overTablet {
-      background-image: url('/assets/images/page-header-gradient.png');
+      background-image: url('/assets/images/page-header-gradient-2.png');
     }
     @include mobile {
-      background-image: url('/assets/images/page-header-gradient-sp.png');
+      background-image: url('/assets/images/page-header-gradient-sp-2.png');
     }
   }
-  &::after {
-    background-color: rgb(203 191 203 / 47%);
-  }
+  // &::after {
+  //   background-color: rgb(203 191 203 / 47%);
+  // }
 }
 
 .search-box {
