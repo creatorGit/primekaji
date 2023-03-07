@@ -1,0 +1,64 @@
+.side-col {
+  @include desktop {
+    width: 300px;
+  }
+  @include tablet {
+    width: 200px;
+  }
+  @include mobile {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.side-banner-wrap {
+  a {
+    display: block;
+    &:hover {
+      opacity: 0.8;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+.side-cat-box {
+  .title {
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E2E2E2;
+  }
+  li {
+    letter-spacing: 0.05rem;
+    font-size: 15px;
+    position: relative;
+    @include overTablet {
+      padding-left: 23px;
+    }
+    @include mobile {
+      padding-left: 18px;
+    }
+    &:not(:last-of-type) {
+      @include overTablet {
+        margin-bottom: 15px;
+      }
+      @include mobile {
+        margin-bottom: 7px;
+      }
+    }
+    &::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      display: block;
+      border-left: 2px solid #CBBFCB;
+      border-bottom: 2px solid #CBBFCB;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

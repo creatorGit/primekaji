@@ -263,6 +263,17 @@
     margin-top: 60px;
   }
 }
+.mb-120 {
+  @include desktop {
+    margin-bottom: 120px;
+  }
+  @include tablet {
+    margin-bottom: 80px;
+  }
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}
 
 .py-120 {
   @include desktop {

@@ -3905,6 +3905,208 @@ body.loggedin #nav-menu .logout {
   }
 }
 
+@media (min-width: 961px) {
+  .left-col {
+    width: calc(100% - 350px);
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .left-col {
+    width: calc(100% - 230px);
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .left-col {
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  .news-blog-list {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 50px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .news-blog-list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 30px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .news-blog-list {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    row-gap: 20px;
+  }
+}
+
+.news-blog-item {
+  position: relative;
+}
+.news-blog-item .img-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  overflow: hidden;
+}
+.news-blog-item .img-box img {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-blog-item .blog-cat {
+  background-color: #fff;
+  color: #312200;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 4px;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .news-blog-item .blog-cat {
+    font-size: 13px;
+  }
+}
+.news-blog-item a {
+  display: block;
+}
+.news-blog-item a:hover {
+  text-decoration: none;
+}
+.news-blog-item a:hover .img-box img {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.05);
+}
+.news-blog-item .date {
+  color: #AEA6BC;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .news-blog-item .date {
+    font-size: 13px;
+  }
+}
+.news-blog-item .title {
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: #312200;
+}
+@media (min-width: 521px) {
+  .news-blog-item .title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .news-blog-item .title {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+.news-blog-item .excerpt {
+  letter-spacing: 0.05rem;
+  color: #312200;
+}
+@media (min-width: 521px) {
+  .news-blog-item .excerpt {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .news-blog-item .excerpt {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 961px) {
+  .side-col {
+    width: 300px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .side-col {
+    width: 200px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .side-col {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.side-banner-wrap a {
+  display: block;
+}
+.side-banner-wrap a:hover {
+  opacity: 0.8;
+}
+.side-banner-wrap a img {
+  width: 100%;
+}
+
+.side-cat-box .title {
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.side-cat-box li {
+  letter-spacing: 0.05rem;
+  font-size: 15px;
+  position: relative;
+}
+@media (min-width: 521px) {
+  .side-cat-box li {
+    padding-left: 23px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .side-cat-box li {
+    padding-left: 18px;
+  }
+}
+@media (min-width: 521px) {
+  .side-cat-box li:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .side-cat-box li:not(:last-of-type) {
+    margin-bottom: 7px;
+  }
+}
+.side-cat-box li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-left: 2px solid #CBBFCB;
+  border-bottom: 2px solid #CBBFCB;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 footer {
   background-color: #9F8E9F;
   color: #fff;
@@ -4523,6 +4725,22 @@ footer._front .footer-nav-2 nav .footer-nav-2-link:not(:first-of-type) {
 @media (min-width: 240px) and (max-width: 520px) {
   .mt-120 {
     margin-top: 60px;
+  }
+}
+
+@media (min-width: 961px) {
+  .mb-120 {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .mb-120 {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .mb-120 {
+    margin-bottom: 60px;
   }
 }
 
