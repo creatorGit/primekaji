@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>カテゴリTOP</title>
+  <link rel="icon" href="/assets/images/icons/favicon.png">
+
+  <!-- google fonts 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- BootStrap 読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- FontAwesome 読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  
+  <!-- stylesheetファイル 読み込み -->
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body id="body" class="home "><!-- loggedinの追加又は削除 -->
+  <!-- ヘッダー開始 -->
+  <div class="header-txt-wrap bg-white">
+    <div class="container">
+      <p class="header-txt">高品質・信頼感を大切にした、家事代行マッチングサービス「プライムカジ」</p>
+    </div>
+  </div>
+  <header id="header" class="position-relative">    
+    <div class="container">
+      <nav id="nav-main" class="flex align-items-center justify-content-between">
+        <div class="header-logo">
+          <a href="/" class="logo-link u-hover-opacity">
+            <img src="/assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
+          </a>
+        </div>
+        <div id="nav-menu" class="nav-menu">
+          <div class="menu-mask"></div>
+          <button class="menu-close-btn">
+            <i class="fa fa-times"></i>
+          </button>
+          <ul class="menu-wrap flex align-items-center">
+            <li><a href="!#">プライムカジとは？</a></li>
+            <li><a href="!#">ご利用方法</a></li>
+            <li><a href="!#">カテゴリ一覧</a></li>
+            <li><a href="!#">よくある質問</a></li>
+            <li class="login">
+              <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
+                <img src="/assets/images/icons/login.svg" alt="login-icon">
+                <span>ログイン</span>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
+                <img src="/assets/images/icons/logout.svg" alt="login-icon">
+                <span>ログアウト</span>
+              </a>
+            </li>
+            <li><a href="!#" class="signup-free-btn primary-btn-brown">無料会員登録</a></li>
+            <li><a href="!#" class="staff-signup-btn primary-btn-purple">スタッフ登録はこちら</a></li>
+          </ul>
+        </div>
+        <div class="burger-wrap u-tab-sp-show">
+          <button id="target-burger" class="target-burger" type="button">
+            <ul class="buns">
+              <li class="bun"></li>
+              <li class="bun"></li>
+              <li class="bun"></li>
+            </ul>
+          </button>
+        </div>
+      </nav>        
+    </div>
+  </header>
+  <!-- ヘッダー終了 -->
+
+  <div class="l-main">
+        
+  </div>
+
+  <!-- ここから共通 -->
+  <!-- Footer Contact -->
+  <div id="footerContact" class="footer-contact">
+    <div class="container">
+      <div class="wrap text-center">
+        <h2 class="p-section-title u-font-bold text-white">もっと、理想の暮らしを手に入れる</h2>
+        <div class="btn-group grid grid-lg-2 grid-md-2 grid-sm-1 mt-35">
+          <a href="!#" class="login-banner-btn flex justify-content-center align-items-center u-br">
+            すでに登録済みの方はこちら
+            <span>ログイン</span>
+          </a>
+          <a href="!#" class="signup-banner-btn flex justify-content-center align-items-center bg-white u-br">
+            初めてご利用の方はこちら
+            <span>無料会員登録</span>
+          </a>
+        </div>
+        <div class="u-pc-tab-show mt-45">
+          <div class="contact-box u-brl bg-white grid justify-content-center">
+            <div class="tel-box">
+              <div class="grid justify-content-center">
+                <p>お電話でのお問い合わせ</p>
+                <p class="tel">tel. <span>0120-464-668</span></p>
+              </div>
+            </div>
+            <div class="mail-contact-box">
+              <div class="grid justify-content-center">
+                <p>メールでのお問い合わせ</p>
+                <a href="#" class="primary-btn-brown">お問い合わせはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Footer Contact -->
+  <!-- フッター開始 -->
+  <footer class="footer _front">
+    <div class="footer-nav-1">
+      <div class="container">
+        <div class="grid">
+          <div class="footer-logo">
+            <a href="/" class="u-hover-opacity"><img src="/assets/images/header_logo.svg" alt="LOGO"></a>
+          </div>
+          <div class="p-footer-nav flex">
+            <div>
+              <a href="" class="footer-nav-label cat">カテゴリから探す</a>
+              <div class="f-menu-wrap">
+                <p class="f-menu-wrap-label">通常カテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix">
+                  <li class="menu-item">
+                    <a href="!#" class="link">料理代行</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">整理収納</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ベビー・キッズシッター</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">チケットプレゼントのコンサート</a>
+                  </li>
+                </ul>
+                <p class="f-menu-wrap-label">プロカテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix mt-2">
+                  <li class="menu-item">
+                    <a href="!#" class="link">出張シェフ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ハウスクリーニング</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">プライムカジとは？</a>
+              <a href="!#" class="footer-nav-label">ご利用方法</a>
+              <a href="!#" class="footer-nav-label">安心・安全の取り組み</a>
+              <a href="!#" class="footer-nav-label">新規登録</a>
+              <a href="!#" class="footer-nav-label">ログイン / マイページ</a>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">お知らせ</a>
+              <a href="!#" class="footer-nav-label">ブログ</a>
+              <a href="!#" class="footer-nav-label">よくあるご質問</a>
+              <a href="!#" class="footer-nav-label">お問い合わせ</a>
+              <a href="!#" class="footer-nav-label">家事代行スタッフ募集について</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-nav-2 text-center">
+      <nav class="align-items-center justify-content-center">
+        <a href="" class="footer-nav-2-link">会社概要</a>
+        <a href="" class="footer-nav-2-link">利用規約</a>
+        <a href="" class="footer-nav-2-link">特定商取引法に基づく表記</a>
+        <a href="" class="footer-nav-2-link">個人情報保護方針</a>
+      </nav>
+      <p class="c-copyright">Copyright &copy; 2023 prime kaji All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- フッター終了 -->
+
+  <div id="backToTop"><div>page<br>top</div></div>
+  
+  <!-- JQuery 読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="/assets/js/css3-animate-it.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

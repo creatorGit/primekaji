@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>カテゴリTOP</title>
+  <link rel="icon" href="/assets/images/icons/favicon.png">
+
+  <!-- google fonts 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- BootStrap 読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- FontAwesome 読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  
+  <!-- stylesheetファイル 読み込み -->
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body id="body" class="home "><!-- loggedinの追加又は削除 -->
+  <!-- ヘッダー開始 -->
+  <div class="header-txt-wrap bg-white">
+    <div class="container">
+      <p class="header-txt">高品質・信頼感を大切にした、家事代行マッチングサービス「プライムカジ」</p>
+    </div>
+  </div>
+  <header id="header" class="position-relative">    
+    <div class="container">
+      <nav id="nav-main" class="flex align-items-center justify-content-between">
+        <div class="header-logo">
+          <a href="/" class="logo-link u-hover-opacity">
+            <img src="/assets/images/header_logo.svg" width="212" height="62" loading="lazy" alt="LOGO">
+          </a>
+        </div>
+        <div id="nav-menu" class="nav-menu">
+          <div class="menu-mask"></div>
+          <button class="menu-close-btn">
+            <i class="fa fa-times"></i>
+          </button>
+          <ul class="menu-wrap flex align-items-center">
+            <li><a href="!#">プライムカジとは？</a></li>
+            <li><a href="!#">ご利用方法</a></li>
+            <li><a href="!#">カテゴリ一覧</a></li>
+            <li><a href="!#">よくある質問</a></li>
+            <li class="login">
+              <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
+                <img src="/assets/images/icons/login.svg" alt="login-icon">
+                <span>ログイン</span>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="!#" class="header-login-btn grid align-items-center justify-content-center">
+                <img src="/assets/images/icons/logout.svg" alt="login-icon">
+                <span>ログアウト</span>
+              </a>
+            </li>
+            <li><a href="!#" class="signup-free-btn primary-btn-brown">無料会員登録</a></li>
+            <li><a href="!#" class="staff-signup-btn primary-btn-purple">スタッフ登録はこちら</a></li>
+          </ul>
+        </div>
+        <div class="burger-wrap u-tab-sp-show">
+          <button id="target-burger" class="target-burger" type="button">
+            <ul class="buns">
+              <li class="bun"></li>
+              <li class="bun"></li>
+              <li class="bun"></li>
+            </ul>
+          </button>
+        </div>
+      </nav>        
+    </div>
+  </header>
+  <!-- ヘッダー終了 -->
+  
+  <div class="l-main">
+    <div class="page-top-heading">
+      <!-- パンくずリスト開始 -->
+      <div class="breadcrumb-wrap">
+        <div class="container">
+          <ul class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
+            <li class="breadcrumb-item">カテゴリTOP</li>
+          </ul>
+        </div>
+      </div>
+      <!-- パンくずリスト終了 -->
+      <h1 class="page-title text-center">お掃除代行</h1>
+    </div>
+    
+    <div class="container">
+      <div class="page-header-image">
+        <picture>
+          <source media="(max-width:520px)" srcset="/assets/images/cleaning-sp.jpg">
+          <img src="/assets/images/cleaning.jpg" alt="">
+        </picture>
+      </div>
+      <h3 class="p-sub-title text-center mt-50">お掃除代行</h3>
+      <p class="text-center mt-30">お掃除代行のサービスを料金や相場、レビューで比較し、オンライン予約することができます。
+        <br>毎日のお掃除時間を、別の時間にあててみませんか？掃除が得意なスタッフが、理想の暮らしを叶えるお手伝いをいたします。</p>
+      <div class="search-box mt-50 u-brl">
+
+      </div>
+    </div>
+  </div>
+  <div class="cleaning-search-result search-result pt-70 pb-100 mt-70 bg-white">
+    <div class="container">
+      <div class="animatedParent">
+        <h3 class="p-special-title animated fadeInDownShort">お掃除代行検索結果</h3>
+        <p class="search-result-notice mt-30 animated fadeInLeftShort">1〜20件を表示 / 全220件</p>
+      </div>
+      <div class="filter-btn-wrap flex align-items-center flex-wrap mt-25 animatedParent">
+        <button type="button" class="filter-button animated fadeInUpShort active">オススメ</button>
+        <button type="button" class="filter-button animated fadeInUpShort delay-250">レビュー数順</button>
+        <button type="button" class="filter-button animated fadeInUpShort delay-500">料金が安い順</button>
+        <button type="button" class="filter-button animated fadeInUpShort delay-750">更新順</button>        
+        <button type="button" class="filter-button animated fadeInUpShort delay-1000">評価が高い順</button>
+      </div>
+      <div class="search-result-wrap grid grid-lg-2 grid-md-2 grid-sm-2 mt-80 animatedParent">
+        <div class="latest-service search-result-item animated fadeInLeftShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+        <div class="latest-service search-result-item animated fadeInRightShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+        <div class="latest-service search-result-item animated fadeInLeftShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+        <div class="latest-service search-result-item animated fadeInRightShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+        <div class="latest-service search-result-item animated fadeInLeftShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+        <div class="latest-service search-result-item animated fadeInRightShort">
+          <div>
+            <div class="grid ttl-cat">
+              <div class="cat"><p>掃除代行</p></div>
+              <div>
+                <p class="cc-desc">日々のおうちのお掃除ならお任せください！</p>
+                <h3 class="title">【水周りのお掃除セットプラン！】</h3>
+              </div>
+            </div>
+            <div class="grid cc-detail">
+              <div class="img-box">
+                <img src="/assets/images/service-img.jpg" alt="service">
+              </div>
+              <div>
+                <p class="title">テスト家事代行</p>
+                <div class="grid">                    
+                  <div class="grid">
+                    <div class="star-review-wrap flex align-items-center">
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="review-mark">(<span>4.0</span>)</p>
+                    </div>
+                    <div class="message-num-wrap flex align-items-center float-left">
+                      <img src="/assets/images/icons/message.svg" alt="message icon">
+                      <p class="message-num"><span>279</span>件</p>
+                    </div>                      
+                  </div>
+                  <div class="price-time">
+                    <p class="price">3,000円</p>
+                    <div class="flex align-items-center justify-content-center">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc">キッチン・洗面台・トイレ・お風呂をピカピカに！（各1か所）綺麗な水周りで、毎日を気持ちよくお過ごしください♪</p>
+              </div>
+            </div>
+            <ul class="meta-tags">
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+              <li class="meta-tag"><a href="!#" class="meta-link">#タグ</a></li>
+            </ul>
+          </div>
+          <a href="!#" class="service-link">詳細をみる</a>
+        </div>
+      </div>
+      <div class="text-center mt-70">
+        <div class="g2-slider-pagination__wrapper">
+          <button class="prev">◀</button>
+          <ul id="g2-slider-pagination-list">
+            <li class="dot active">1</li>
+            <li class="dot">2</li>
+            <li class="dot">3</li>
+            <li class="dot">4</li>
+            <li class="dot">5</li>
+          </ul>
+          <button class="next">▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="latest-review mt-100 animatedParent">
+    <div class="container">
+      <div class="title-wrap text-center">
+        <h2 class="p-section-title animated fadeInUpShort">新着レビュー</h2>
+      </div>
+      <p class="text-center mt-45 animated fadeInDownShort">このカテゴリでの、新着のレビューを確認する</p>
+      <div class="l-review-wrap grid grid-lg-2 grid-md-2 grid-sm-1 mt-40">
+        <div class="review-item bg-white u-br animated fadeInLeftShort">
+          <div class="flex post-info-1">
+            <p class="user-name">User name</p>
+            <div class="date-location flex align-items-center pc">
+              <p class="date flex align-items-center"><img src="/assets/images/icons/pencil.svg" alt="icon">2022年9月8日</p>
+              <p class="location flex align-items-center"><img src="/assets/images/icons/map-position.svg" alt="icon">大阪府 / 堺市三原区</p>
+            </div>
+          </div>
+          <div class="star-review-wrap flex align-items-center mt-3">
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p class="review-mark">(<span>4.8</span>)</p>
+          </div>
+          <div class="date-location mt-3 u-sp-show">
+            <p class="date flex align-items-center"><img src="/assets/images/icons/pencil.svg" alt="icon">2022年9月8日</p>
+            <p class="location flex align-items-center mt-1"><img src="/assets/images/icons/map-position.svg" alt="icon">大阪府 / 堺市三原区</p>
+          </div>
+          <p class="review-txt mt-3">
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <div class="grid post-info-2 mt-3">
+            <div class="img-box">
+              <img src="/assets/images/service-img.jpg" alt="img">
+            </div>
+            <div class="detail">
+              <h3>日々のおうちのお掃除ならお任せください！【水周りのお掃除セットプラン！】</h3>
+              <p>スタッフ家事ハナコ</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-item bg-white u-br animated fadeInRightShort">
+          <div class="flex post-info-1">
+            <p class="user-name">User name</p>
+            <div class="date-location flex align-items-center pc">
+              <p class="date flex align-items-center"><img src="/assets/images/icons/pencil.svg" alt="icon">2022年9月8日</p>
+              <p class="location flex align-items-center"><img src="/assets/images/icons/map-position.svg" alt="icon">大阪府 / 堺市三原区</p>
+            </div>
+          </div>
+          <div class="star-review-wrap flex align-items-center mt-3">
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p class="review-mark">(<span>4.8</span>)</p>
+          </div>
+          <div class="date-location mt-3 u-sp-show">
+            <p class="date flex align-items-center"><img src="/assets/images/icons/pencil.svg" alt="icon">2022年9月8日</p>
+            <p class="location flex align-items-center mt-1"><img src="/assets/images/icons/map-position.svg" alt="icon">大阪府 / 堺市三原区</p>
+          </div>
+          <p class="review-txt mt-3">
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <div class="grid post-info-2 mt-3">
+            <div class="img-box">
+              <img src="/assets/images/service-img.jpg" alt="img">
+            </div>
+            <div class="detail">
+              <h3>日々のおうちのお掃除ならお任せください！【水周りのお掃除セットプラン！】</h3>
+              <p>スタッフ家事ハナコ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-100 pt-100 bg-white animatedParent">
+    <div class="container">
+      <div class="title-wrap text-center">
+        <h2 class="p-section-title animated fadeInUpShort">エリアで絞りこむ</h2>
+      </div>
+      <ul class="area-list mt-50 flex align-items-center flex-wrap animated fadeInUpShort mt-55">
+        <li class="area-item"><a href="!#" class="area-link">北海道</a></li>
+        <li class="area-item"><a href="!#" class="area-link">青森県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">岩手県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">宮城県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">秋田県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">山形県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">福島県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">茨城県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">栃木県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">群馬県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">埼玉県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">千葉県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">東京都</a></li>
+        <li class="area-item"><a href="!#" class="area-link">神奈川県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">新潟県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">富山県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">石川県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">福井県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">山梨県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">長野県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">岐阜県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">静岡県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">愛知県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">三重県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">滋賀県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">京都府</a></li>
+        <li class="area-item"><a href="!#" class="area-link">大阪府</a></li>
+        <li class="area-item"><a href="!#" class="area-link">兵庫県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">奈良県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">和歌山県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">鳥取県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">島根県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">岡山県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">広島県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">山口県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">徳島県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">香川県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">愛媛県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">高知県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">福岡県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">佐賀県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">長崎県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">熊本県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">大分県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">宮崎県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">鹿児島県</a></li>
+        <li class="area-item"><a href="!#" class="area-link">沖縄県</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="prime-blog bg-white py-120 animatedParent">
+    <div class="title-wrap text-center">
+      <h2 class="p-section-title animated fadeInUpShort">PRIME!ブログ</h2>
+    </div>
+    <div class="prime-blog-container blog-list mt-80">
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <div class="swiper-wrapper">
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolin.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolini-2.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolini-2.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolin.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolini-2.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+        <a href="!#" class="swiper-slide">
+          <img src="/assets/images/francesca-tosolini-2.jpg" alt="slide-img">
+          <h3 class="mt-25">こんなお家の状態に、なってしまっていませんか？</h3>
+          <div class="flex align-items-center justify-content-between mt-25">
+            <ul class="cat-list">
+              <li class="cat">#カテゴリ</li>
+              <li class="cat">#カテゴリ</li>
+            </ul>
+            <p class="date">2021.8.30</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <a href="!#" class="c-view-more-btn primary-btn-brown mt-80">もっと見る</a>
+  </div>
+
+  <!-- ここから共通 -->
+  <!-- Footer Contact -->
+  <div id="footerContact" class="footer-contact">
+    <div class="container">
+      <div class="wrap text-center">
+        <h2 class="p-section-title u-font-bold text-white">もっと、理想の暮らしを手に入れる</h2>
+        <div class="btn-group grid grid-lg-2 grid-md-2 grid-sm-1 mt-35">
+          <a href="!#" class="login-banner-btn flex justify-content-center align-items-center u-br">
+            すでに登録済みの方はこちら
+            <span>ログイン</span>
+          </a>
+          <a href="!#" class="signup-banner-btn flex justify-content-center align-items-center bg-white u-br">
+            初めてご利用の方はこちら
+            <span>無料会員登録</span>
+          </a>
+        </div>
+        <div class="u-pc-tab-show mt-45">
+          <div class="contact-box u-brl bg-white grid justify-content-center">
+            <div class="tel-box">
+              <div class="grid justify-content-center">
+                <p>お電話でのお問い合わせ</p>
+                <p class="tel">tel. <span>0120-464-668</span></p>
+              </div>
+            </div>
+            <div class="mail-contact-box">
+              <div class="grid justify-content-center">
+                <p>メールでのお問い合わせ</p>
+                <a href="#" class="primary-btn-brown">お問い合わせはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Footer Contact -->
+  <!-- フッター開始 -->
+  <footer class="footer _front">
+    <div class="footer-nav-1">
+      <div class="container">
+        <div class="grid">
+          <div class="footer-logo">
+            <a href="/" class="u-hover-opacity"><img src="/assets/images/header_logo.svg" alt="LOGO"></a>
+          </div>
+          <div class="p-footer-nav flex">
+            <div>
+              <a href="" class="footer-nav-label cat">カテゴリから探す</a>
+              <div class="f-menu-wrap">
+                <p class="f-menu-wrap-label">通常カテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix">
+                  <li class="menu-item">
+                    <a href="!#" class="link">料理代行</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">整理収納</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ベビー・キッズシッター</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">チケットプレゼントのコンサート</a>
+                  </li>
+                </ul>
+                <p class="f-menu-wrap-label">プロカテゴリー</p>
+                <ul class="menu p-footer-box u-clearfix mt-2">
+                  <li class="menu-item">
+                    <a href="!#" class="link">出張シェフ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="!#" class="link">ハウスクリーニング</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">プライムカジとは？</a>
+              <a href="!#" class="footer-nav-label">ご利用方法</a>
+              <a href="!#" class="footer-nav-label">安心・安全の取り組み</a>
+              <a href="!#" class="footer-nav-label">新規登録</a>
+              <a href="!#" class="footer-nav-label">ログイン / マイページ</a>
+            </div>
+            
+            <div>
+              <a href="!#" class="footer-nav-label">お知らせ</a>
+              <a href="!#" class="footer-nav-label">ブログ</a>
+              <a href="!#" class="footer-nav-label">よくあるご質問</a>
+              <a href="!#" class="footer-nav-label">お問い合わせ</a>
+              <a href="!#" class="footer-nav-label">家事代行スタッフ募集について</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-nav-2 text-center">
+      <nav class="align-items-center justify-content-center">
+        <a href="" class="footer-nav-2-link">会社概要</a>
+        <a href="" class="footer-nav-2-link">利用規約</a>
+        <a href="" class="footer-nav-2-link">特定商取引法に基づく表記</a>
+        <a href="" class="footer-nav-2-link">個人情報保護方針</a>
+      </nav>
+      <p class="c-copyright">Copyright &copy; 2023 prime kaji All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- フッター終了 -->
+
+  <div id="backToTop"><div>page<br>top</div></div>
+  
+  <!-- JQuery 読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="/assets/js/css3-animate-it.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
