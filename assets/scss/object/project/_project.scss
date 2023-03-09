@@ -854,3 +854,28 @@ p {
     }
   }
 }
+
+.p-circle-mark {
+  list-style-type: disc;
+  list-style-position: inside;
+  @include overTablet {
+    font-size: 16px;
+  }
+  li::marker {
+    color: #AEA6BC;
+  }
+}
+.p-number-mark {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 18px;
+  @include overTablet {
+    font-size: 16px;
+  }
+  li {
+    padding-left: 6px;
+    &::marker {
+      color: #AEA6BC;
+    }
+  }
+}

@@ -28,12 +28,39 @@
   padding-bottom: 1px;
 }
 
+.mt-10 {
+  @include overTablet {
+    margin-top: 10px;
+  }
+  @include mobile {
+    margin-top: 5px;
+  }
+}
+
+.mt-15 {
+  @include overTablet {
+    margin-top: 15px;
+  }
+  @include mobile {
+    margin-top: 7px;
+  }
+}
+
 .mt-20 {
   @include overTablet {
     margin-top: 20px;
   }
   @include mobile {
     margin-top: 10px;
+  }
+}
+
+.pt-25 {
+  @include overTablet {
+    padding-top: 25px;
+  }
+  @include mobile {
+    padding-top: 10px;
   }
 }
 
@@ -123,6 +150,15 @@
   }
   @include mobile {
     margin-top: 30px;
+  }
+}
+
+.pt-50 {
+  @include overTablet {
+    padding-top: 55px;
+  }
+  @include mobile {
+    padding-top: 30px;
   }
 }
 
@@ -301,6 +337,10 @@
 
 .u-font-bold {
   font-weight: $font-weight-bold;
+}
+
+.u-font-medium {
+  font-weight: 500;
 }
 
 .u-font-small {

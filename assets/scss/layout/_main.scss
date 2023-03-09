@@ -2952,8 +2952,10 @@ body {
   background-color: #CBBFCB;
   border-radius: 2px;
   padding: 2px 4px;
-  letter-spacing: 0.1rem;
-  font-size: 12px;
+  letter-spacing: 0.1rem !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  display: inline-block;
 }
 
 .p-g-meta {
@@ -2965,6 +2967,13 @@ body {
   @include mobile {
     font-size: 13px;
   }
+}
+
+.p-g-date {
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #AEA6BC;
 }
 
 .search-box-cat {
@@ -3129,5 +3138,145 @@ body {
       font-size: 13px;
       margin-top: 5px;
     }
+  }
+}
+
+.related-blog, .top-news {
+  .news-blog-item {
+    .title {
+      font-weight: 500;
+      @include overTablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+  .cat-list {
+    @include overTablet {
+      column-gap: 20px;
+    }
+    @include mobile {
+      column-gap: 10px;
+    }
+    .cat {
+      color: #888275;
+    }
+  }
+}
+
+.single {
+  section {
+    &:not(:first-of-type) {
+      @include overTablet {
+        margin-top: 45px;
+      }
+      @include mobile {
+        margin-top: 25px;
+      }
+    }
+  }
+  p {
+    letter-spacing: 0.05rem;
+    @include overTablet {
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+}
+
+.left-border-title {
+  padding-left: 20px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    display: block;
+    background-color: #CBBFCB;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.quote-box {
+  background-color: #FAFAFA;
+  letter-spacing: 0.05rem;
+  position: relative;
+  @include overTablet {
+    font-size: 15px;
+  }
+  @include desktop {
+    padding: 19px 60px;
+  }
+  @include tablet {
+    padding: 15px 40px;
+  }
+  @include mobile {
+    padding: 10px 25px;
+  }
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    @include desktop {
+      width: 26px;
+      height: 22px;
+    }
+    @include tablet {
+      width: 20px;
+      height: 18px;
+    }
+    @include mobile {
+      width: 16px;
+      height: 14px;
+    }
+  }
+  &::before {
+    background-image: url('/assets/images/icons/quote-left.svg');
+    @include desktop {
+      left: 15px;
+      top: 12px;
+    }
+    @include tablet {
+      left: 12px;
+      top: 10px;
+    }
+    @include mobile {
+      left: 5px;
+      top: 5px;
+    }
+  }
+  &::after {
+    background-image: url('/assets/images/icons/quote-right.svg');
+    @include desktop {
+      right: 15px;
+      bottom: 12px;
+    }
+    @include tablet {
+      right: 12px;
+      bottom: 10px;
+    }
+    @include mobile {
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+}
+
+.single-page-nav-box {
+  border-top: 1px solid #E2E2E2;
+}
+
+.single-page-nav {
+  column-gap: 10px;
+  span {
+    color: #CBBFCB;
+    font-size: 0.75em;
   }
 }
