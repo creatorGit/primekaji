@@ -1,0 +1,298 @@
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section, .main {
+  border-radius: 8px;
+	width: 100%;
+	margin: 0 auto;
+  max-width: 660px;
+}
+.fc-calendar-container {
+	position: relative;
+	@include desktop {
+		height: 480px;
+	}
+	@include tablet {
+		height: 300px;
+	}
+}
+.fc-calendar {
+	width: 100%;
+	height: 100%;
+}
+.fc-calendar .fc-head {
+	height: 30px;
+	line-height: 30px;
+}
+.fc-calendar .fc-body {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 50px);
+	margin-top: 10px;
+	display: grid;
+	row-gap: 8px;
+}
+.fc-calendar .fc-row {
+	width: 100%;
+	display: flex;
+	column-gap: 8px;
+}
+.fc-four-rows .fc-row  {
+	// height: 25%;
+	height: 100%;
+}
+.fc-five-rows .fc-row  {
+	// height: 20%;
+	height: 100%;
+}
+.fc-six-rows .fc-row {
+	// height: 16.66%;
+	height: 100%;
+	// height: -moz-calc(100%/6);
+	// height: -webkit-calc(100%/6);
+	// height: calc(100%/6);
+}
+.fc-calendar .fc-row > div, .fc-calendar .fc-head > div {
+	float: left;
+	height: 100%;
+	width:  14.28%; /* 100% / 7 */
+	width: -moz-calc(100%/7);
+	width: -webkit-calc(100%/7);
+	width: calc(100%/7);
+	position: relative;
+}
+.ie9 .fc-calendar .fc-row > div, .ie9 .fc-calendar .fc-head > div {
+	width:  14.2%;
+}
+.fc-calendar .fc-row > div {
+	overflow: hidden;
+	position: relative;
+	border-radius: 3px;
+	border: 2px solid #E9EAE9;
+}
+.fc-calendar .fc-head > div {
+	text-align: center;
+}
+.fc-calendar .fc-row > div > span.fc-date {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	@include desktop {
+		font-size: 23px;
+	}
+	@include tablet {
+		font-size: 20px;
+	}
+	@include mobile {
+		font-size: 19px;
+	}
+}
+.fc-calendar .fc-row > div > span.fc-weekday {
+	padding-left: 5px;
+	display: none;
+}
+.fc-calendar .fc-row > div.fc-today {
+	background: #fff4c3;
+}
+.fc-calendar .fc-row > div.fc-out {
+	opacity: 0.6;
+}
+.custom-calendar-wrap {
+	position: relative;
+	overflow: hidden;
+}
+.custom-inner {
+	background: #fff;
+  border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.custom-inner:before,.custom-inner:after  {
+	content: '';
+	width: 99%;
+	height: 50%;
+	position: absolute;
+	background: #f6f6f6;
+	bottom: -4px;
+	left: 0.5%;
+	z-index: -1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.custom-inner:after {
+	content: '';
+	width: 98%;
+	bottom: -7px;
+	left: 1%;
+	z-index: -2;
+}
+.custom-header {
+	position: relative;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	& > div {
+		justify-content: center;
+	}
+}
+.custom-header h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+}
+.custom-header nav span {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	color: transparent;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 28px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: #EAEAEA;
+	border-radius: 3px;
+}
+.custom-header nav span:first-child {	left: 0;}
+.custom-header nav span:last-child {	right: 0;}
+.custom-header nav span:before {
+	color: #000;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.custom-header nav span.custom-prev:before {	content: '◀';}
+.custom-header nav span.custom-next:before {	content: '▶';}
+.custom-header nav span:hover:before {	color: #495468;}
+.custom-content-reveal {
+	background: #f6f6f6;
+	background: rgba(246, 246, 246, 0.9);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	top: 100%;
+	left: 0px;
+	text-align: center;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+.custom-content-reveal span.custom-content-close {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	background: #ef4f69;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	cursor: pointer;
+	line-height: 13px;
+	padding: 0;
+}
+.custom-content-reveal span.custom-content-close:after {
+	content: 'x';
+	font-size: 18px;
+	color: #fff;
+}
+.custom-content-reveal a, .custom-content-reveal span {
+	font-size: 22px;
+	padding: 10px 30px;
+	display: block;
+}
+.custom-content-reveal h4 {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: #777;
+	padding: 20px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	border-top: 5px solid #ef4f69;
+	box-shadow: 0 1px rgba(255,255,255,0.9);
+	margin-bottom: 30px;
+}
+.custom-content-reveal span {	color: #888;}
+.custom-content-reveal a {	color: #ef4f69;}
+.custom-content-reveal a:hover {	color: #333;}
+
+/* Modifications */
+.fc-calendar-container {
+	width: auto;
+	@include desktop {
+		margin-top: 40px;
+	}
+	@include tablet {
+		margin-top: 30px;
+	}
+	@include mobile {
+		margin-top: 20px;
+	}
+}
+.fc-calendar .fc-head {
+	background: transparent;
+	font-weight: 400;
+	text-transform: uppercase;
+	@include overTablet {
+		font-size: 20px;
+	}
+	@include mobile {
+		font-size: 17px;
+	}
+}
+.fc-calendar .fc-row > div {
+	background: #fff;
+	cursor: pointer;
+}
+.fc-calendar .fc-row > div:empty {
+	background: transparent;
+}
+.fc-calendar .fc-row > div > span.fc-date {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 400;
+}
+.fc-calendar .fc-row > div.fc-today {
+	background: $secondary-color;
+	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
+}
+.fc-calendar .fc-row > div.fc-today > span.fc-date {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.fc-calendar .fc-row > div.fc-content:after {
+	content: '\00B7';
+	text-align: center;
+	width: 20px;
+	margin-left: -10px;
+	position: absolute;
+	color: #DDD;
+	font-size: 70px;
+	line-height: 20px;
+	left: 50%;
+	bottom: 3px;
+}
+.fc-calendar .fc-row > div.fc-today.fc-content:after {	color: #b02c42;}
+.fc-calendar .fc-row > div.fc-content:hover:after{	color: #ef4f69;}
+.fc-calendar .fc-row > div.fc-today.fc-content:hover:after{	color: #fff;}
+.fc-calendar .fc-row > div > div a, .fc-calendar .fc-row > div > div span {
+	display: none;
+	font-size: 16px;
+}
+@include mobile {
+	.fc-calendar-container {	height: 275px;	}
+	.fc-calendar .fc-row > div > span.fc-date {		font-size: 12px;	}
+}

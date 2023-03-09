@@ -113,19 +113,281 @@
             <input type="search" name="kSearch" id="kSearch" placeholder="キーワード検索">
             <button type="submit" class="flex align-items-center search-btn _brown">検 索<img src="/assets/images/icons/search-white.svg" alt="icon"></button>
           </form>
-          <div class="grid mt-25">
-            <div class="grid align-items-center grid-lg-3 grid-dm-3 grid-sm-1">
-              <form action="">
-                <div class="select-wrap">
-                  <fieldset>
-                    <select name="area" id="">
-                      <option hidden selected disabled>選択してください</option>
-                      <span>▼</span>
-                    </select>
-                  </fieldset>
+          <div class="search-grid-wrap grid mt-25">
+            <div class="search-grid grid grid-lg-3">
+              <div class="select-btn-wrap">
+                <p class="p-sub-title-2 u-font-bold">エリアで絞り込む</p>
+                <button type="button" id="select-button" class="select-button search-sel-btn flex align-items-center justify-content-between mt-20" data-target="#search-box-area">選択してください<span>▼</span></button>
+              </div>
+              <div class="select-btn-wrap">
+                <p class="p-sub-title-2 u-font-bold">希望日時で絞り込む</p>
+                <button type="button" id="calendar-button" class="calendar-button search-sel-btn flex align-items-center justify-content-between mt-20" data-target="#search-box-calendar">希望日時<img src="/assets/images/icons/calendar-new.svg" alt="icon"></button>
+              </div>
+              <div class="select-btn-wrap">
+                <button type="button" id="detail-btn" class="detail-btn search-sel-btn flex align-items-center" data-target="#search-box-detail">詳しい条件で絞り込む<span>▼</span></button>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="primary-btn-brown">絞り込む</button>
+            </div>
+          </div>
+        </div>
+        <div id="search-box-area" class="search-box-details">
+          <div class="inner">
+            <div class="flex">
+              <div class="search-from-postcode">
+                <p class="p-sub-title-2 u-font-bold">郵便番号から探す</p>
+                <form action="" class="key-search search-box-icon flex align-items-center mt-20">
+                  <input type="search" name="postcode-Search" id="kSearch" placeholder="例: 000-0000">
+                  <button type="submit" class="flex align-items-center search-btn _brown _icon bg-white"><img src="/assets/images/icons/search-brown.svg" alt="icon"></button>
+                </form>
+              </div>
+              <div class="search-from-station">
+                <p class="p-sub-title-2 u-font-bold">最寄駅から探す</p>
+                <form action="" class="key-search search-box-icon flex align-items-center mt-20">
+                  <input type="search" name="station-Search" id="kSearch" placeholder="例:三宮駅">
+                  <button type="submit" class="flex align-items-center search-btn _brown _icon bg-white"><img src="/assets/images/icons/search-brown.svg" alt="icon"></button>
+                </form>
+              </div>
+            </div>
+            <div class="search-from-province mt-35">
+              <p class="p-sub-title-2 u-font-bold">都道府県から探す</p>
+              <div class="u-pc-tab-show mt-20">
+                <ul class="province-filter-btns flex align-items-center flex-wrap">
+                  <li class="province-filter-btn active">北海道</li>
+                  <li class="province-filter-btn">東北</li>
+                  <li class="province-filter-btn">関東</li>
+                  <li class="province-filter-btn">中部</li>
+                  <li class="province-filter-btn">近畿</li>
+                  <li class="province-filter-btn">中国</li>
+                  <li class="province-filter-btn">四国</li>
+                  <li class="province-filter-btn">九州・沖縄</li>
+                </ul>
+                <div class="filter-contents mt-25">
+                  <ul class="area-list flex align-items-center flex-wrap">
+                    <li class="area-item"><a href="!#" class="area-link">北海道</a></li>
+                  </ul>
                 </div>
+              </div>
+              <div class="u-sp-show mt-20">
+                <form action="" class="form">
+                  <fieldset>
+                    <div class="select-wrap">
+                      <select name="province" id="">
+                        <option selected hidden disabled>選択してください</option>
+                        <option value="hokkaido">北海道</option>
+                        <option value="aomori">青森県</option>
+                        <option value="iwate">岩手県</option>
+                        <option value="miyagi">宮城県</option>
+                        <option value="akita">秋田県</option>
+                        <option value="yamagata">山形県</option>
+                        <option value="fukushima">福島県</option>
+                        <option value="ibaraki">茨城県</option>
+                        <option value="tochigi">栃木県</option>
+                        <option value="gunma">群馬県</option>
+                        <option value="saitama">埼玉県</option>
+                        <option value="chiba">千葉県</option>
+                        <option value="tokyo">東京都</option>
+                        <option value="kanagawa">神奈川県</option>
+                        <option value="niigata">新潟県</option>
+                        <option value="toyama">富山県</option>
+                        <option value="ishikawa">石川県</option>
+                        <option value="fukui">福井県</option>
+                        <option value="yamanashi">山梨県</option>
+                        <option value="nagano">長野県</option>
+                        <option value="gifu">岐阜県</option>
+                        <option value="shizuoka">静岡県</option>
+                        <option value="aichi">愛知県</option>
+                        <option value="mie">三重県</option>
+                        <option value="shiga">滋賀県</option>
+                        <option value="kyoto">京都府</option>
+                        <option value="osaka">大阪府</option>
+                        <option value="hyogo">兵庫県</option>
+                        <option value="nara">奈良県</option>
+                        <option value="wakayama">和歌山県</option>
+                        <option value="tottori">鳥取県</option>
+                        <option value="shimane">島根県</option>
+                        <option value="okayama">岡山県</option>
+                        <option value="hiroshima">広島県</option>
+                        <option value="yamaguchi">山口県</option>
+                        <option value="tokushima">徳島県</option>
+                        <option value="kagawa">香川県</option>
+                        <option value="ehime">愛媛県</option>
+                        <option value="kochi">高知県</option>
+                        <option value="fukuoka">福岡県</option>
+                        <option value="saga">佐賀県</option>
+                        <option value="nagasaki">長崎県</option>
+                        <option value="kumamoto">熊本県</option>
+                        <option value="oita">大分県</option>
+                        <option value="miyazaki">宮崎県</option>
+                        <option value="kagoshima">鹿児島県</option>
+                        <option value="okinawa">沖縄県</option>
+                      </select>
+                      <span>▼</span>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <button class="search-close-btn mt-20">▲ 閉じる</button>
+          </div>
+        </div>
+        <div id="search-box-calendar" class="search-box-details">
+          <div class="inner">
+            <div class="flex">
+              <div class="calendar-box">
+                <p class="p-sub-title-2 u-font-bold">希望日付</p>
+                <div class="mt-45">
+                  <div class="c-calendar">
+                    <section>
+                      <div class="main">
+                        <div class="custom-calendar-wrap">
+                          <div id="custom-inner" class="custom-inner">
+                            <div class="custom-header u-clearfix">
+                              <nav class="u-clearfix">
+                                <span id="custom-prev" class="custom-prev"></span>
+                                <span id="custom-next" class="custom-next"></span>
+                              </nav>
+                              <div class="flex">
+                                <h2 id="custom-year" class="custom-year"></h2>
+                                <h2>年</h2>
+                                <h2 id="custom-month" class="custom-month"></h2>
+                              </div>
+                            </div>
+                            <div id="calendar" class="fc-calendar-container"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="time-cats cook-cats">
+                <p class="p-sub-title-2 u-font-bold">開始時間帯</p>
+                <form action="" class="form mt-45">
+                  <fieldset>
+                    <label for="" class="checkbox">
+                      <span>9：00～12：00</span>
+                      <input type="checkbox" name="">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label for="" class="checkbox">
+                      <span>13：00～16：00</span>
+                      <input type="checkbox" name="">
+                      <span class="checkmark"></span>
+                    </label>                  
+                    <label for="" class="checkbox">
+                      <span>17：00～21：00</span>
+                      <input type="checkbox" name="">
+                      <span class="checkmark"></span>
+                    </label>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <button class="c-view-more-btn primary-btn-brown mt-35">クリアにする</button>
+            <button class="search-close-btn mt-20">▲ 閉じる</button>
+          </div>
+        </div>
+        <div id="search-box-detail" class="search-box-details">
+          <div class="inner">
+            <p class="p-sub-title-2 u-font-bold">お料理代行</p>
+            <div class="cook-cats mt-20">
+              <form action="" class="form">
+                <fieldset>
+                  <label for="JapaneseFood" class="checkbox">
+                    <span>和食</span>
+                    <input type="checkbox" name="JapaneseFood">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="westernFood" class="checkbox">
+                    <span>洋食</span>
+                    <input type="checkbox" name="westernFood">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="italian" class="checkbox">
+                    <span>イタリアン</span>
+                    <input type="checkbox" name="italian">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="chinese" class="checkbox">
+                    <span>中華</span>
+                    <input type="checkbox" name="chinese">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="preMade" class="checkbox">
+                    <span>作り置き</span>
+                    <input type="checkbox" name="preMade">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="allergicMaterial" class="checkbox">
+                    <span>アレルギー食材対応</span>
+                    <input type="checkbox" name="allergicMaterial">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="babyFood" class="checkbox">
+                    <span>離乳食</span>
+                    <input type="checkbox" name="babyFood">
+                    <span class="checkmark"></span>
+                  </label>              
+                  <label for="certificate" class="checkbox">
+                    <span>管理栄養士資格</span>
+                    <input type="checkbox" name="certificate">
+                    <span class="checkmark"></span>
+                  </label>             
+                  <label for="designationOk" class="checkbox">
+                    <span>食材指定OK</span>
+                    <input type="checkbox" name="designationOk">
+                    <span class="checkmark"></span>
+                  </label>            
+                  <label for="other" class="checkbox">
+                    <span>その他</span>
+                    <input type="checkbox" name="other">
+                    <span class="checkmark"></span>
+                  </label>
+                </fieldset>
               </form>
             </div>
+            <div class="staff-cats cook-cats flex align-items-center mt-45">
+              <p class="p-sub-title-2 u-font-bold">性別</p>
+              <form action="" class="form">
+                <fieldset>
+                  <label for="man" class="checkbox">
+                    <span>男性</span>
+                    <input type="checkbox" name="man">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="woman" class="checkbox">
+                    <span>女性</span>
+                    <input type="checkbox" name="woman">
+                    <span class="checkmark"></span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+            <div class="language-cats cook-cats flex flex-wrap align-items-center mt-45">
+              <p class="p-sub-title-2 u-font-bold">言語</p>
+              <form action="" class="form">
+                <fieldset>
+                  <label for="Japanese" class="checkbox">
+                    <span>日本語</span>
+                    <input type="checkbox" name="Japanese">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label for="English" class="checkbox">
+                    <span>英語</span>
+                    <input type="checkbox" name="English">
+                    <span class="checkmark"></span>
+                  </label>                  
+                  <label for="Chinese" class="checkbox">
+                    <span>中国語</span>
+                    <input type="checkbox" name="Chinese">
+                    <span class="checkmark"></span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+            <button class="search-close-btn mt-20">▲ 閉じる</button>
           </div>
         </div>
       </div>
@@ -572,7 +834,7 @@
       <div class="title-wrap text-center">
         <h2 class="p-section-title animated fadeInUpShort">エリアで絞りこむ</h2>
       </div>
-      <ul class="area-list mt-50 flex align-items-center flex-wrap animated fadeInUpShort mt-55">
+      <ul class="area-list flex align-items-center flex-wrap animated fadeInUpShort mt-55">
         <li class="area-item"><a href="!#" class="area-link">北海道</a></li>
         <li class="area-item"><a href="!#" class="area-link">青森県</a></li>
         <li class="area-item"><a href="!#" class="area-link">岩手県</a></li>
@@ -816,6 +1078,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="/assets/js/css3-animate-it.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/calendar.js"></script>
 </body>
 
 </html>

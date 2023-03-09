@@ -336,11 +336,11 @@
 }
 
 .u-font-bold {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold !important;
 }
 
 .u-font-medium {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .u-font-small {

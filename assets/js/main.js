@@ -357,3 +357,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 });
+
+$(document).ready(function() {
+  $('.search-sel-btn').click(function() {
+    $(this).toggleClass('active');
+    var target = $(this).attr('data-target');
+    if ($(target).height() == 0) {
+      var height = $(target).children('.inner').innerHeight();
+      $(target).css('max-height', height);
+    } else {
+      $(target).css('max-height', '');
+    }    
+  });
+
+  $('.search-close-btn').click(function() {
+    $(this).parent().parent().css('max-height', '');
+  })
+});

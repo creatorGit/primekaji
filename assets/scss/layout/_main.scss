@@ -3036,6 +3036,9 @@ body {
     &._brown {
       background-color: $secondary-color;
     }
+    &._icon {
+      width: 60px;
+    }
   }
 }
 
@@ -3297,5 +3300,180 @@ body {
   }
   .key-search {
     max-width: 520px;
+  }
+}
+
+.search-grid {
+  column-gap: 24px;
+  @include overTablet {
+    align-items: flex-end;
+  }  
+  @include tablet {
+    row-gap: 30px;
+  }
+  @include mobile {
+    row-gap: 15px;
+  }
+  .select-btn-wrap {
+    button {
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      position: relative;
+      @include overTablet {
+        height: 57px;
+      }
+      @include mobile {
+        height: 50px;
+      }
+      &:not(.detail-btn) {
+        background-color: #fff;
+        padding: 10px 16px 10px 20px;
+      }
+      &.detail-btn {
+        background-color: transparent;
+        padding: 0;
+        column-gap: 5px;
+        font-weight: 500;
+        @include overTablet {
+          max-width: 190px;
+        }
+        @include mobile {
+          justify-content: center;
+          height: 30px;
+        }
+      }
+      &.calendar-button {
+        color: #9D9D9D;
+      }
+      &.select-button {
+        span {
+          font-size: 0.6em;
+        }
+      }
+      &.active {
+        @include desktop {
+          &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 22.5px 21px 22.5px;
+            border-color: transparent transparent #ffffff transparent;
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-grid-wrap {
+  @include overTablet {
+    grid-template-columns: 3fr 1fr;
+    align-items: flex-end;
+    column-gap: 30px;
+  }
+  @include mobile {
+    row-gap: 15px;
+  }
+  .primary-btn-brown {
+    width: 100%;    
+    @include overTablet {
+      max-width: 180px;
+      margin-left: auto;
+    }
+    @include mobile {
+      max-width: 275px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.search-box-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: all ease-in-out;
+  background-color: #fff;
+  .inner {
+    @include overTablet {
+      padding: 55px 30px 20px;
+    }
+    @include mobile {
+      padding: 23px 19px 10px;
+    }
+    & > .flex {
+      @include desktop {
+        column-gap: 50px;
+      }
+      @include tablet {
+        column-gap: 20px;
+      }
+      @include mobile {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }  
+  .form {
+    fieldset {
+      padding: 0;
+    }
+  }
+  .calendar-box {
+    @include overTablet {
+      width: 60%;
+    }
+  }
+}
+
+.province-filter-btns {
+  border-bottom: 1px solid #C9BFCA;
+  gap: 7px;
+  .province-filter-btn {
+    background-color: #E6E6E6;
+    letter-spacing: 0.1rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      background-color: #C9BFCA;
+      color: #fff;
+    }
+    padding: 4px 15px;
+    font-size: 16px;
+  }
+}
+
+.search-close-btn {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  background-color: transparent;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  display: block;
+  color: $primary-color;
+}
+
+.staff-cats, .language-cats, .time-cats {
+  @include mobile {
+    flex-direction: row !important;
+    column-gap: 30px;
+    row-gap: 10px !important;
+  }
+  .form {
+    fieldset {
+      column-gap: 20px;
+    }
   }
 }
