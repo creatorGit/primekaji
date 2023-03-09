@@ -372,5 +372,6 @@ $(document).ready(function() {
 
   $('.search-close-btn').click(function() {
     $(this).parent().parent().css('max-height', '');
+    $('.search-sel-btn').removeClass('active');
   })
 });
