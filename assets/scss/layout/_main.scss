@@ -2141,8 +2141,8 @@ body {
 .mv-sec {
   .mv-wrap {
     position: relative;
+    display: flex;
     @include desktop {
-      display: flex;
       align-items: stretch;
     }
     @media screen and (max-width: 960px) {
@@ -2158,23 +2158,13 @@ body {
     @include desktop {
       width: 37%;
     }
-    @media screen and (max-width: 960px) {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-      background-image: none;
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      overflow: hidden;;
-    }
     @include tablet {
-      max-width: 300px;
+      padding-top: 50px;
+      padding-bottom: 120px;
     }
     @include mobile {
-      max-width: 170px;
+      padding-top: 25px;
+      padding-bottom: 110px;
     }
     &::before {
       content: '';
@@ -2203,14 +2193,6 @@ body {
         @media screen and (max-width: 960px) {
           text-align: center;
         }
-        @include tablet {
-          margin-top: 30px;
-          margin-bottom: 10px;
-        }
-        @include mobile {
-          margin-top: 15px;
-          margin-bottom: 5px;
-        }
       }
     }
     .mv-title {
@@ -2220,17 +2202,13 @@ body {
       position: relative;
       display: inline-block;
       letter-spacing: 0.1rem;
-      @include desktop {
+      @include overTablet {
         font-size: 43px;
         margin-bottom: 35px;
       }
-      @include tablet {
-        font-size: 32px;
-        margin-bottom: 15px;
-      }
       @include mobile {
-        font-size: 22px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        margin-bottom: 15px;
       }
       &::after {
         content: '';
@@ -2240,18 +2218,16 @@ body {
         background-color: #fff;
         position: absolute;
         left: 0;
-        @include desktop {
+        @include overTablet {
           bottom: -25px;
         }
         @media screen and (max-width: 960px) {
           left: 50%;
           transform: translateX(-50%);
         }
-        @include tablet {
-          bottom: -15px;
-        }
         @include mobile {
-          bottom: -10px;
+          width: 130px;
+          bottom: -15px;
         }
       }
     }
@@ -2260,14 +2236,11 @@ body {
       letter-spacing: 0.05rem;
       color: #fff;
       position: relative;
-      @include desktop {
+      @include overTablet{
         font-size: 49px;
       }
-      @include tablet {
-        font-size: 36px;
-      }
       @include mobile {
-        font-size: 24px;
+        font-size: 33px;
       }
     }
   }
@@ -2281,11 +2254,23 @@ body {
     }
     img {
       &.new-open {
-        max-width: 52%;
         position: absolute;
-        right: 0;
-        top: 0;
         z-index: 1;
+        @include desktop {
+          max-width: 52%;
+          right: 0;
+          top: 0;
+        }
+        @media screen and (max-width: 960px) {
+          left: 0;
+        }
+        @include tablet {
+          bottom: -30px;
+        }
+        @include mobile {
+          width: 240px;
+          bottom: -15px;
+        }
       }
     }
   }
@@ -2300,18 +2285,20 @@ body {
   }
   .inner {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     @include desktop {
       margin-top: -60px;
       max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     }
     @include overTablet {
       padding: 20px 25px 30px;
+      margin-top: -90px;
     }
     @include mobile {
-      padding-top: 20px;
+      padding: 15px 12px 20px;
+      margin-top: -100px;
     }
   }
   h2 {

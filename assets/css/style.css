@@ -2860,10 +2860,10 @@ body.loggedin #nav-menu .logout {
 
 .mv-sec .mv-wrap {
   position: relative;
+  display: flex;
 }
 @media (min-width: 961px) {
   .mv-sec .mv-wrap {
-    display: flex;
     align-items: stretch;
   }
 }
@@ -2884,28 +2884,16 @@ body.loggedin #nav-menu .logout {
     width: 37%;
   }
 }
-@media screen and (max-width: 960px) {
-  .mv-sec .txt-box {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    background-image: none;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    overflow: hidden;
-  }
-}
 @media (min-width: 521px) and (max-width: 960px) {
   .mv-sec .txt-box {
-    max-width: 300px;
+    padding-top: 50px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
   .mv-sec .txt-box {
-    max-width: 170px;
+    padding-top: 25px;
+    padding-bottom: 110px;
   }
 }
 .mv-sec .txt-box::before {
@@ -2939,18 +2927,6 @@ body.loggedin #nav-menu .logout {
     text-align: center;
   }
 }
-@media (min-width: 521px) and (max-width: 960px) {
-  .mv-sec .txt-box .wrap .inner {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 240px) and (max-width: 520px) {
-  .mv-sec .txt-box .wrap .inner {
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-}
 .mv-sec .txt-box .mv-title {
   font-family: "Noto Serif JP", sans-serif;
   color: #fff;
@@ -2959,22 +2935,16 @@ body.loggedin #nav-menu .logout {
   display: inline-block;
   letter-spacing: 0.1rem;
 }
-@media (min-width: 961px) {
+@media (min-width: 521px) {
   .mv-sec .txt-box .mv-title {
     font-size: 43px;
     margin-bottom: 35px;
   }
 }
-@media (min-width: 521px) and (max-width: 960px) {
-  .mv-sec .txt-box .mv-title {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-}
 @media (min-width: 240px) and (max-width: 520px) {
   .mv-sec .txt-box .mv-title {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 }
 .mv-sec .txt-box .mv-title::after {
@@ -2986,7 +2956,7 @@ body.loggedin #nav-menu .logout {
   position: absolute;
   left: 0;
 }
-@media (min-width: 961px) {
+@media (min-width: 521px) {
   .mv-sec .txt-box .mv-title::after {
     bottom: -25px;
   }
@@ -2997,14 +2967,10 @@ body.loggedin #nav-menu .logout {
     transform: translateX(-50%);
   }
 }
-@media (min-width: 521px) and (max-width: 960px) {
-  .mv-sec .txt-box .mv-title::after {
-    bottom: -15px;
-  }
-}
 @media (min-width: 240px) and (max-width: 520px) {
   .mv-sec .txt-box .mv-title::after {
-    bottom: -10px;
+    width: 130px;
+    bottom: -15px;
   }
 }
 .mv-sec .txt-box p {
@@ -3013,19 +2979,14 @@ body.loggedin #nav-menu .logout {
   color: #fff;
   position: relative;
 }
-@media (min-width: 961px) {
+@media (min-width: 521px) {
   .mv-sec .txt-box p {
     font-size: 49px;
   }
 }
-@media (min-width: 521px) and (max-width: 960px) {
-  .mv-sec .txt-box p {
-    font-size: 36px;
-  }
-}
 @media (min-width: 240px) and (max-width: 520px) {
   .mv-sec .txt-box p {
-    font-size: 24px;
+    font-size: 33px;
   }
 }
 .mv-sec .img-box {
@@ -3042,11 +3003,31 @@ body.loggedin #nav-menu .logout {
   }
 }
 .mv-sec .img-box img.new-open {
-  max-width: 52%;
   position: absolute;
-  right: 0;
-  top: 0;
   z-index: 1;
+}
+@media (min-width: 961px) {
+  .mv-sec .img-box img.new-open {
+    max-width: 52%;
+    right: 0;
+    top: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mv-sec .img-box img.new-open {
+    left: 0;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .mv-sec .img-box img.new-open {
+    bottom: -30px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .mv-sec .img-box img.new-open {
+    width: 240px;
+    bottom: -15px;
+  }
 }
 
 @media (min-width: 521px) {
@@ -3061,24 +3042,26 @@ body.loggedin #nav-menu .logout {
 }
 .top-search-area .inner {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 961px) {
   .top-search-area .inner {
     margin-top: -60px;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   }
 }
 @media (min-width: 521px) {
   .top-search-area .inner {
     padding: 20px 25px 30px;
+    margin-top: -90px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
   .top-search-area .inner {
-    padding-top: 20px;
+    padding: 15px 12px 20px;
+    margin-top: -100px;
   }
 }
 .top-search-area h2 {

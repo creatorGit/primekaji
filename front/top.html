@@ -88,14 +88,20 @@
         <div class="txt-box">
           <div class="wrap">
             <div class="inner">
-              <h1 class="mv-title">見つけた<br>憧れの暮らし</h1>
+              <h1 class="mv-title">見つけた<br class="u-pc-show">憧れの暮らし</h1>
               <p>get a new life</p>
             </div>
           </div>
         </div>
         <div class="img-box">
-          <img src="/assets/images/new-open.png" alt="tag" class="new-open">
-          <img src="/assets/images/mv-2.jpg" alt="mv" class="main-img">
+          <picture>
+            <source media="(max-width: 960px)" srcset="/assets/images/new-open-sp.png" class="new-open">
+            <img src="/assets/images/new-open.png" alt="tag" class="new-open">
+          </picture>
+          <picture>
+            <source media="(max-width: 520px)" srcset="/assets/images/mv-2-sp.jpg" class="main-img">
+            <img src="/assets/images/mv-2.jpg" alt="mv" class="main-img">
+          </picture>
         </div>
       </div>
     </div>
@@ -235,13 +241,74 @@
       </div>
     </div>
   
-    <div class="news mt-100">
+    <div class="top-news mt-100">
       <div class="container">
         <div class="title-wrap text-center">
           <p class="p-main-title-en-2">News</p>
           <h2 class="p-section-title mt-2">お知らせ</h2>
         </div>
-  
+        <ul class="news-blog-list grid grid-lg-4 grid-md-3 grid-sm-2 mt-80">
+          <li class="article news-blog-item">
+            <a href="!#">
+              <div class="img-box">
+                <img src="/assets/images/chuttersnap-blog.jpg" alt="thumbnail">
+              </div>
+              <div class="details mt-20">
+                <p class="date">2023.3.21</p>
+                <h3 class="title">こちらにはダミーです。記事タイトルが入ります。こちらにはダミーです。</h3>
+                <ul class="cat-list flex align-items-center mt-10">
+                  <li class="cat">#カテゴリ</li>
+                  <li class="cat">#カテゴリ</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article news-blog-item">
+            <a href="!#">
+              <div class="img-box">
+                <img src="/assets/images/heather-ford-2.jpg" alt="thumbnail">
+              </div>
+              <div class="details mt-20">
+                <p class="date">2023.3.21</p>
+                <h3 class="title">こちらにはダミーです。記事タイトルが入ります。こちらにはダミーです。</h3>
+                <ul class="cat-list flex align-items-center mt-10">
+                  <li class="cat">#カテゴリ</li>
+                  <li class="cat">#カテゴリ</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article news-blog-item">
+            <a href="!#">
+              <div class="img-box">
+                <img src="/assets/images/brooke-lark.jpg" alt="thumbnail">
+              </div>
+              <div class="details mt-20">
+                <p class="date">2023.3.21</p>
+                <h3 class="title">こちらにはダミーです。記事タイトルが入ります。こちらにはダミーです。</h3>
+                <ul class="cat-list flex align-items-center mt-10">
+                  <li class="cat">#カテゴリ</li>
+                  <li class="cat">#カテゴリ</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article news-blog-item">
+            <a href="!#">
+              <div class="img-box">
+                <img src="/assets/images/heather-ford.jpg" alt="thumbnail">
+              </div>
+              <div class="details mt-20">
+                <p class="date">2023.3.21</p>
+                <h3 class="title">こちらにはダミーです。記事タイトルが入ります。こちらにはダミーです。</h3>
+                <ul class="cat-list flex align-items-center mt-10">
+                  <li class="cat">#カテゴリ</li>
+                  <li class="cat">#カテゴリ</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   
