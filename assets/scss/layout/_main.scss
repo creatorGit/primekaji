@@ -3033,6 +3033,9 @@ body {
         width: 20px;
       }
     }
+    &._brown {
+      background-color: $secondary-color;
+    }
   }
 }
 
@@ -3278,5 +3281,21 @@ body {
   span {
     color: #CBBFCB;
     font-size: 0.75em;
+  }
+}
+
+.search-box-inner {
+  background-color: #DDD8CD;
+  @include desktop {
+    padding: 33px 30px 40px;
+  }
+  @include tablet {
+    padding: 23px 20px 30px;
+  }
+  @include mobile {
+    padding: 15px 12px 25px;
+  }
+  .key-search {
+    max-width: 520px;
   }
 }

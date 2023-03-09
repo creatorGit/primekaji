@@ -3964,6 +3964,9 @@ body.loggedin #nav-menu .logout {
     width: 20px;
   }
 }
+.search-box-icon button._brown {
+  background-color: #B19D70;
+}
 
 @media (min-width: 961px) {
   .left-col {
@@ -4263,6 +4266,28 @@ body.loggedin #nav-menu .logout {
 .single-page-nav span {
   color: #CBBFCB;
   font-size: 0.75em;
+}
+
+.search-box-inner {
+  background-color: #DDD8CD;
+}
+@media (min-width: 961px) {
+  .search-box-inner {
+    padding: 33px 30px 40px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .search-box-inner {
+    padding: 23px 20px 30px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .search-box-inner {
+    padding: 15px 12px 25px;
+  }
+}
+.search-box-inner .key-search {
+  max-width: 520px;
 }
 
 @media (min-width: 961px) {
