@@ -2919,9 +2919,11 @@ body {
   @include mobile {
     flex-direction: column;
     row-gap: 7px;
-    align-items: flex-end;
     padding-top: 16px;
     padding-bottom: 10px;
+    a {
+      justify-content: flex-end;
+    }
   }
   .meta {
     column-gap: 15px;
@@ -3025,6 +3027,16 @@ body {
     }
     &._icon {
       width: 60px;
+    }
+  }
+  &._side-search {
+    button {
+      @include overTablet {
+        width: 74px;
+        img {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -3673,3 +3685,98 @@ body {
     }
   }
 }
+
+.side-col {
+  .qa-cat-wrap {
+    @include overTablet {
+      row-gap: 20px;
+    }
+    a {
+      justify-content: space-between;
+      @include overTablet {
+        height: 49px;
+        font-size: 17px;
+      }
+      span {
+        color: #CBBFCB;
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+.q-wrap {
+  @include overTablet {
+    column-gap: 20px;
+  }
+  @include mobile {
+    column-gap: 8px;
+  }
+  .q-mark {
+    color: #AEA6BC;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    font-size: 30px;
+  }
+}
+.qa-result-display {
+  @include overTablet {
+    justify-content: space-between;
+  }
+  @include mobile {
+    flex-direction: column;
+    row-gap: 6px;
+  }
+  .title {
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    @include overTablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+  .result-num {
+    @include overTablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+
+.a-text {
+  @include overTablet {
+    font-size: 15px;
+  }
+}
+.a-mark {
+  color: #CDBC95;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  @include overTablet {
+    font-size: 53px;
+  }
+  @include mobile {
+    font-size: 42px;
+  }
+}
+.contact-to-support-center {
+  color: $secondary-color;
+  font-weight: 500;
+  column-gap: 10px;
+  span {
+    font-size: 0.75em;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+
