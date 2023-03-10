@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>本人確認書類登録の完了 | マイページ</title>
+  <title>パスワード再設定</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">本人確認書類登録の完了</li>
+        <li class="breadcrumb-item">パスワード再設定</li>
       </ul>
     </div>
   </div>
@@ -86,28 +86,31 @@
 
   <div class="l-main">
     <div id="main" class="container">
-      <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort active">マイページ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000">登録内容</a>
-      </div>
-
-      <div class="mt-50">
-        <div class="animatedParent">
-          <h2 class="p-main-title animated fadeInLeftShort">本人確認書類登録の完了</h2>
-          <p class="p-main-desc animated fadeInUpShort">本人確認のリクエストが完了しました。
-            <br>運営事務局にて、頂いた個人情報と身分証明書の項目を確認し、本人確認承認の手続きを行います。
-            <br>恐れ入りますが、本人確認承認まで今しばらくお待ちください。</p>
-          <p class="p-sub-desc animated fadeInUpShort mt-20">本人確認申請の状況は、マイページトップにてご確認頂けます。</p>
-        </div>
-        <div class="container-inner">
-          <form action="" class="form animatedParent">
-            <div class="grid two-btn-wrap animated fadeInUpShort mt-60">
-              <a href="!#" class="outline-btn custom_outline-btn">マイページTOP</a>
-              <a href="!#" class="c-view-more-btn primary-btn-brown">サービスTOP</a>
+      <div class="animatedParent mt-50">          
+        <div class="pw-reset-box bg-white pt-40 pb-70 _box-shadow animated fadeInUpShort">
+          <div class="text-center img-box">
+            <img src="/assets/images/header_logo.svg" alt="">
+          </div>
+          <h2 class="text-center p-main-title mt-40">パスワード再設定</h2>
+          <p class="text-center p-main-desc mt-25">新しいパスワードを入力して<br class="u-sp-show">設定ボタンを押してください。</p>
+          <form action="" class="form mt-40">
+            <div class="form-wrap">
+              <fieldset class="grid required">
+                <label for="password" class="flex align-items-center">新しいパスワードを入力<span>必須</span></label>
+                <div class="position-relative login-pw-wrap">
+                  <input id="textPassword" name="password" type="password" placeholder="●●●●●●●●" required>
+                  <span id="buttonEye" class="fa fa-eye toggle-eyes" onclick="pushHideButton()"></span>
+                </div>
+              </fieldset>
+              <fieldset class="grid required">
+                <label for="password-confirm" class="flex align-items-center">パスワード(確認)<span>必須</span></label>
+                <div class="position-relative login-pw-wrap">
+                  <input id="textPassword-2" name="password-confirm" type="password" placeholder="●●●●●●●●" required>
+                  <span id="buttonEye-2" class="fa fa-eye toggle-eyes" onclick="pushHideButton2()"></span>
+                </div>
+              </fieldset>
             </div>
+            <input type="submit" class="c-view-more-btn primary-btn-brown mt-40" value="設定">
           </form>
         </div>
       </div>

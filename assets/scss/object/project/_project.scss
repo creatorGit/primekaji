@@ -107,6 +107,33 @@
   }
 }
 
+.p-sub-title-3 {
+  border-bottom: 1px solid #C9BFCA;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  align-items: center;
+  @include overTablet {
+    padding-bottom: 16px;
+    font-size: 26px;
+    column-gap: 30px;
+  }
+  @include mobile {
+    padding-bottom: 12px;
+    font-size: 17px;
+    column-gap: 20px;
+    row-gap: 3px;
+  }
+  span {
+    font-weight: 400;
+    @include overTablet {
+      font-size: 14px;
+    }
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+}
+
 .p-section-title {
   font-family: 'Noto Serif JP', sans-serif;
   @include desktop {

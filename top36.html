@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>マイページ</title>
+  <title>退会</title>
   <link rel="icon" href="assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -78,7 +78,7 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">マイページ</li>
+        <li class="breadcrumb-item">退会</li>
       </ul>
     </div>
   </div>
@@ -87,18 +87,47 @@
   <div class="l-main">
     <div id="main" class="container">
       <div class="m-top-btn-wrap animatedParent flex align-items-center flex-wrap">
-        <a href="!#" class="outline-btn animated fadeInDownShort active">マイページ</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort">マイページ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-250">メッセージ</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-500">予約状況の確認</a>
         <a href="!#" class="outline-btn animated fadeInDownShort delay-750">お気に入り</a>
-        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000">登録内容</a>
+        <a href="!#" class="outline-btn animated fadeInDownShort delay-1000 active">登録内容</a>
       </div>
-
       <div class="main-col">
-        
+        <div class="animatedParent">
+          <h2 class="p-main-title animated fadeInLeftShort">退会</h2>
+          <p class="p-main-desc animated fadeInUpShort">本当に退会してもよろしいですか？<br>これまでプライムカジを利用した情報は削除されますのでご注意下さい。</p>
+          <p class="p-sub-desc animated fadeInUpShort mt-3">※登録情報は、一定期間経過後に削除されます。この猶予期間はサービス利用に関するトラブルを防ぐために設けられています。</p>
+        </div>
+        <div class="container-inner">
+          <form action="" class="form animatedParent">
+            <div class="grid two-btn-wrap animated fadeInUpShort mt-60">
+              <a href="!#" class="outline-btn custom_outline-btn">退会しない</a>
+              <input type="button" class="c-view-more-btn primary-btn-brown modalShowBtn" data-target="#signoutModal-2" value="退会する">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal-wrap" id="signoutModal-2">
+    <div class="mask"></div>
+    <div class="modal">
+      <div class="modal__inner">
+        <button type="button" class="crossBtn">&times;</button>
+        <h2 class="text-center">退会完了</h3>
+        <div class="modal__inner__contents">
+          <p>退会が完了しました。</p>
+        </div>
+        <div class="mt-50 text-center">
+          <a href="/" class="close-btn outline-btn custom_outline-btn">TOPへ戻る</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal -->
 
   <!-- フッター開始 -->
   <footer class="footer mt-120">

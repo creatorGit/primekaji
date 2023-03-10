@@ -10,7 +10,7 @@ Form
         column-gap: 20px;
       }
       @include tablet {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 300px 1fr;
         column-gap: 10px;
       }
       @include mobile {

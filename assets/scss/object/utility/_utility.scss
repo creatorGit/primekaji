@@ -66,10 +66,10 @@
 
 .mt-25 {
   @include overTablet {
-    margin-top: 25px;
+    margin-top: 25px !important;
   }
   @include mobile {
-    margin-top: 10px;
+    margin-top: 10px !important;
   }
 }
 
@@ -84,10 +84,10 @@
 
 .mt-30 {
   @include overTablet {
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
   @include mobile {
-    margin-top: 20px;
+    margin-top: 20px !important;
   }
 }
 .mt-35 {
@@ -101,10 +101,10 @@
 
 .mb-30 {
   @include overTablet {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   @include mobile {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 }
 
@@ -137,10 +137,10 @@
 
 .mt-50 {
   @include overTablet {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
   @include mobile {
-    margin-top: 25px;
+    margin-top: 25px !important;
   }
 }
 
@@ -153,12 +153,36 @@
   }
 }
 
+.pt-40 {
+  @include overTablet {
+    padding-top: 40px;
+  }
+  @include mobile {
+    padding-top: 20px;
+  }
+}
 .pt-50 {
   @include overTablet {
-    padding-top: 55px;
+    padding-top: 50px;
   }
   @include mobile {
     padding-top: 30px;
+  }
+}
+.pb-50 {
+  @include overTablet {
+    padding-bottom: 50px;
+  }
+  @include mobile {
+    padding-bottom: 30px;
+  }
+}
+.pb-70 {
+  @include overTablet {
+    padding-bottom: 70px;
+  }
+  @include mobile {
+    padding-bottom: 40px;
   }
 }
 
@@ -222,6 +246,15 @@
   }
   @include mobile {
     margin-bottom: 40px;
+  }
+}
+
+.mt-90 {
+  @include overTablet {
+    margin-top: 90px;
+  }
+  @include mobile {
+    margin-top: 45px;
   }
 }
 

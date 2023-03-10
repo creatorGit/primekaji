@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>お問い合わせ</title>
+  <title>お問い合わせ確認</title>
   <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -87,21 +87,22 @@
         <div class="container">
           <ul class="breadcrumb bg-transparent">
             <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-            <li class="breadcrumb-item">お問い合わせ</li>
+            <li class="breadcrumb-item">お問い合わせ確認</li>
           </ul>
         </div>
       </div>
       <!-- パンくずリスト終了 -->
-      <h1 class="page-title text-center">お問い合わせ</h1>
+      <h1 class="page-title text-center">お問い合わせ確認</h1>
     </div>
 
     <div id="main" class="contact-contents bg-images pt-80 pb-100">
       <div class="container">
         <div class="animatedParent">
           <div class="title-wrap text-center animated fadeInDownShort">
-            <h2 class="p-section-title">お問い合わせ</h2>
+            <h2 class="p-section-title">お問い合わせ確認</h2>
           </div>
-          <p class="p-main-desc animated fadeInUpShort text-center mt-50">以下項目に全てご入力頂き、確認ボタンを<br class="u-sp-show">押して下さい。</p>
+          <p class="p-main-desc animated fadeInUpShort text-center mt-50">入力内容をご確認いただき、
+            <br>お間違いなければ、送信ボタンを押してください。</p>
         </div>
         <div class="container-inner animatedParent">          
           <div class="signup-box animated fadeInUpShort">
@@ -109,49 +110,35 @@
               <div class="form-wrap bg-white _box-shadow">
                 <fieldset class="grid required">
                   <label for="name" class="flex align-items-center">お名前<span>必須</span></label>
-                  <input id="" name="name" type="text" placeholder="家事　花子" required>
+                  <p class="name">家事　花子</p>
                 </fieldset>
                 <fieldset class="grid optional">
                   <label for="furigana" class="flex align-items-center">フリガナ<span>任意</span></label>
-                  <input id="" name="furigana" type="text" placeholder="カジ　ハナコ">
+                  <p class="furigana">カジ　ハナコ</p>
                 </fieldset>
                 <fieldset class="grid optional">
                   <label for="companyName" class="flex align-items-center">会社名<span>任意</span></label>
-                  <input id="" name="companyName" type="text" placeholder="株式会社エンジェルメイド">
+                  <p class="company">株式会社エンジェルメイド</p>
                 </fieldset>
                 <fieldset class="grid required">
                   <label for="email" class="flex align-items-center">メールアドレス<span>必須</span></label>
-                  <input id="" name="email" type="email" placeholder="primekaji@△△△.com">
+                  <p class="mail">primekaji@△△△.com</p>
                 </fieldset>
                 <fieldset class="grid required">
-                  <label for="contactCat" class="flex align-items-center">お問合せカテゴリ<span>必須</span></label>
-                  <div class="select-wrap">
-                    <select name="contactCat" id="">
-                      <option value="">選択してください</option>
-                      <option value="ユーザー会員登録について">ユーザー会員登録について</option>
-                      <option value="サービス利用について">サービス利用について</option>
-                      <option value="PRIME KAJIスタッフ登録について">PRIME KAJIスタッフ登録について</option>
-                      <option value="PRIME KAJIスタッフの方">PRIME KAJIスタッフの方</option>
-                      <option value="その他">その他</option>
-                    </select>
-                    <span>▼</span>
-                  </div>
+                  <label for="contactCategory" class="flex align-items-center">お問合せカテゴリ<span>必須</span></label>
+                  <p class="contactCategory">ユーザー会員登録について</p>
                 </fieldset>
                 <fieldset class="grid required align-items-start">
                   <label for="content" class="flex align-items-center">お問い合わせ内容<span>必須</span></label>
-                  <textarea name="content" id="" cols="30" rows="5" placeholder="お問い合わせ内容を記入してください。"></textarea>
+                  <p class="content">テストテストテストテストテストテスト
+                    テストテストテストテストテストテスト
+                    テストテストテストテストテストテスト</p>
                 </fieldset>
-                <fieldset class="text-center privacy-acceptance">
-                  <label for="privacyAgree" class="checkbox">
-                    <span>プライバシーポリシーに同意する</span>
-                    <input type="checkbox" name="privacyAgree">
-                    <span class="checkmark"></span>
-                  </label>
-                </fieldset>
-                <div class="animated fadeInUpShort mt-35 mb-40">                
-                  <input type="submit" class="c-view-more-btn primary-btn-brown modalShowBtn" value="確認する">
-                </div>
-              </div>            
+              </div>
+              <div class="grid two-btn-wrap animated fadeInUpShort mt-60">
+                <a href="!#" class="outline-btn custom_outline-btn">入力内容を修正する</a>
+                <input type="submit" class="c-view-more-btn primary-btn-brown" value="この内容で送信する">
+              </div>
             </form>
           </div>
         </div>
