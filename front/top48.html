@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>お問い合わせ完了</title>
+  <title>お問い合わせ確認</title>
   <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -84,35 +84,84 @@
     <div class="container">
       <ul class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
-        <li class="breadcrumb-item">お問い合わせ完了</li>
+        <li class="breadcrumb-item">レビュー投稿</li>
       </ul>
     </div>
   </div>
   <!-- パンくずリスト終了 -->
 
   <div class="l-main mb-120">
-    <div id="main" class="">
-      <div class="container">
-        <div class="mt-50">
-          <div class="container-inner">
-            <div class="thank-you-box u-brl _box-shadow bg-white">
-              <div class="animatedParent text-center">
-                <div class="mb-30">
-                  <img src="/assets/images/header_logo.svg" alt="logo">
+    <div id="main" class="container">
+      
+      <div class="main-col">
+        <div class="animatedParent">
+          <h2 class="p-main-title animated fadeInDownShort">レビューを投稿しましょう</h2>
+        </div>
+        <div class="clearfix sp-reverse animatedParent mt-40">
+          <div class="side-col float-left animated fadeInLeftShort">
+            <ul class="articles favorite-lists">
+              <li class="article-wrap favorite-item u-br">
+                <a class="article" href="!#" data-href="!#">
+                  <div class="img-box">
+                    <img src="/assets/images/article-img-woman.jpg" width="470" height="338" loading="lazy" alt="thumbnail">
+                  </div>
+                  <h3 class="p-article-title">テスト家事代行</h3>
+                  <div class="star-review-wrap flex align-items-center">
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <p class="review-mark">(<span>4.0</span>)</p>
+                  </div>
+                  <ul class="meta-tags flex align-items-center flex-wrap">
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">料理代行</span></li>
+                    <li class="meta-tag"><span class="meta cat cat-own" data-href="!#cat">掃除代行</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">整理収納</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">洗濯代行</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">出張シェフ</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">ハウスクリーニング</span></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="left-col float-right">
+            <div class="review-box _custom u-br bg-white animated fadeInRightShort">
+              <h3 class="c-second-title">5段階評価</h3>
+              <form action="" class="form">
+                <p class="mt-2 required-2">利用したサービスについて★（5段階）で評価しましょう。<span>必須</span></p>
+                <div class="star-review-wrap flex align-items-end">
+                  <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                  <p class="review-mark">(<span>4.0</span>)</p>
                 </div>
-                <p class="p-main-title-en animated fadeInUpShort" style="margin-top: 0; margin-bottom: 10px">Thank you!</p>              
-                <h2 class="p-main-title animated fadeInDownShort">お問合せ<br class="u-sp-show">ありがとうございます</h2>
-                <div class="alert-box animated fadeInUpShort mt-35">
-                  <p class="alert-text">ご入力いただきましたメールアドレス宛に控えメールを自動返信いたしました。
-                    <br>
-                    <br>スタッフより、3営業日以内にご連絡させて頂きます。
-                    <br>
-                    <br>この控えメールが届かない場合は、ご入力いただいたメールアドレスに誤りがあるか、
-                    <br>インターネット上のなんらかのトラブルの可能性もありますので
-                    <br>お手数をおかけ致しますが、再度お問合せ頂きますよう、お願いいたします。</p>
+  
+                <p class="mt-45 optional">利用したサービス・スタッフについてレビューを投稿しましょう。<span>任意</span></p>
+                <textarea name="review" class="mt-20" id="" cols="30" rows="5" placeholder="レビューを書く"></textarea>
+                <div class="image-upload-1 mt-20">
+                  <label for="reviewImage" class="flex align-items-center"><img src="/assets/images/icons/file-2.svg" alt="file-image">画像を添付する（JPEG/PNG）</label>
+                  <input type="file" name="reviewImage">
                 </div>
-              </div>
-              <a href="/" class="c-view-more-btn primary-btn-brown mt-60">TOPに戻る</a>
+                <div class="grid one-btn-wrap mt-45">
+                  <input type="submit" class="outline-btn custom_outline-btn" value="投稿する">
+                </div>
+              </form>
+            </div>          
+            <div class="animated fadeInUpShort mt-60">
+              <a href="!#" class="c-view-more-btn primary-btn-brown">一覧へ戻る</a>
             </div>
           </div>
         </div>

@@ -4059,3 +4059,11 @@ body {
     }
   }
 }
+
+.review-box {
+  &._custom {
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

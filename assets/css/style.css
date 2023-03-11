@@ -5208,6 +5208,12 @@ body.loggedin #nav-menu .logout {
   padding: 0;
 }
 
+@media (min-width: 240px) and (max-width: 520px) {
+  .review-box._custom {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: 961px) {
   .side-col {
     width: 300px;
@@ -7810,7 +7816,6 @@ section, .main {
   border-radius: 8px;
   width: 100%;
   margin: 0 auto;
-  max-width: 660px;
 }
 
 .fc-calendar-container {
