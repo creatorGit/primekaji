@@ -2104,7 +2104,15 @@ body {
   .inner {
     border: 1px solid #ADA6BA;
     border-radius: 20px;
-    padding: 55px 45px 80px;
+    @include desktop {
+      padding: 55px 45px 80px;
+    }
+    @include tablet {
+      padding: 35px 25px 40px;
+    }
+    @include mobile {
+      padding: 27px 12px 25px;
+    }
   }
 }
 
@@ -2120,6 +2128,7 @@ body {
   }
   @include mobile {
     row-gap: 20px;
+    max-width: 300px;
   }
   a {
     font-weight: 500 !important;
@@ -2302,7 +2311,12 @@ body {
     }
   }
   h2 {
-    font-size: 21px;
+    @include overTablet {
+      font-size: 21px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
   }
   .grid {
     margin-top: 14px;
@@ -4064,6 +4078,272 @@ body {
   &._custom {
     @include mobile {
       margin-top: 20px;
+    }
+  }
+}
+
+.c-slider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+    @include desktop {
+      width: 80px;
+    }
+    @include tablet {
+      width: 50px;
+    }
+  }
+  &::before {
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    right: 0;
+    top: 0;
+  }
+  @include desktop {
+    padding-left: 80px;
+    padding-right: 80px;
+    
+  }
+  @include tablet {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &.swiper-container-horizontal {
+    padding-bottom: 30px;
+    & > .swiper-pagination-bullets {
+      bottom: 0;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: #CBBFCB;
+    margin: 0 10px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #605A6C;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    @include desktop {
+      width: 55px;
+      height: 55px;
+      top: calc(50% - 18px);
+    }
+    @include tablet {
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 10px);
+    }
+    &::after {      
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+    &::after {
+      background-image: url('/assets/images/icons/arrow-left.svg');
+    }
+  }
+  .swiper-button-next {
+    right: 0;
+    &::after {
+      background-image: url('/assets/images/icons/arrow-right.svg');
+    }
+  }
+}
+
+.top-map-sec {  
+  & > .grid {
+    @include desktop {
+      column-gap: 40px;
+      grid-template-columns: 1fr 1.4fr;
+      align-items: center;
+    }
+    @include tablet {
+      column-gap: 20px;
+      grid-template-columns: 1fr 1.4fr;
+      align-items: center;
+    }
+    @include mobile {
+      row-gap: 25px;
+    }
+  }
+  .pc-province {
+    @include desktop {
+      column-gap: 30px;
+    }
+    @include tablet {
+      column-gap: 20px;
+    }
+    &:not(:first-of-type) {
+      @include desktop {
+        margin-top: 50px;
+      }
+      @include tablet {
+        margin-top: 30px;
+      }
+    }
+  }
+  .pc-province-list {
+    gap: 10px;
+    span {
+      display: block;
+      border-radius: 4px;
+      background-color: #EAEAEA;
+      color: #C6C6C6;
+      padding: 4px 8px;
+      @include overTablet {
+        font-size: 18px;
+      }
+    }
+    a {
+      border: 1px solid #CECECE;
+      display: block;
+      background-color: #fff;
+      font-size: 18px;
+      border-radius: 4px;
+      padding: 4px 8px;
+      line-height: 25px;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.top-review-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop {
+    padding-left: calc(50% - 360px);
+    padding-right: calc(50% - 360px);
+  }
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &::before, &::after {
+    content: '';
+    height: 100%;
+    display: block;
+    background: rgb(255 255 255 / 0.35);
+    position: absolute;
+    z-index: 2;
+    @include desktop {
+      width: calc(50% - 480px);
+    }
+  }
+  &::before {
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    right: 0;
+    top: 0;
+  }
+  .swiper-slide {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #C9BFCA;
+    @include overTablet {
+      grid-template-columns: 250px 1fr;
+      align-items: center;
+      .img-box {
+        height: 0;
+        padding-top: 100%;
+        position: relative;
+        img {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          object-fit: cover;
+        }
+      }
+    }
+    .detail {
+      a, p {
+        color: $primary-color
+      }
+      @include overTablet {
+        padding-left: 25px;
+        padding-right: 15px;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+  .swiper-pagination {
+    @include desktop {
+      display: none;
+    }
+    @media screen and (max-width: 960px) {
+      bottom: 0;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: #CBBFCB;
+    margin: 0 10px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #605A6C;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    @include desktop {
+      width: 55px;
+      height: 55px;
+      top: calc(50% - 15px);
+    }
+    &::after {      
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    @include desktop {
+      left: calc(50% - 450px);
+    }
+    &::after {
+      background-image: url('/assets/images/icons/arrow-left.svg');
+    }
+  }
+  .swiper-button-next {
+    @include desktop {
+      right: calc(50% - 450px);
+    }
+    &::after {
+      background-image: url('/assets/images/icons/arrow-right.svg');
     }
   }
 }

@@ -129,7 +129,7 @@
               <button type="submit" class="flex align-items-center search-btn">検 索<img src="/assets/images/icons/search-white.svg" alt="icon"></button>
             </form>
           </div>
-          <a href="!#" class="c-view-more-btn primary-btn-brown mt-30">エリアから探す</a>
+          <a href="#corresponding-area" class="c-view-more-btn primary-btn-brown mt-30">エリアから探す</a>
         </div>        
       </div>
     </div>
@@ -144,16 +144,40 @@
     </div>
   
     <div class="top-banner-1 top-banner-2 bg-white">
-      <div class="inner">
+      <div class="inner text-center">
         <a href="!#">
           <img src="/assets/images/banner-1.png" alt="banner">
         </a>
       </div>
     </div>
   
-    <div class="bg-white campain-slide">
+    <div class="bg-white campain-slide pb-50">
       <div class="container">
-        
+        <div class="c-slider swiper-container">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-wrapper">
+            <a href="!#" class="swiper-slide">
+              <picture>
+                <source media="(max-width:520px)" srcset="/assets/images/c-banner-sp.png">
+                <img src="/assets/images/c-banner-pc.png" alt="banner">
+              </picture>
+            </a>
+            <a href="!#" class="swiper-slide">
+              <picture>
+                <source media="(max-width:520px)" srcset="/assets/images/c-banner-sp.png">
+                <img src="/assets/images/c-banner-pc.png" alt="banner">
+              </picture>
+            </a>
+            <a href="!#" class="swiper-slide">
+              <picture>
+                <source media="(max-width:520px)" srcset="/assets/images/c-banner-sp.png">
+                <img src="/assets/images/c-banner-pc.png" alt="banner">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
   
@@ -161,7 +185,7 @@
       <div class="container">
         <div class="title-wrap text-center">
           <p class="p-main-title-en-2">Service category</p>
-          <h2 class="p-section-title mt-2">プライムカジで利用できるサービス</h2>
+          <h2 class="p-section-title mt-2">プライムカジで<br class="u-sp-show">利用できるサービス</h2>
         </div>
         <div class="mt-60">
           <p class="p-sub-title-3 flex flex-wrap">通常カテゴリー<span>普段の家事をお手伝いさんにお任せ！</span></p>
@@ -231,19 +255,175 @@
       </div>
     </div>
   
-    <div class="corresponding-area mt-100">
+    <div id="corresponding-area" class="corresponding-area pt-100">
       <div class="container">
         <div class="inner bg-white">
           <div class="title-wrap text-center">
             <p class="p-main-title-en-2">Corresponding area</p>
-            <h2 class="p-section-title mt-2">プライムカジ対応エリア</h2>
+            <h2 class="p-section-title mt-2">プライムカジ<br class="u-sp-show">対応エリア</h2>
           </div>
-          <div class="map-sec mt-80">
-            <div class="grid grid-lg-2 grid-md-2 grid-sm-1">
+          <div class="top-map-sec mt-80">
+            <div class="grid">
               <div class="img-box">
                 <img src="/assets/images/map-japan.png" alt="map">
               </div>
-  
+              <div class="u-pc-tab-show">
+                <div class="pc-province grid grid-lg-2 grid-md-2">
+                  <div>
+                    <p class="p-sub-title-2">北海道・東北</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">北海道</a></li>
+                      <li><a href="!#">青森</a></li>
+                      <li><span>秋田</span></li>
+                      <li><a href="!#">岩手</a></li>
+                      <li><a href="!#">山形</a></li>
+                      <li><a href="!#">宮城</a></li>
+                      <li><a href="!#">福島</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="p-sub-title-2">甲信越・北陸</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><span>石川</span></li>
+                      <li><a href="!#">新潟</a></li>
+                      <li><a href="!#">福井</a></li>
+                      <li><a href="!#">富山</a></li>
+                      <li><a href="!#">長野</a></li>
+                      <li><a href="!#">山梨</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pc-province grid grid-lg-2 grid-md-2">
+                  <div>
+                    <p class="p-sub-title-2">関東</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">群馬</a></li>
+                      <li><a href="!#">栃木</a></li>
+                      <li><a href="!#">埼玉</a></li>
+                      <li><a href="!#">茨城</a></li>
+                      <li><a href="!#">神奈川</a></li>
+                      <li><a href="!#">東京</a></li>
+                      <li><a href="!#">千葉</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="p-sub-title-2">東海</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">愛知</a></li>
+                      <li><a href="!#">岐阜</a></li>
+                      <li><a href="!#">三重</a></li>
+                      <li><a href="!#">静岡</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pc-province grid grid-lg-2 grid-md-2">
+                  <div>
+                    <p class="p-sub-title-2">近畿</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">兵庫</a></li>
+                      <li><a href="!#">京都</a></li>
+                      <li><a href="!#">大阪</a></li>
+                      <li><a href="!#">滋賀</a></li>
+                      <li><a href="!#">和歌山</a></li>
+                      <li><a href="!#">奈良</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="p-sub-title-2">四国</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">愛媛</a></li>
+                      <li><a href="!#">香川</a></li>
+                      <li><span>高知</span></li>
+                      <li><a href="!#">徳島</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pc-province grid grid-lg-2 grid-md-2">
+                  <div>
+                    <p class="p-sub-title-2">中国</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">島根</a></li>
+                      <li><a href="!#">鳥取</a></li>
+                      <li><a href="!#">広島</a></li>
+                      <li><a href="!#">岡山</a></li>
+                      <li><a href="!#">山口</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="p-sub-title-2">九州・沖縄</p>
+                    <ul class="pc-province-list flex align-items-center flex-wrap mt-3">
+                      <li><a href="!#">佐賀</a></li>
+                      <li><a href="!#">福岡</a></li>
+                      <li><a href="!#">長崎</a></li>
+                      <li><a href="!#">大分</a></li>
+                      <li><a href="!#">熊本</a></li>
+                      <li><a href="!#">宮崎</a></li>
+                      <li><a href="!#">鹿児島</a></li>
+                      <li><a href="!#">沖縄</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="u-sp-show">
+                <p class="p-sub-title-2">都道府県から探す</p>
+                <form action="" class="form mt-20">
+                  <fieldset style="padding:0">
+                    <div class="select-wrap">
+                      <select name="province" id="">
+                        <option selected hidden disabled>選択してください</option>
+                        <option value="hokkaido">北海道</option>
+                        <option value="aomori">青森県</option>
+                        <option value="iwate">岩手県</option>
+                        <option value="miyagi">宮城県</option>
+                        <option value="akita">秋田県</option>
+                        <option value="yamagata">山形県</option>
+                        <option value="fukushima">福島県</option>
+                        <option value="ibaraki">茨城県</option>
+                        <option value="tochigi">栃木県</option>
+                        <option value="gunma">群馬県</option>
+                        <option value="saitama">埼玉県</option>
+                        <option value="chiba">千葉県</option>
+                        <option value="tokyo">東京都</option>
+                        <option value="kanagawa">神奈川県</option>
+                        <option value="niigata">新潟県</option>
+                        <option value="toyama">富山県</option>
+                        <option value="ishikawa">石川県</option>
+                        <option value="fukui">福井県</option>
+                        <option value="yamanashi">山梨県</option>
+                        <option value="nagano">長野県</option>
+                        <option value="gifu">岐阜県</option>
+                        <option value="shizuoka">静岡県</option>
+                        <option value="aichi">愛知県</option>
+                        <option value="mie">三重県</option>
+                        <option value="shiga">滋賀県</option>
+                        <option value="kyoto">京都府</option>
+                        <option value="osaka">大阪府</option>
+                        <option value="hyogo">兵庫県</option>
+                        <option value="nara">奈良県</option>
+                        <option value="wakayama">和歌山県</option>
+                        <option value="tottori">鳥取県</option>
+                        <option value="shimane">島根県</option>
+                        <option value="okayama">岡山県</option>
+                        <option value="hiroshima">広島県</option>
+                        <option value="yamaguchi">山口県</option>
+                        <option value="tokushima">徳島県</option>
+                        <option value="kagawa">香川県</option>
+                        <option value="ehime">愛媛県</option>
+                        <option value="kochi">高知県</option>
+                        <option value="fukuoka">福岡県</option>
+                        <option value="saga">佐賀県</option>
+                        <option value="nagasaki">長崎県</option>
+                        <option value="kumamoto">熊本県</option>
+                        <option value="oita">大分県</option>
+                        <option value="miyazaki">宮崎県</option>
+                        <option value="kagoshima">鹿児島県</option>
+                        <option value="okinawa">沖縄県</option>
+                      </select>
+                      <span>▼</span>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
           <div class="office-area mt-60 text-center">
@@ -266,7 +446,68 @@
         <p class="p-main-title-en-2">Review</p>
         <h2 class="p-section-title mt-2">新着レビュー</h2>
       </div>
-      
+      <p class="text-center mt-50">お客様からの、リアルなレビューをご確認ください！</p>
+      <div class="top-review-wrap position-relative mt-45">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="top-review-list swiper-wrapper">
+          <a href="!#" class="swiper-slide grid">
+            <div class="img-box">
+              <img src="/assets/images/review-img-2.jpg" alt="thumb">
+            </div>
+            <div class="detail">
+              <p class="p-title-20">レビュー見出しが入ります。(1〜2行ほど想定)</p>
+              <div class="star-review-wrap flex align-items-center mt-3">
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <p class="excerpt mt-3">こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。</p>
+            </div>
+          </a>
+          <a href="!#" class="swiper-slide grid">
+            <div class="img-box">
+              <img src="/assets/images/review-img-2.jpg" alt="thumb">
+            </div>
+            <div class="detail">
+              <p class="p-title-20">レビュー見出しが入ります。(1〜2行ほど想定)</p>
+              <div class="star-review-wrap flex align-items-center mt-3">
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <p class="excerpt mt-3">こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。</p>
+            </div>
+          </a>
+          <a href="!#" class="swiper-slide grid">
+            <div class="img-box">
+              <img src="/assets/images/review-img-2.jpg" alt="thumb">
+            </div>
+            <div class="detail">
+              <p class="p-title-20">レビュー見出しが入ります。(1〜2行ほど想定)</p>
+              <div class="star-review-wrap flex align-items-center mt-3">
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <p class="excerpt mt-3">こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。こちらのテキストはダミーです。レビュー内容が入ります。</p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   
     <div class="top-banner-2 bg-white mt-120">

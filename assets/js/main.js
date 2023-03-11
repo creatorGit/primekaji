@@ -356,6 +356,60 @@ window.addEventListener('DOMContentLoaded', (event) => {
       },
     }
   });
+
+  let cSlider = new Swiper('.c-slider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    slidesPerView: 2,
+    loop:true,
+    watchOverflow: true,
+    breakpoints: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      240: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
+    }
+  });
+
+  let reviewSlider = new Swiper('.top-review-wrap', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    slidesPerView: 1,
+    loop:true,
+    watchOverflow: true,
+    breakpoints: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      240: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 120,
+      }
+    }
+  });
 });
 
 $(document).ready(function() {
