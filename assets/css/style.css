@@ -4856,6 +4856,358 @@ body.loggedin #nav-menu .logout {
   color: #312200;
 }
 
+.customer-info-details {
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+@media (min-width: 521px) {
+  .customer-info-details > .customer-info-list {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .customer-info-details > .customer-info-list {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+}
+.customer-info-details > .customer-info-list:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+.customer-info-details > .customer-info-list .customer-info-name {
+  width: 100%;
+  font-weight: 500;
+}
+@media (min-width: 961px) {
+  .customer-info-details > .customer-info-list .customer-info-name {
+    max-width: 190px;
+  }
+}
+@media (min-width: 521px) {
+  .customer-info-details > .customer-info-list .customer-info-name {
+    font-size: 20px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .customer-info-details > .customer-info-list .customer-info-name {
+    max-width: 150px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .customer-info-details > .customer-info-list .customer-info-name {
+    font-size: 17px;
+    max-width: 120px;
+  }
+}
+@media (min-width: 521px) {
+  .customer-info-details > .customer-info-list .customer-info-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .customer-info-details > .customer-info-list .customer-info-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 521px) {
+  .customer-info-details .customer-info-list .group-text-list .group-text-list-item {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .customer-info-details .customer-info-list .group-text-list .group-text-list-item {
+    flex-direction: column;
+  }
+}
+@media (min-width: 521px) {
+  .customer-info-details .customer-info-list .group-text-list .group-text-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .customer-info-details .customer-info-list .group-text-list .group-text-list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.customer-info-details .customer-info-list .group-text-list .group-text-list-item .customer-info-text:nth-child(1) {
+  font-weight: 700;
+}
+
+.reservation-card-infobox {
+  position: relative;
+  border: 5px solid #eeefee;
+}
+@media (min-width: 521px) {
+  .reservation-card-infobox {
+    padding: 26px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-card-infobox {
+    padding: 20px 12px;
+  }
+}
+.reservation-card-infobox .reservation-card-title {
+  font-weight: 500;
+}
+@media (min-width: 521px) {
+  .reservation-card-infobox .reservation-card-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-card-infobox .reservation-card-title {
+    font-size: 16px;
+  }
+}
+
+.link-other-card {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.reservation-card-infobox .card-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 521px) {
+  .reservation-card-infobox .card-info {
+    font-size: 16px;
+  }
+}
+.reservation-card-infobox .card-info .valid-date {
+  color: #9a9a9a;
+  margin-left: 15px;
+}
+@media (min-width: 521px) {
+  .reservation-card-infobox .card-info .valid-date {
+    font-size: 14px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-card-infobox .card-info .valid-date {
+    font-size: 13px;
+  }
+}
+
+.reservation-content-right .service-content-infobox {
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox {
+    margin-top: 15px;
+  }
+}
+.reservation-content-right .service-content-infobox .services-info-title {
+  background-color: #cbbfcb;
+  border-radius: 6px 6px 0 0;
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-info-title {
+    padding: 12px 25px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-info-title {
+    padding: 12px;
+  }
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items {
+    padding: 20px 20px 16px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items {
+    padding: 10px 12px;
+  }
+}
+.reservation-content-right .service-content-infobox .services-items-list .services-items:not(:last-child) {
+  border-bottom: 1px solid #e2e2e2;
+}
+.reservation-content-right .service-content-infobox .services-items-list .services-items .services-item-title {
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-item-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-item-title {
+    font-size: 18px;
+  }
+}
+.reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info {
+    font-size: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info {
+    font-size: 26px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .total {
+    font-size: 16px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .total {
+    font-size: 12px;
+  }
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .text {
+    font-size: 17px;
+  }
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .pin-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .services-price-info .pin-text {
+    font-size: 12px;
+  }
+}
+.reservation-content-right .service-content-infobox .services-items-list .services-items .estimation-text {
+  color: #777777;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (min-width: 521px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .estimation-text {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (min-width: 521px) and (max-width: 960px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .estimation-text {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-right .service-content-infobox .services-items-list .services-items .estimation-text {
+    font-size: 12px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+
+.about-reservation-info {
+  border-radius: 6px;
+  background: #CDBC95;
+}
+@media (min-width: 521px) {
+  .about-reservation-info {
+    padding: 24px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .about-reservation-info {
+    padding: 18px 12px;
+  }
+}
+.about-reservation-info .about-reservation-title {
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+@media (min-width: 521px) {
+  .about-reservation-info .about-reservation-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .about-reservation-info .about-reservation-title {
+    font-size: 17px;
+  }
+}
+.about-reservation-info .reservation-text {
+  letter-spacing: 0.05rem;
+}
+@media (min-width: 521px) {
+  .about-reservation-info .reservation-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .about-reservation-info .reservation-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 520px) {
+  .reservation-content-left {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 520px) {
+  .sp-reverse .side-col {
+    margin-top: 0;
+  }
+}
+
+.c-outline-btn-block {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500 !important;
+}
+@media (min-width: 521px) {
+  .c-outline-btn-block {
+    max-width: 339px;
+    line-height: 34px !important;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .c-outline-btn-block {
+    max-width: 270px;
+    line-height: 22px !important;
+  }
+}
+
+.visa-info {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.visa-info .form fieldset {
+  padding: 0;
+}
+
 @media (min-width: 961px) {
   .side-col {
     width: 300px;
@@ -5799,6 +6151,20 @@ footer._front .footer-nav-2 nav .footer-nav-2-link:not(:first-of-type) {
 .p-article-title a:hover {
   color: inherit;
   text-decoration: none;
+}
+
+.p-title-20 {
+  letter-spacing: 0.05rem;
+}
+@media (min-width: 521px) {
+  .p-title-20 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 240px) and (max-width: 520px) {
+  .p-title-20 {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 521px) {

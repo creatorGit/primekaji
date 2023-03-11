@@ -61,6 +61,15 @@
     }
   }
 }
+.p-title-20 {
+  letter-spacing: 0.05rem;
+  @include overTablet {
+    font-size: 20px;
+  }
+  @include mobile {
+    font-size: 17px;
+  }
+}
 .p-main-desc {
   @include overTablet {
     font-size: 16px;
