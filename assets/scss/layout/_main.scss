@@ -2648,6 +2648,9 @@ body {
       &.pc {
         display: none;
       }
+      flex-direction: column;
+      row-gap: 3px;
+      align-items: flex-start !important;
     }
     .date, .location {
       color: #ACACAC;
@@ -4344,6 +4347,873 @@ body {
     }
     &::after {
       background-image: url('/assets/images/icons/arrow-right.svg');
+    }
+  }
+}
+
+.service-details-wrapper {
+  .p-special-title {
+    @include overTablet {
+      font-size: 20px;
+    }
+  }
+}
+.service-details-left-content{
+  .service-product-details{
+    & > .meta-tags {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      margin-top: 10px;
+      .meta-tag {
+        border-radius: 10px;
+        background-color: #F0F0F0;
+        border: 1px solid #DDDDDD;
+        letter-spacing: 0.05rem;
+        padding: 1px 10px;
+        font-size: 13px;
+        line-height: 18px;
+        color: $primary-color;
+        a {
+          &:hover {
+            text-decoration: none;
+            color: #B19D70;
+          }
+        }
+      }
+    }
+    .category-list-item{
+      gap: 10px;
+      .category-list{
+        &>span{
+          font-size: 26px;
+          line-height: 35px;
+          border-radius: 10px;
+          background-color: #F0F0F0;
+          border: 2px solid #DDDDDD;
+          width: 104px;
+          height: 38px;
+          text-align: center;
+          display: inline-flex;
+          justify-content: center;
+          @include desktop {
+            width: 57px;
+            height: 21px;
+            font-size: 13px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+    .p-desc-text{
+      letter-spacing: 0.05rem;
+      @include overTablet{
+        font-size: 16px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.about-service-tabs-info-box{
+  .service-details-tabs-item{
+    .service-details-tabs-list{
+      line-height: 1;
+      &.active{
+        color: #B19D70;
+        font-weight: 700;
+      }
+      @include overTablet {
+        font-size: 18px;
+        &:not(:first-child){
+          padding-left: 25px;
+          margin-left: 25px;
+          border-left: 1px solid $primary-color;
+        }
+      }
+      @include mobile {
+        font-size: 15px;
+        &:not(:first-child){
+          padding-left: 15px;
+          margin-left: 15px;
+          border-left: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+.p-info-modal-desc{
+  @include overTablet{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  @include mobile {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+.option-fee-table-box{
+  .option-fee-list-item{
+    .option-fee-details-item{
+      .option-fee-title{
+        @media screen and (min-width:992px) {
+        }
+      }
+      .option-fee-index{
+        .option-fee-price{
+          @media screen and (min-width:992px) {
+          }
+        }
+        .option-fee-priod{
+          @media screen and (min-width:992px) {
+          }
+        }
+      }
+    }
+  }
+}
+.service-users-review{
+  .users-review-item-list{
+    .users-review-item{
+      padding: 25px 24px 28px;
+      border-radius: 6px;
+      background-color: #fff;
+      border: 1px solid #E2E2E2;
+      display: grid;
+      @include desktop {
+        column-gap: 40px;
+      }
+      @include tablet {
+        column-gap: 20px;
+      }
+      @include overTablet {
+        grid-template-columns: 95px 1fr;
+      }
+      @include mobile {
+        grid-template-columns: 1fr;
+        row-gap: 13px;
+        padding: 15px;
+      }
+      &._w-180 {
+        @include overTablet {
+          grid-template-columns: 180px 1fr;
+        }
+      }
+      &:not(:first-child){
+        @include overTablet {
+          margin-top: 20px;
+        }
+        @include mobile {
+          margin-top: 10px;
+        }
+      }
+      &.store-review-item {
+        grid-template-columns: 1fr;
+        .user-info-box {
+          width: 100%;
+          column-gap: 15px;
+        }
+      }
+      .user-info-box{
+        width: 95px;
+        &._w-180 {
+          @include overTablet {
+            width: 180px;
+          }
+          img {
+            width: 100%;
+          }
+          .user-info-date {
+            @include overTablet {
+              font-size: 15px;
+            }
+          }
+        }
+        @include mobile {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+        .users-image{
+          margin-bottom: 6px;
+        }
+        .users-info-text{
+          color: #ACACAC;
+          text-align: center;
+          @include overTablet {
+            font-size: 12px;
+          }
+        }
+      }
+      .users-text-box{
+        .users-review-desc-text{
+          @include overTablet {
+            font-size: 16px;
+          }
+          @include mobile {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.service-users-review {
+  .see-more-review {
+    background: transparent;
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    text-decoration: underline;
+    font-weight: 500;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    @include overTablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      margin-right: auto;
+      font-size: 17px;
+    }
+  }
+}
+.related-service-item {
+	position: relative;
+	border-radius: 6px;
+	background: #fff;
+	border: 1px solid #E2E2E2;
+  padding: 15px;
+  & > .meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 10px;
+    .meta-tag {
+      border-radius: 10px;
+      background-color: #F0F0F0;
+      border: 1px solid #DDDDDD;
+      letter-spacing: 0.05rem;
+      padding: 1px 10px;
+      font-size: 13px;
+      line-height: 18px;
+      color: $primary-color;
+      a {
+        &:hover {
+          text-decoration: none;
+          color: #B19D70;
+        }
+      }
+    }
+  }
+}
+.related-items-topbox {
+  display: flex;
+  @include overTablet {
+    column-gap: 15px;
+  }
+  @include mobile {
+    column-gap: 10px;
+  }
+  .img-box {
+    flex: none;
+    @include overTablet {
+      width: 160px;
+    }
+    @include mobile {
+      width: 140px;
+    }
+  }
+}
+.service-price-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 10px;
+  line-height: 1px;
+  margin-top: 5px;
+  @include overTablet {
+    font-size: 29px;
+  }
+  @include mobile {
+    font-size: 23px;
+  }
+  .service-duration{
+    padding: 2px 4px;
+    background-color: #E3E3E3;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    @include overTablet {
+      font-size: 12px;
+      height: 21px;
+      line-height: 21px;
+    }
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+  span {
+    line-height: 1;
+    &.price {
+      display: block;
+      margin-top: -3px;
+    }
+  }
+}
+.service-details-right-content {  
+  .c-view-more-btn {
+    line-height: 20px !important;
+    font-size: 16px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .outline-btn {
+    line-height: 24px !important;
+    font-size: 16px !important;
+    letter-spacing: 0;
+    width: 100%;
+  }
+}
+.selected-service-details-info{
+	position: relative;
+	padding: 15px;
+	border-radius: 6px;
+  border: 1px solid #E2E2E2;
+  .meta-tags {
+    gap: 6px;
+  }
+}
+.provider-user-box{
+  display: flex;
+  column-gap: 10px;
+
+  .provider-info-text{
+    .title{
+      @include overTablet {
+        font-size: 16px;
+        line-height: 17px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+    .review-count-box{
+      align-items: center;
+      column-gap: 6px;
+      margin-top: 5px;
+      @include overTablet {
+        font-size: 12px;
+      }
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.option-fee-list-item {
+  .option-fee-details-item {
+    border: 1px solid #e0e0e0;
+    &:last-of-type {
+      border-top: none;
+    }
+    .option-fee-title {
+      max-width: 403px;
+      width: 100%;
+      background: #f8f8f8;
+      font-size: 15px;
+      @include overTablet {
+        font-size: 20px;
+        padding: 14px 0 14px 22px;
+      }
+      @include mobile {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+.option-fee-index {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  align-items: stretch;
+  .option-fee-priod{
+    padding: 14px 22px;
+    width: 40%;
+    font-size: 15px;
+    @include overTablet {
+      text-align: right;
+      font-size: 17px;
+    }
+  }
+  .option-fee-price {
+    width: 60%;
+    padding: 14px 22px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 15px;
+    @include desktop {
+      text-align: right;
+    }
+    @include overTablet {
+      font-size: 17px;
+      width: 70%;
+    }
+  }
+}
+.other-related-services-list {
+  @include overTablet {
+    gap: 20px;
+  }
+  @include mobile {
+    row-gap: 10px;
+  }
+}
+
+.user-avatar {
+  max-width: 100px;
+}
+
+.calender-widget-box {
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  .calender-widget-title {
+    padding: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    column-gap: 10px;
+  }
+  .inner {
+    padding: 15px;
+  }
+}
+
+.c-calendar {
+  &._side {
+    .fc-calendar-container {
+      margin-top: 20px;
+      @include desktop {
+        height: 240px;
+      }
+      @include tablet {
+        height: 240px;
+      }
+    }
+    .fc-calendar {
+      .fc-head {
+        font-size: 15px;
+      }
+      .fc-row {
+        & > div {
+          & > span {
+            &.fc-date {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.side-col {
+  .c-view-more-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  .c-outline-btn-block {
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+      letter-spacing: 0;
+    }
+  }
+  .c-calendar {
+    .custom-inner {
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.side-col {
+  &._second {
+    @include desktop {
+      margin-top: -195px;
+    }
+  }
+}
+.service-details-wrapper {
+  .left-col {
+    @include tablet {
+      width: 100%;
+      float: none !important;
+    }
+  }
+  .side-col {
+    @include tablet {
+      width: 300px;
+      float: none !important;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+}
+
+.store-cat-box {
+  .meta-tags {
+    .meta-tag {
+      .meta {
+        @include overTablet {
+          font-size: 20px;
+          line-height: 1;
+          padding: 4px 8px;
+        }
+        @include mobile {
+          font-size: 13px;
+          padding: 2px 6px;
+        }
+      }
+    }
+  }
+}
+
+.reg-favorite-btn {
+  outline:  none;
+  border: none;  
+  border-radius: 5px;
+  background-color: $secondary-color;
+  font-size: 15px;
+  font-weight: 500;
+  column-gap: 5px;
+  color: #fff;
+  &:hover {
+    filter: brightness(1.1);
+  }
+  @include overTablet {
+    padding: 8px 12px;
+    box-shadow: 0 5px 0 #DFDFDF;
+  }
+  @include mobile {
+    padding: 6px;
+    box-shadow: 0 3px 0 #DFDFDF;
+  }
+  img {
+    @include mobile {
+      width: 20px;
+    }
+  }
+}
+
+.store-review-detail {
+  @include desktop {
+    column-gap: 40px;
+  }
+  @include tablet {
+    column-gap: 20px;
+  }
+  @include mobile {
+    column-gap: 10px;
+  }
+  .message-num-wrap {
+    .message-num {
+      @include overTablet {
+        font-size: 15px;
+      }
+    }
+  }
+  .favorite-num-wrap {
+    p {
+      @include overTablet {
+        font-size: 15px;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.staff-other-detail-info {
+  & > .grid {
+    @include overTablet {
+      grid-template-columns: 1fr 1.4fr;
+    }
+    @include mobile {
+      row-gap: 16px;
+    }
+    div {
+      &.flex {
+        max-width: 150px;
+        p {
+          line-height: 1;
+          @include overTablet {
+            font-size: 20px;
+          }
+          @include mobile {
+            font-size: 17px;
+          }
+        }
+        span {
+          @include overTablet {
+            font-size: 17px;
+            line-height: 20px;
+          }
+          @include mobile {
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service-users-review {
+  &.store-service-review {
+    .users-review-item-list {
+      @include overTablet {
+        gap: 20px;
+      }
+      @include mobile {
+        row-gap: 10px;
+      }
+      .users-review-item {
+        &.store-review-item {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.title-box-custom {
+  @include overTablet {
+    column-gap: 14px;
+  }
+  @include mobile {
+    flex-direction: column;
+    row-gap: 7px;
+  }
+}
+
+.note-to-customer {
+  border: 1px solid $secondary-color;
+  .title-box {
+    background-color: $secondary-color;
+    padding: 12px 18px;
+    @include overTablet {
+      column-gap: 10px;
+      img {
+        width: 26px;
+      }
+    }
+    @include mobile {
+      column-gap: 7px;
+      img {
+        width: 24px;
+      }
+    }
+  }
+  .text-box {
+    letter-spacing: 0.05rem;
+    @include overTablet {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
+    @include mobile {
+      padding: 10px 12px 13px;
+      font-size: 15px;
+    }
+  }
+}
+.public-info {
+  background-color: #AEA6BC;
+  color: #fff;
+  letter-spacing: 0.05rem;
+  @include overTablet {
+    font-size: 16px;
+    padding: 25px 25px 18px;
+  }
+  @include mobile {
+    font-size: 15px;
+    padding: 18px 12px 14px;
+  }
+}
+
+.apply-reservation-content {
+  border: 2px solid #E2E2E2;
+}
+
+
+.custom-app-content {
+  .img-box {
+    @include overTablet {
+      width: 170px;
+      margin-right: 20px;
+    }
+    @include mobile {
+      width: 120px;
+      margin-right: 8px;
+    }
+  }
+  .app-service-inner {
+    @include overTablet {
+      padding: 18px;
+    }
+    @include mobile {
+      padding: 15px 12px;
+    }
+    &.select-amount {
+      & > div {
+        @include mobile {
+          flex-direction: column;
+          align-items: flex-start !important;
+          row-gap: 10px;
+        }
+      }
+      select {
+        @include overTablet {
+          width: 265px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          height: 45px;
+        }
+        @include mobile {
+          width: 315px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .detail-txt, .meta-tags-wrap {
+    @include overTablet {
+      width: calc(100% - 190px);
+      float: right;
+    }
+  }
+  .span-time {
+    border-radius: 2px;
+    background-color: #E3E3E3;
+    padding: 2px 4px;
+  }
+}
+
+.req-option-text {
+  @include overTablet {
+    column-gap: 15px;
+  }
+  @include mobile {
+    column-gap: 10px;
+  }
+  span {
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 12px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    &.req {
+      background-color: $secondary-color;
+      color: #fff;
+    }
+    &.opt {
+      background-color: #9a9a9a;
+    }
+  }
+  p {
+    @include overTablet {
+      font-size: 16px;
+    }
+  }
+}
+
+.sum-price-wrap {
+  @include overTablet {
+    column-gap: 40px;
+  }
+  @include mobile {
+    column-gap: 20px;
+  }
+  p {
+    &.text {
+      @include overTablet {
+        font-size: 16px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+    &.price {
+      font-weight: 700;
+      font-size: 30px;
+      span {
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+.apply-sum-price {
+  background-color: #F4F4F4;
+  @include overTablet {
+    padding: 25px;
+  }
+  @include mobile {
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  & > div {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #E2E2E2;
+    @include overTablet {
+      padding: 15px 18px;
+    }
+    @include mobile {
+      padding: 10px 12px;
+    }
+  }
+}
+
+.option-price-wrap {
+  th, td {
+    &:not(:last-of-type) {
+      border-right: 1px solid #E0E0E0;
+    }
+    &:last-of-type {
+      @include overTablet {
+        width: 141px;
+      }
+    }
+  }
+  .select-wrap {
+    @include overTablet {
+      width: 113px;
+    }
+    @include mobile {
+      width: 190px;
+    }
+  }
+  select {
+    @include overTablet {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: 45px;
+    }
+    @include mobile {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: 30px;
     }
   }
 }

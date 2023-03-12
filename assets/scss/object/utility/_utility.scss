@@ -177,6 +177,15 @@
     padding-bottom: 30px;
   }
 }
+
+.pt-70 {
+  @include overTablet {
+    padding-top: 70px;
+  }
+  @include mobile {
+    padding-top: 40px;
+  }
+}
 .pb-70 {
   @include overTablet {
     padding-bottom: 70px;

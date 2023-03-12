@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>カテゴリTOP</title>
+  <title>ご予約申し込み</title>
   <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -83,7 +83,294 @@
   <!-- ヘッダー終了 -->
 
   <div class="l-main">
-        
+    <div class="page-top-heading">
+      <!-- パンくずリスト開始 -->
+      <div class="breadcrumb-wrap">
+        <div class="container">
+          <ul class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><a href="/" class="u-font-bold">TOP</a></li>
+            <li class="breadcrumb-item">店舗詳細</li>
+          </ul>
+        </div>
+      </div>
+      <!-- パンくずリスト終了 -->
+      <h1 class="page-title text-center">店舗詳細</h1>
+    </div>
+
+    <div class="bg-white pt-70 pb-70">
+      <div class="container clearfix">
+        <div class="left-col float-left">
+          <div class="title-box-custom flex align-items-center">
+            <h2 class="p-main-title">ご予約お申し込み</h2>
+            <p>お申込み内容をご入力・確認してください。</p>
+          </div>
+          <div class="mt-50">
+            <h2 class="p-sub-title">お申し込みサービス内容</h2>
+            <div class="apply-reservation-content custom-app-content mt-20 u-br">
+              <div class="app-service-inner border-bottom clearfix">
+                <div class="img-box float-left">
+                  <img src="/assets/images/service-img.jpg" alt="thumb">
+                </div>
+                <div class="meta-tags-wrap">
+                  <ul class="meta-tags flex align-items-center flex-wrap" style="margin:0">
+                    <li class="meta-tag"><span class="meta cat cat-own" data-href="!#cat">料理代行</span></li>
+                    <li class="meta-tag"><span class="meta cat cat-own" data-href="!#cat">掃除代行</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">整理収納</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">洗濯代行</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">出張シェフ</span></li>
+                    <li class="meta-tag"><span class="meta cat" data-href="!#cat">ハウスクリーニング</span></li>
+                  </ul>
+                </div>
+                <div class="detail-txt mt-15">
+                  <p class="p-main-desc" style="margin-top:0">日々のおうちのお掃除ならお任せください！</p>
+                  <div class="flex align-items-center">
+                    <p class="p-title-20 u-font-medium">【水周りのお掃除セットプラン！】</p>
+                    <div class="span-time u-pc-tab-show">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-content-between mt-15">
+                    <p class="p-main-desc" style="margin-top:0">テスト家事代行</p>
+                    <div class="span-time u-sp-show">
+                      <span>2h</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-service-inner select-amount border-bottom">
+                <div class="flex align-items-center justify-content-between">
+                  <label class="req-option-text flex align-item-center">
+                    <span class="req">必 須</span>
+                    <p>数量を選択してください</p>
+                  </label>
+                  <form class="form">
+                    <div class="select-wrap">
+                      <fieldset style="padding:0">
+                        <select name="cSearch" id="cSearch">
+                          <option disabled hidden selected>選択してください</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                        <span>▼</span>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="app-service-inner">
+                <div class="sum-price-wrap flex align-items-center justify-content-end">
+                  <p class="text">小 計</p>
+                  <p class="price">3,000<span>円</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="option-price-wrap mt-40">
+              <p class="p-sub-title">オプション料金</p>
+              <div class="mt-20 u-pc-tab-show">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th class="text-center">内 容</th>
+                      <th class="text-center">所要時間目安</th>
+                      <th class="text-center">金 額</th>
+                      <th class="text-center">数 量</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form class="form">
+                          <fieldset class="" style="padding:0">
+                            <label class="checkbox">
+                              <span>トイレ一箇所追加</span>
+                              <input type="checkbox" id="" class="" name="" value="" checked>
+                              <span class="checkmark"></span>
+                            </label>
+                          </fieldset>
+                        </form>
+                      </td>
+                      <td class="text-right">30分</td>
+                      <td class="text-right">3,000円(税込)</td>
+                      <td>
+                        <form class="form">
+                          <div class="select-wrap">
+                            <fieldset style="padding:0">
+                              <select name="cSearch" id="cSearch">
+                                <option disabled hidden selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                              <span>▼</span>
+                            </fieldset>
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <form class="form">
+                          <fieldset class="" style="padding:0">
+                            <label class="checkbox">
+                              <span>レンジフード掃除</span>
+                              <input type="checkbox" id="" class="" name="" value="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </fieldset>
+                        </form>
+                      </td>
+                      <td class="text-right">30分</td>
+                      <td class="text-right">5,000円(税込)</td>
+                      <td>
+                        <form class="form">
+                          <div class="select-wrap">
+                            <fieldset style="padding:0">
+                              <select name="cSearch" id="cSearch">
+                                <option disabled hidden selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                              <span>▼</span>
+                            </fieldset>
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                    <tr col-span="4">
+                      <td colspan="4" class="text-right">
+                        <div class="sum-price-wrap flex align-items-center justify-content-end">
+                          <p class="text">小 計</p>
+                          <p class="price">3,000<span>円</span></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-20 u-sp-show">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>内 容</th>
+                      <td>
+                        <form class="form">
+                          <fieldset class="" style="padding:0">
+                            <label class="checkbox">
+                              <span>トイレ一箇所追加</span>
+                              <input type="checkbox" id="" class="" name="" value="" checked>
+                              <span class="checkmark"></span>
+                            </label>
+                          </fieldset>
+                        </form>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>所要時間目安</th>
+                      <td>30分</td>
+                    </tr>
+                    <tr>
+                      <th>金 額</th>
+                      <td>3,000円(税込)</td>
+                    </tr>
+                    <tr>
+                      <th>数 量</th>
+                      <td>
+                        <form class="form">
+                          <div class="select-wrap">
+                            <fieldset style="padding:0">
+                              <select name="cSearch" id="cSearch">
+                                <option disabled hidden selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                              <span>▼</span>
+                            </fieldset>
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-20 u-sp-show">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>内 容</th>
+                      <td>
+                        <form class="form">
+                          <fieldset class="" style="padding:0">
+                            <label class="checkbox">
+                              <span>レンジフード掃除</span>
+                              <input type="checkbox" id="" class="" name="" value="" checked>
+                              <span class="checkmark"></span>
+                            </label>
+                          </fieldset>
+                        </form>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>所要時間目安</th>
+                      <td>30分</td>
+                    </tr>
+                    <tr>
+                      <th>金 額</th>
+                      <td>5,000円(税込)</td>
+                    </tr>
+                    <tr>
+                      <th>数 量</th>
+                      <td>
+                        <form class="form">
+                          <div class="select-wrap">
+                            <fieldset style="padding:0">
+                              <select name="cSearch" id="cSearch">
+                                <option disabled hidden selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                              <span>▼</span>
+                            </fieldset>
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="apply-sum-price mt-40">
+              <p class="p-sub-title">申込合計金額</p>
+              <div class="mt-10">
+                <div class="sum-price-wrap flex align-items-center justify-content-end">
+                  <p class="text">合 計</p>
+                  <p class="price">6,000<span>円</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-col float-right">
+          <div class="note-to-customer u-br overflow-hidden">
+            <div class="title-box flex align-items-center">
+              <img src="/assets/images/icons/warning-tri.svg" alt="icon">
+              <p class="p-sub-title-2">備考（お客様へのお願い）</p>
+            </div>
+            <div class="text-box bg-white">
+              <p>予約成立後の変更・キャンセルは、作業の6日前まで承ります。
+                期限を過ぎてのキャンセルは、5日前から2日前までは予約金額の25%、前日までは50%、それ以降は100%のキャンセル料が発生することがございますのでご了承ください。</p>
+            </div>
+          </div>
+          <div class="public-info mt-25 u-br">
+            <p class="p-sub-title-2 text-center">情報の公開について</p>
+            <p class="mt-20">予約が成立するまでは、お名前と住所の一部しかスタッフに公開されません。予約が確定すると、詳細な住所や電話番号がスタッフに公開されます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 

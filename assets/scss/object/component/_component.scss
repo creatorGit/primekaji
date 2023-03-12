@@ -419,3 +419,46 @@
     font-size: 19px;
   }
 }
+
+.favorite-num-wrap {
+  column-gap: 9px;
+  p {
+    column-gap: 5px;
+  }
+}
+
+table {
+  tbody {
+    border: 1px solid #E0E0E0;
+  }
+  tr {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E0E0E0;
+    }
+  }
+  th {
+    background-color: #F8F8F8;
+    font-weight: 400;
+    @include overTablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 15px;
+      min-width: 120px;
+    }
+  }
+  td {
+    @include overTablet {
+      font-size: 17px;
+    }
+  }
+  th, td {
+    vertical-align: middle;
+    @include overTablet {
+      padding: 14px 22px;
+    }
+    @include mobile {
+      padding: 10px 12px;
+    }
+  }
+}
