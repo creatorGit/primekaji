@@ -1,36 +1,36 @@
 .u-pc-show {
   @include desktop {
-    display: block;
+    display: block !important;
   }
-  @include underDesktop {
-    display: none;
+  @media screen and (max-width: 960px) {
+    display: none !important;
   }
 }
 
 .u-sp-show {
   @include overTablet {
-    display: none;
+    display: none !important;
   }
   @include mobile {
-    display: block;
+    display: block !important;
   }
 }
 
 .u-pc-tab-show {
   @include overTablet {
-    display: block;
+    display: block !important;
   }
   @include mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-tab-sp-show {
   @include desktop {
-    display: none;
+    display: none !important;
   }
   @include underDesktop {
-    display: block;
+    display: block !important;
   }
 }
 
