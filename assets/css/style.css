@@ -1673,27 +1673,6 @@ body {
     line-height: 1;
   }
 }
-.step-1 .card-skeleton .card-body h4, .step-2 .card-skeleton .card-body h4, .step-3 .card-skeleton .card-body h4 {
-  font-size: 23px;
-  font-weight: 500;
-  color: #312200;
-}
-@media (min-width: 240px) and (max-width: 520px) {
-  .step-1 .card-skeleton .card-body h4, .step-2 .card-skeleton .card-body h4, .step-3 .card-skeleton .card-body h4 {
-    font-size: 19px;
-  }
-}
-.step-1 .card-skeleton .card-body h6, .step-2 .card-skeleton .card-body h6, .step-3 .card-skeleton .card-body h6 {
-  font-size: 18px;
-  font-weight: 500;
-  padding-top: 10px;
-  color: #312200;
-}
-@media (min-width: 240px) and (max-width: 520px) {
-  .step-1 .card-skeleton .card-body h6, .step-2 .card-skeleton .card-body h6, .step-3 .card-skeleton .card-body h6 {
-    font-size: 18px;
-  }
-}
 .step-1 .card-skeleton .bg-c-secondary, .step-2 .card-skeleton .bg-c-secondary, .step-3 .card-skeleton .bg-c-secondary {
   background-color: #E8E8E8;
   border-radius: 10px;
@@ -1896,16 +1875,16 @@ body {
     padding: 15px 12px;
   }
 }
-.drive-id h4 {
+.drive-id h3 {
   font-weight: 500;
 }
 @media (min-width: 521px) {
-  .drive-id h4 {
+  .drive-id h3 {
     font-size: 18px;
   }
 }
 @media (min-width: 240px) and (max-width: 520px) {
-  .drive-id h4 {
+  .drive-id h3 {
     font-size: 16px;
   }
 }
