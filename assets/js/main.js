@@ -395,10 +395,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     watchOverflow: true,
     breakpoints: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 15,
       240: {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 15,
       },
       640: {
         slidesPerView: 1,

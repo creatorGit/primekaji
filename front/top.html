@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>マイページ</title>
+  <title>TOP</title>
   <link rel="icon" href="/assets/images/icons/favicon.png">
 
   <!-- google fonts 読み込み -->
@@ -113,20 +113,25 @@
           <div class="grid">
             <form action="" class="key-search flex align-items-center">
               <input type="search" name="kSearch" id="kSearch" placeholder="キーワード検索">
-              <button type="submit" class="flex align-items-center search-btn">検 索<img src="/assets/images/icons/search-white.svg" alt="icon"></button>
+              <button type="submit" class="flex align-items-center search-btn top-search-btn"><span class="u-pc-show">検 索</span><img src="/assets/images/icons/search-white.svg" alt="icon"></button>
             </form>
             <form action="" class="form cat-search flex align-items-center">
               <!-- <input type="search" name="cSearch" id="cSearch"> -->
               <div class="select-wrap">
                 <fieldset>
                   <select name="cSearch" id="cSearch">
-                    <option value="カテゴリから探す">カテゴリから探す</option>
-                    <option value=""></option>
+                    <option disabled selected hidden>カテゴリから探す</option>
+                    <option value="料理代行">料理代行</option>
+                    <option value="お掃除代行">お掃除代行</option>
+                    <option value="整理収納">整理収納</option>
+                    <option value="洗濯代行">洗濯代行</option>
+                    <option value="【プロ】出張シェフ">【プロ】出張シェフ</option>
+                    <option value="【プロ】ハウスクリーニング">【プロ】ハウスクリーニング</option>
                   </select>
                   <span>▼</span>
                 </fieldset>
               </div>
-              <button type="submit" class="flex align-items-center search-btn">検 索<img src="/assets/images/icons/search-white.svg" alt="icon"></button>
+              <button type="submit" class="flex align-items-center search-btn top-search-btn"><span class="u-pc-show">検 索</span><img src="/assets/images/icons/search-white.svg" alt="icon"></button>
             </form>
           </div>
           <a href="#corresponding-area" class="c-view-more-btn primary-btn-brown mt-30">エリアから探す</a>
@@ -146,7 +151,10 @@
     <div class="top-banner-1 top-banner-2 bg-white">
       <div class="inner text-center">
         <a href="!#">
-          <img src="/assets/images/banner-1.png" alt="banner">
+          <picture>
+            <source media="(max-width: 520px)" srcset="/assets/images/banner-1-sp.png">
+            <img src="/assets/images/banner-1.png" alt="banner">
+          </picture>
         </a>
       </div>
     </div>
@@ -427,7 +435,10 @@
             </div>
           </div>
           <div class="office-area mt-60 text-center">
-            <img src="/assets/images/office-area.png" alt="office-area">
+            <picture>
+              <source media="(max-width:520px)" srcset="/assets/images/office-area-sp.png">
+              <img src="/assets/images/office-area.png" alt="office-area">
+            </picture>
           </div>
           <div class="top-login-signup-group grid grid-lg-2 grid-md-2 grid-sm-1 mt-80">
             <a href="!#" class="outline-btn login"><span>すでに登録済みの方はこちら</span><br>ログイン</a>
@@ -513,7 +524,10 @@
     <div class="top-banner-2 bg-white mt-120">
       <div class="inner">
         <a href="!#">
-          <img src="/assets/images/banner-2.png" alt="banner">
+          <picture>
+            <source media="(max-width: 520px)" srcset="/assets/images/banner-2-sp.png">
+            <img src="/assets/images/banner-2.png" alt="banner">
+          </picture>
         </a>
       </div>
     </div>
@@ -525,42 +539,48 @@
           <h2 class="p-section-title mt-2">ご利用方法</h2>
         </div>
         <div class="how-to-list grid grid-lg-3 grid-md-3 grid-sm-1 mt-60">
-          <div class="how-to-item flex">
-            <div class="img-box">
-              <img src="/assets/images/icons/free-reg.svg" alt="icon">
-            </div>
-            <div class="detail">
-              <div class="flex ttl-wrap">
-                <p class="p-title-en">Step 01</p>
-                <p class="title">無料会員登録をする</p>
+          <div class="how-to-item">
+            <div class="how-to-item-wrap flex">
+              <div class="img-box">
+                <img src="/assets/images/icons/free-reg.svg" alt="icon">
               </div>
-              <p class="desc">こちらから、会員登録をしてください。会員登録は無料です。
-                <br><span>※マイページにて身分証明書の登録が必要になります。</span></p>
+              <div class="detail">
+                <div class="flex ttl-wrap">
+                  <p class="p-title-en">Step 01</p>
+                  <p class="title">無料会員登録をする</p>
+                </div>
+                <p class="desc">こちらから、会員登録をしてください。会員登録は無料です。
+                  <br><span>※マイページにて身分証明書の登録が必要になります。</span></p>
+              </div>
             </div>
           </div>
-          <div class="how-to-item flex">
-            <div class="img-box">
-              <img src="/assets/images/icons/matching.svg" alt="icon">
-            </div>
-            <div class="detail">
-              <div class="flex ttl-wrap">
-                <p class="p-title-en">Step 02</p>
-                <p class="title">マッチング</p>
+          <div class="how-to-item">
+            <div class="how-to-item-wrap flex">
+              <div class="img-box">
+                <img src="/assets/images/icons/matching.svg" alt="icon">
               </div>
-              <p class="desc">お願いしたい家事サービスを、お住まいの地域で検索してください。
-                <br>依頼したいサービスについて事前にスタッフに問い合わせを行うことが可能です。</p>
+              <div class="detail">
+                <div class="flex ttl-wrap">
+                  <p class="p-title-en">Step 02</p>
+                  <p class="title">マッチング</p>
+                </div>
+                <p class="desc">お願いしたい家事サービスを、お住まいの地域で検索してください。
+                  <br>依頼したいサービスについて事前にスタッフに問い合わせを行うことが可能です。</p>
+              </div>
             </div>
           </div>
-          <div class="how-to-item flex">
-            <div class="img-box">
-              <img src="/assets/images/icons/house-keeping.svg" alt="icon">
-            </div>
-            <div class="detail">
-              <div class="flex ttl-wrap">
-                <p class="p-title-en">Step 03</p>
-                <p class="title">家事の代行</p>
+          <div class="how-to-item last-item">
+            <div class="how-to-item-wrap flex">
+              <div class="img-box">
+                <img src="/assets/images/icons/house-keeping.svg" alt="icon">
               </div>
-              <p class="desc">サービス予約当日、スタッフがご登録のご住所へ訪問させていただきます。事前にご依頼頂いたサービス内容の家事を代行させていただきます。</p>
+              <div class="detail">
+                <div class="flex ttl-wrap">
+                  <p class="p-title-en">Step 03</p>
+                  <p class="title">家事の代行</p>
+                </div>
+                <p class="desc">サービス予約当日、スタッフがご登録のご住所へ訪問させていただきます。事前にご依頼頂いたサービス内容の家事を代行させていただきます。</p>
+              </div>
             </div>
           </div>
         </div>
@@ -596,7 +616,7 @@
           <p class="p-main-title-en-2">News</p>
           <h2 class="p-section-title mt-2">お知らせ</h2>
         </div>
-        <ul class="news-blog-list grid grid-lg-4 grid-md-3 grid-sm-2 mt-80">
+        <ul class="news-blog-list grid grid-lg-4 grid-md-2 grid-sm-2 mt-80">
           <li class="article news-blog-item">
             <a href="!#">
               <div class="img-box">

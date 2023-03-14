@@ -2068,8 +2068,8 @@ body {
     padding-bottom: 50px;
   }
   @include mobile {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
   .inner {
     max-width: 934px;
@@ -2112,7 +2112,7 @@ body {
     column-gap: 20px;
   }
   @include mobile {
-    row-gap: 20px;
+    row-gap: 12px;
     max-width: 300px;
   }
   a {
@@ -2180,7 +2180,7 @@ body {
         margin-left: auto;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-60%);
         right: 0;
       }
       .inner {
@@ -2275,7 +2275,7 @@ body {
     padding-bottom: 60px;
   }
   @include mobile {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .inner {
     position: relative;
@@ -2390,6 +2390,11 @@ body {
           width: 20px;
         }
       }
+      &.top-search-btn {
+        @media screen and (max-width: 960px) {
+          width: 54px;
+        }
+      }
     }
   }
 }
@@ -2459,6 +2464,7 @@ body {
     display: block;
     border-radius: 10px;
     img {
+      width: 100%;
       border-radius: 10px;
     }
     h3 {
@@ -3562,18 +3568,22 @@ body {
     row-gap: 50px;
   }
   .how-to-item {
-    background-color: #fff;
-    border: 1px solid #ADA6BA;
-    @include overTablet {
-      flex-direction: column;
-      row-gap: 20px;
-      border-radius: 20px;
-      padding: 25px;
-    }
-    @include mobile {
-      column-gap: 10px;
-      border-radius: 7px;
-      padding: 12px;
+    position: relative;
+    .how-to-item-wrap {
+      background-color: #fff;
+      border: 1px solid #ADA6BA;
+      height: 100%;
+      @include overTablet {
+        flex-direction: column;
+        row-gap: 20px;
+        border-radius: 20px;
+        padding: 25px;
+      }
+      @include mobile {
+        column-gap: 10px;
+        border-radius: 7px;
+        padding: 12px;
+      }
     }
     .img-box {
       display: flex;
@@ -3602,6 +3612,7 @@ body {
         column-gap: 8px;
         margin-bottom: 20px;
         margin-left: -5px;
+        align-items: center;
       }
       &::after {
         content: '';
@@ -3652,6 +3663,37 @@ body {
       }
       span {
         color: #898782;
+      }
+    }
+    &:not(.last-item) {
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include overTablet {
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 4px;
+          background-image: url('/assets/images/icons/dots-3-horizontal.svg');
+        }
+        @include desktop {
+          right: -60px;
+        }
+        @include tablet {
+          right: -45px;
+        }
+        @include mobile {
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -40px;
+          width: 6.5px;
+          height: 28px;
+          background-image: url('/assets/images/icons/dots-3-vertical.svg');
+        }
       }
     }
   }
@@ -4228,9 +4270,10 @@ body {
     padding-left: calc(50% - 360px);
     padding-right: calc(50% - 360px);
   }
-  @include mobile {
+  @media screen and (max-width: 960px) {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 60px;
   }
   &::before, &::after {
     content: '';
@@ -4283,6 +4326,9 @@ body {
         padding-left: 25px;
         padding-right: 15px;
       }
+      @include mobile {
+        padding: 8px 12px 12px;
+      }
     }
     &:hover {
       text-decoration: none;
@@ -4294,7 +4340,7 @@ body {
       display: none;
     }
     @media screen and (max-width: 960px) {
-      bottom: 0;
+      bottom: 8px;
     }
   }
   .swiper-pagination-bullet {
@@ -4319,7 +4365,11 @@ body {
       background-size: cover;
     }
     @media screen and (max-width: 960px) {
-      display: none;
+      top: auto;
+      bottom: 0;
+      width: 36px;
+      height: 36px;
+      z-index: 11;
     }
   }
   .swiper-button-prev {
@@ -4329,6 +4379,12 @@ body {
     &::after {
       background-image: url('/assets/images/icons/arrow-left.svg');
     }
+    @include tablet {
+      left: 200px;
+    }
+    @include mobile {
+      left: 70px;
+    }
   }
   .swiper-button-next {
     @include desktop {
@@ -4336,6 +4392,12 @@ body {
     }
     &::after {
       background-image: url('/assets/images/icons/arrow-right.svg');
+    }
+    @include tablet {
+      right: 200px;
+    }
+    @include mobile {
+      right: 70px;
     }
   }
 }
