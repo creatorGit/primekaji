@@ -3235,6 +3235,10 @@ body.loggedin #nav-menu .logout {
     padding-bottom: 20px;
   }
 }
+.cat-modal-button:hover {
+  background-color: #B19D70;
+  color: #fff;
+}
 
 @media (min-width: 521px) {
   .general-cats {

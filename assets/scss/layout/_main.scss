@@ -2428,6 +2428,10 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
 }
 
 .general-cats {
